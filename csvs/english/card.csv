@@ -493,7 +493,7 @@ This enters the arena with a stream counter. At the start of your turn, destroy 
 rNhqkLtwRGdRf7Pkh6b7b	Astral Assault	Red	1	2	5	2				Lightning, Action, Attack								When this attacks, you may destroy a Lightning Flow you control. If you do, this gets +2{p}.	Lightning Action - Attack						
 dhfWgpW6bPJrPMcKrFRdt	Astral Assault	Yellow	2	2	4	2				Lightning, Action, Attack								When this attacks, you may destroy a Lightning Flow you control. If you do, this gets +2{p}.	Lightning Action - Attack						
 BJBhJz9Gmjc6fpQjzrDB8	Astral Assault	Blue	3	2	3	2				Lightning, Action, Attack								When this attacks, you may destroy a Lightning Flow you control. If you do, this gets +2{p}.	Lightning Action - Attack						
-h6tW6K9N8LRqtbQrJLpgC	Astral Bridge	Red	1	0						Lightning, Wizard, Instant		Starfall						"Put the top card of your deck into your graveyard. If it's an instant, you may play it this turn.
+h6tW6K9N8LRqtbQrJLpgC	Astral Bridge	Red	1	0					1	Lightning, Wizard, Instant		Starfall						"Put the top card of your deck into your graveyard. If it's an instant, you may play it this turn.
 
 **Starfall** - If an instant has been put into your graveyard this turn, deal 1 arcane damage to target hero."	Lightning Wizard Instant				No	No	
 9zdPMfzWLFq7PWbjKmCc6	Astral Etchings	Red	1	1		3				Illusionist, Action							Ward	"Put three +1{p} counters on target aura with **ward** you control.
@@ -1663,7 +1663,7 @@ zQMJwgRd9B7zbF6fqb7Hk	By the Book	Blue	3	0		2				Revered, Action, Aura								"I
 
 Heroes can't draw cards during action phases.
 
-At the beginning of your action phase, destroy this."	Reviled Action - Aura				No	No	
+At the beginning of your action phase, destroy this."	Revered Action - Aura				No	No	
 9N8KCpFCwjdCgn8CBMQfg	Cadaverous Contraband	Red	1	2	6	2				Generic, Action, Attack								If Cadaverous Contraband hits, you may put a 'non-attack' action card from your graveyard on top of your deck.	Generic Action - Attack						
 RKW7z89gLBwpKqrWPfgHH	Cadaverous Contraband	Yellow	2	2	5	2				Generic, Action, Attack								If Cadaverous Contraband hits, you may put a 'non-attack' action card from your graveyard on top of your deck.	Generic Action - Attack						
 wzF9jpgGN8tPLtfrtrHfm	Cadaverous Contraband	Blue	3	2	4	2				Generic, Action, Attack								If Cadaverous Contraband hits, you may put a 'non-attack' action card from your graveyard on top of your deck.	Generic Action - Attack						
@@ -2398,13 +2398,13 @@ WhggpfhhBLDnpKwCkjWDk	Cosmic Duality	Blue	3	2	5	3			1	Lightning, Illusionist, Ac
 
 **Fragment**"	Lightning Illusionist Action - Attack						
 TqcHrNkPMppfprqPbDRRm	Cosmic Flare	Red	1	0						Lightning, Instant								Gain {r}{r}{r}	Lightning Instant						
-wd8WJpB9j7qfWHWFffqWr	Cosmic Suture	Red	1	2						Lightning, Wizard, Instant		Starfall						"Prevent the next 4 damage that would be dealt to you this turn.
+wd8WJpB9j7qfWHWFffqWr	Cosmic Suture	Red	1	2					1	Lightning, Wizard, Instant		Starfall						"Prevent the next 4 damage that would be dealt to you this turn.
 
 **Starfall** - If an instant card has been put into your graveyard this turn, deal 1 arcane damage to target hero."	Lightning Wizard Instant						
-PhWgpcwRmzjQ6bDcqcPbW	Cosmic Suture	Yellow	2	2						Lightning, Wizard, Instant		Starfall						"Prevent the next 3 damage that would be dealt to you this turn.
+PhWgpcwRmzjQ6bDcqcPbW	Cosmic Suture	Yellow	2	2					1	Lightning, Wizard, Instant		Starfall						"Prevent the next 3 damage that would be dealt to you this turn.
 
 **Starfall** - If an instant card has been put into your graveyard this turn, deal 1 arcane damage to target hero."	Lightning Wizard Instant						
-JRmqMNgWfmdffrT8WKrLf	Cosmic Suture	Blue	3	2						Lightning, Wizard, Instant		Starfall						"Prevent the next 2 damage that would be dealt to you this turn.
+JRmqMNgWfmdffrT8WKrLf	Cosmic Suture	Blue	3	2					1	Lightning, Wizard, Instant		Starfall						"Prevent the next 2 damage that would be dealt to you this turn.
 
 **Starfall** - If an instant card has been put into your graveyard this turn, deal 1 arcane damage to target hero."	Lightning Wizard Instant						
 zMC89pqnzTP7bkmfjmTzQ	Cosmo, Scroll of Ancestral Tapestry									Illusionist, Weapon, Scroll, 2H					Go again		Ward	"During your turn, auras you control with **ward** are weapons with base {p} equal to their **ward** and **Once per Turn Action - {r}: Attack**
@@ -2650,7 +2650,7 @@ N6TDqDNWfKfrz6G6jNrQQ	Dash, Database						18	4		Mechanologist, Hero, Young						
 
 Once per turn, you may play a Mechanologist item with cost 0 or 1 from the top of your deck as though it were an instant. It costs an additional {r} to play."	Mechanologist Hero - Young			No			No
 6CcjWGnThrTmTQFQ9zHMN	Dash, Inventor Extraordinaire						40	4		Mechanologist, Hero								You may start the game with a Mechanologist item with cost 2 or less in the arena.	Mechanologist Hero		No		No	No	
-8m9Tr996zccnJhHcQKhFr	Dashing Flashfoot	Yellow	2	1	3	3				Lightning, Runeblade, Action, Attack		Quickstrike					Go again	"**Quickstrike** - If this has go again, it gets +1{p} and ""When this attacks a hero, deal 1 arcane damage to them.""
+8m9Tr996zccnJhHcQKhFr	Dashing Flashfoot	Yellow	2	1	3	3			1	Lightning, Runeblade, Action, Attack		Quickstrike					Go again	"**Quickstrike** - If this has go again, it gets +1{p} and ""When this attacks a hero, deal 1 arcane damage to them.""
 
 The first time this deals damage to a hero, create an Embodiment of Lightning token."	Lightning Runeblade Action - Attack					No	
 kbdzm8R7MHCpWC79RdTGH	Data Doll MKII						20	3		Mechanologist, Hero, Young								Whenever a Mechanologist item with cost 2 or less is put into your banished zone from your deck, put it into the arena.	Mechanologist Hero - Young			No			No
@@ -4386,7 +4386,7 @@ KQhHqHjdrF8cFkRhQDQWq	Flowing Stormstrike	Red	1	0	4	2				Lightning, Action, Atta
 
 When this hits, create a Lightning Flow token."	Lightning Action - Attack					No	
 tR69zGf7gHHC9pTwwwnkH	Flowshard Elemental	Red	1	0	4	2				Lightning, Action, Attack		Go again						When this attacks, you may discard an instant card. If you do, create a Lightning Flow token and this gets **go again**.	Lightning Action - Attack					No	
-HWwCcqHRHkB69mfHDdJfk	Flowstate Embodiment	Red	1	0	4	3				Lightning, Action, Attack								Whenever you play an instant card this chain link, create an Embodiment of Lightning or Lightning FLow token.	Lightning Action - Attack				No	No	
+HWwCcqHRHkB69mfHDdJfk	Flowstate Embodiment	Red	1	0	4	3				Lightning, Action, Attack								Whenever you play an instant card this chain link, create an Embodiment of Lightning or Lightning Flow token.	Lightning Action - Attack				No	No	
 DfDQKGMfKrkdtfkJKLQch	Fluid Motion	Blue	3	0	2	3				Mystic, Action, Attack		Go again						If you've created a card this turn, this gets **go again**.	Mystic Action - Attack						
 jdkmHT8QfQmMbPLBHPrHJ	Flurry									Warrior, Token, Aura								When you activate a weapon attack, destroy this and you may attack with the weapon twice this turn.	Warrior Token - Aura						
 CRcjBPdh8TCq96GKpcmBc	Flurry Foot Dance	Yellow	2	0		2				Warrior, Defense Reaction								While this is defending, if you control a Flurry token, this gets +2{d}.	Warrior Defense Reaction					No	
@@ -6168,7 +6168,7 @@ pdfbRhNQ7rBq8r8HfcBbt	Lava Vein Loyalty	Yellow	2	0	2	3				Draconic, Ninja, Actio
 KTF8r6hgr8f89Gn9PpGn6	Lava Vein Loyalty	Blue	3	0	1	3				Draconic, Ninja, Action, Attack		Go again						If you control 2 or more Draconic chain links, this gets **go again**.	Draconic Ninja Action - Attack						
 8jkrbgKtBmnwdwNR7cKHn	Lay Down the Challenge	Yellow	2	0		3				Brute, Action		Intimidate, Go again						"**Intimidate** target hero, then if they have more cards in hand than you, draw a card.
 
-**Go again**"	Brute Action - Attack				No	No	
+**Go again**"	Brute Action				No	No	
 trdLjTnNnn6NjM7DzrcQh	Lay Down the Law	Red	1	3	7	3				Guardian, Action, Attack		Tower						**Tower** - If this has 13 or more {p}, non-equipment cards get -1{d} while defending this.	Guardian Action - Attack					No	
 fnrjjBNqBwWQb7PhMtmzC	Lay Low	Yellow	2	0		3				Generic, Defense Reaction							Mark	"If you are **marked**, you can't play this.
 
@@ -6720,7 +6720,7 @@ KFh8LdDmdJdmn9RJc8hhJ	Mechanical Strength	Red	1	3	5	3				Mechanologist, Action, 
 pHCcrc7zRQnTFLfqcpgjd	Mechanical Strength	Yellow	2	3	4	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +X{p}, where X is the number of Evos you have equipped.	Mechanologist Action - Attack					No	
 7FfRqNrB8z7L6HjzTpbJd	Mechanical Strength	Blue	3	3	3	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +X{p}, where X is the number of Evos you have equipped.	Mechanologist Action - Attack					No	
 BWQhCMHmkKGCnHfNQ8jKH	Medkit	Blue	3	0						Mechanologist, Action, Item			Action					**Action** - Put this on the bottom of its owner's deck: Gain 2{h}	Mechanologist Action - Item					No	
-GmnHWfMKzgJgpWKhQBmrM	Meet Madness	Red	1	0	3	3				Chaos, Assassin, Action, Attack	Stealth							"**Stealth**
+GmnHWfMKzgJgpWKhQBmrM	Meet Madness	Red	1	0	3	3				Chaos, Assassin, Action, Attack		Stealth						"**Stealth**
 
 When this hits a hero, choose 1 at random;
 - They choose a card in their hand. Banish it.
@@ -9336,7 +9336,7 @@ Create a Ponder token."	Wizard Instant					No
 WKb8wmGL6MRRzwLnzqLBj	Saving Grace	Yellow	2	0		3				Light, Warrior, Defense Reaction		Charge					Charge	"As an additional cost to play this, you may **charge** your hero's soul.
 
 If you've **charged** this turn, target attack gets -2{p}."	Light Warrior Defense Reaction				No	No	
-nmc8wLKtTmPhJFb7FH8BG	Savor Bloodshed	Red	1	0		3				Assassin, Warrior, Action		Go again					Mark	"You next dagger attack this turn gets +4{p}.
+nmc8wLKtTmPhJFb7FH8BG	Savor Bloodshed	Red	1	0		3				Assassin, Warrior, Action		Go again					Mark	"Your next dagger attack this turn gets +4{p}.
 
 The next time you hit a **marked** hero with a dagger this turn, draw a card.
 
@@ -9379,7 +9379,7 @@ When this is pitched, each hero shuffles, then puts the top card of their deck f
 When this attacks, you may put a yellow card from a graveyard on the bottom of its owner's deck. If you do, create a Gold token.
 
 **Watery Grave**"	Pirate Necromancer Action - Ally					No	
-cGDjfwq76gpNQpWDMtLt9	Scorpio, Comet Tail				1					Lightning, Runeblade, Weapon, Sword, 2H			Action	Attack				"**Action** - {t}: **Attack**. Activate this only if you control a Lightning attack.
+cGDjfwq76gpNQpWDMtLt9	Scorpio, Comet Tail				1				1	Lightning, Runeblade, Weapon, Sword, 2H			Action	Attack				"**Action** - {t}: **Attack**. Activate this only if you control a Lightning attack.
 
 When this hits a hero, deal 1 arcane damage to them."	Lightning Runeblade Weapon - Sword (2H)						
 9hDNGJWktKbqR8bFFzmMf	Scour	Blue	3	X		3			X	Wizard, Action								Destroy X target aura tokens and/or auras with cost 0 controlled by target hero. Then deal arcane damage to that hero equal to the number of auras destroyed this way.	Wizard Action				No	No	
@@ -11785,9 +11785,9 @@ WnPNGc8HLQHhbFKFrLkPM	Truths Retold									Mystic, Illusionist, Equipment, Head
 wKnhnNTHKHqFfjgdn9LLP	Tuffnut						20	3		Revered, Brute, Hero, Young			Instant	The Crowd Cheers				"**Instant** - {t}: Pitch the top card of your deck. If it has 6 or more {p}, **the crowd cheers** you.
 
 Whenever the crowd cheers you, create a Toughness token."	Revered Brute Hero - Young			No			No
-wqmMJj8PqzNHg7Q7LMqTR	Tuffnut, Bumbling Hulkster						40	3		Revered, Brute, Hero			Instant	The Crowd Cheers			The Crowd Cheers	"**Instant** - {t}: Pitch the top card of your deck. If it has 6 or more {p}, **the crowd cheers* you.
+wqmMJj8PqzNHg7Q7LMqTR	Tuffnut, Bumbling Hulkster						40	3		Revered, Brute, Hero			Instant	The Crowd Cheers			The Crowd Cheers	"**Instant** - {t}: Pitch the top card of your deck. If it has 6 or more {p}, **the crowd cheers** you.
 
-Wheenver the crowd cheers you, create a Toughness token."	Revered Brute Hero		No		No	No	
+Whenever the crowd cheers you, create a Toughness token."	Revered Brute Hero		No		No	No	
 RcNNBLRcBbGCWnNjqzPdQ	Turn Heads	Blue	3	3		3				Guardian, Instant, Aura		Suspense						"**Suspense**
 
 When this leaves the arena, {t} target Brute hero. They don't {u} during their next end phase."	Guardian Instant - Aura					No	
