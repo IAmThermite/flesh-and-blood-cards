@@ -86,6 +86,36 @@ def load_upright_image(path, image_rotation_degrees):
     return img
 
 
+def _box_resize_gray(arr):
+    """Area-average downsample an HxWx3 RGB array to DCT_SIZE x DCT_SIZE
+    grayscale.
+
+    This is a faithful port of fab-tabletop's `resizeToGray` in
+    `p_hash.js` (and the identical Dart `PHash._resizeToGray` the FabScan app
+    runs on live camera captures): each output cell averages the source pixels
+    whose centres fall in its box, using the SAME cell-boundary math, then
+    applies the 0.299/0.587/0.114 luma weights. Do NOT swap this for a PIL
+    `resize()` (LANCZOS/BICUBIC) — those apply a sharpening kernel that shifts
+    near-median DCT coefficients and flips hash bits, so the precomputed hashes
+    would no longer match on-device scans.
+    """
+    n = DCT_SIZE
+    height, width = arr.shape[0], arr.shape[1]
+    gray = np.empty((n, n), dtype=np.float64)
+    for oy in range(n):
+        y0 = max(0, int(np.floor(oy * height / n)))
+        y1 = max(y0 + 1, min(height, int(np.ceil((oy + 1) * height / n))))
+        for ox in range(n):
+            x0 = max(0, int(np.floor(ox * width / n)))
+            x1 = max(x0 + 1, min(width, int(np.ceil((ox + 1) * width / n))))
+            cell = arr[y0:y1, x0:x1]
+            r = cell[:, :, 0].mean()
+            g = cell[:, :, 1].mean()
+            b = cell[:, :, 2].mean()
+            gray[oy, ox] = 0.299 * r + 0.587 * g + 0.114 * b
+    return gray
+
+
 def crop_resize_gray(img, bbox):
     width, height = img.size
     bx, by, bw, bh = bbox
@@ -94,9 +124,8 @@ def crop_resize_gray(img, bbox):
     x = round(width * bx)
     y = round(height * by)
     region = img.crop((x, y, x + crop_w, y + crop_h))
-    region = region.resize((DCT_SIZE, DCT_SIZE), Image.LANCZOS)
     arr = np.asarray(region, dtype=np.float64)
-    return 0.299 * arr[:, :, 0] + 0.587 * arr[:, :, 1] + 0.114 * arr[:, :, 2]
+    return _box_resize_gray(arr)
 
 
 def phash_from_gray(gray):
@@ -127,8 +156,11 @@ def compute_hashes(image_url, image_rotation_degrees, art_variations, played_hor
 
     phash_art = ""
     if not played_horizontally:
-        art_bbox = FULL_BBOX if "FA" in art_variations else REGULAR_ART_BBOX
-        phash_art = phash_from_gray(crop_resize_gray(img, art_bbox))
+        # Always the regular art rect — never FULL_BBOX for full-art ("FA")
+        # prints. At scan time the app can't know a card's art type, so it
+        # crops every upright card with this same fixed rect; the DB hash must
+        # match that, so full-art prints are hashed on the regular rect too.
+        phash_art = phash_from_gray(crop_resize_gray(img, REGULAR_ART_BBOX))
 
     return phash_art, phash_full
 
