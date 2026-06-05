@@ -59,7 +59,9 @@
         "flavor_text": "",
         "flavor_text_plain": "",
         "image_url": "https://storage.googleapis.com/fabmaster/cardfaces/2022-1HP/SP/SP_1HP000_1.png",
-        "image_rotation_degrees": 0
+        "image_rotation_degrees": 0,
+        "phash_full": "301208475272313054",
+        "phash_art": "4922155545622798071"
     },
     {
         "unique_id": "N77hdGp96fNQnzc79hqN9",
@@ -122,7 +124,9 @@
         "flavor_text": "",
         "flavor_text_plain": "",
         "image_url": "https://storage.googleapis.com/fabmaster/cardfaces/2022-1HP/SP/SP_1HP000_2.png",
-        "image_rotation_degrees": 0
+        "image_rotation_degrees": 0,
+        "phash_full": "373664377308739659",
+        "phash_art": "119840889489124824"
     },
     {
         "unique_id": "pkMGCRh9fDT98dRgnQF8W",
@@ -185,6 +189,8 @@
         "flavor_text": "",
         "flavor_text_plain": "",
         "image_url": "https://storage.googleapis.com/fabmaster/cardfaces/2022-1HP/SP/SP_1HP000_3.png",
-        "image_rotation_degrees": 0
+        "image_rotation_degrees": 0,
+        "phash_full": "1238355229625770842",
+        "phash_art": "6616487748166234685"
     }
 ]

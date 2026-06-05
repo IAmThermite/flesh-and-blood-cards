@@ -61,7 +61,9 @@
                 "flavor_text": "",
                 "flavor_text_plain": "",
                 "image_url": "https://storage.googleapis.com/fabmaster/cardfaces/2022-1HP/FR/FR_1HP000_1.png",
-                "image_rotation_degrees": 0
+                "image_rotation_degrees": 0,
+                "phash_full": "301208543987595486",
+                "phash_art": "4922155545622798071"
             }
         ]
     },
@@ -128,7 +130,9 @@
                 "flavor_text": "",
                 "flavor_text_plain": "",
                 "image_url": "https://storage.googleapis.com/fabmaster/cardfaces/2022-1HP/FR/FR_1HP000_2.png",
-                "image_rotation_degrees": 0
+                "image_rotation_degrees": 0,
+                "phash_full": "373664377308478539",
+                "phash_art": "119840889489124824"
             }
         ]
     },
@@ -195,7 +199,9 @@
                 "flavor_text": "",
                 "flavor_text_plain": "",
                 "image_url": "https://storage.googleapis.com/fabmaster/cardfaces/2022-1HP/FR/FR_1HP000_3.png",
-                "image_rotation_degrees": 0
+                "image_rotation_degrees": 0,
+                "phash_full": "1526585606029009754",
+                "phash_art": "6616487748166234685"
             }
         ]
     }

@@ -62,6 +62,8 @@ Note: Cards in are organized by what main set they were initially released in in
 | Flavor Text | string | The flavor text (if any) that appears on this card printing. Do not use italics on this, text is assumed to be in italics. (Example pulled from Talisman of Warfare.) | It's said that wherever the Dracai of War planted this talisman, the lava was soon to flow. |
 | Image URL | string | Link to the image of the card printing from fabtcg.com's [image galleries](https://fabtcg.com/resources/card-galleries/). | https://storage.googleapis.com/fabmaster/media/images/ELE146.width-450.png |
 | TCGPlayer ID | string | The product ID of the card printing on TCGPlayer | 225537 |
+| Image Hash Art | string | Perceptual hash (64-bit DCT pHash) of the card art region, stored as a decimal string. Omitted for horizontal cards. | 9187201950351344640 |
+| Image Hash Full | string | Perceptual hash (64-bit DCT pHash) of the full card image, stored as a decimal string. Populated for every printing that has an image URL. | 9223370937343148032 |
 
 ## Card Face Association
 | Field Name | Intended Data Type | Explanation | Example |

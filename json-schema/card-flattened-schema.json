@@ -329,6 +329,14 @@
                 "description": "The amount of degrees the card image needs to be rotated to be oriented correctly.",
                 "type": "number"
             },
+            "phash_full": {
+                "description": "Perceptual hash (64-bit DCT pHash, stored as a decimal string) of the full card image. Null when no image URL exists.",
+                "type": ["string", "null"]
+            },
+            "phash_art": {
+                "description": "Perceptual hash (64-bit DCT pHash, stored as a decimal string) of the card art region. Absent for horizontal cards and prints without an image.",
+                "type": "string"
+            },
             "tcgplayer_product_id": {
                 "description": "The TCGPlayer product ID of the card printing, if it exists.",
                 "type": ["string", "null"]
