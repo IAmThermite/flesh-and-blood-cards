@@ -10,7 +10,7 @@ import numpy as np
 import requests
 from PIL import Image
 
-# --- Perceptual hash configuration (must match fab-tabletop p_hash.ex / p_hash.js) ---
+# --- Perceptual hash configuration ---
 
 DCT_SIZE = 32
 HASH_SIZE = 8
@@ -40,9 +40,7 @@ CDN_PREFIXES = [
     "https://cdn.fabtcg.com/uploads/",
 ]
 
-# DCT-II basis matrix matching fab-tabletop's cos_table: C[u, x] = cos((2x+1) * u * pi / (2N)).
-# A uniform scale factor vs fab-tabletop is irrelevant: only the relative order of the
-# 63 AC coefficients (thresholded against their median) determines the hash bits.
+# DCT-II basis matrix matching: C[u, x] = cos((2x+1) * u * pi / (2N)).
 _u = np.arange(DCT_SIZE).reshape(DCT_SIZE, 1)
 _x = np.arange(DCT_SIZE).reshape(1, DCT_SIZE)
 DCT_MATRIX = np.cos((2 * _x + 1) * _u * np.pi / (2 * DCT_SIZE))
@@ -89,15 +87,6 @@ def load_upright_image(path, image_rotation_degrees):
 def _box_resize_gray(arr):
     """Area-average downsample an HxWx3 RGB array to DCT_SIZE x DCT_SIZE
     grayscale.
-
-    This is a faithful port of fab-tabletop's `resizeToGray` in
-    `p_hash.js` (and the identical Dart `PHash._resizeToGray` the FabScan app
-    runs on live camera captures): each output cell averages the source pixels
-    whose centres fall in its box, using the SAME cell-boundary math, then
-    applies the 0.299/0.587/0.114 luma weights. Do NOT swap this for a PIL
-    `resize()` (LANCZOS/BICUBIC) — those apply a sharpening kernel that shifts
-    near-median DCT coefficients and flips hash bits, so the precomputed hashes
-    would no longer match on-device scans.
     """
     n = DCT_SIZE
     height, width = arr.shape[0], arr.shape[1]
