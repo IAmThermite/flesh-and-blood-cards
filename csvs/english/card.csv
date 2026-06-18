@@ -3085,6 +3085,9 @@ MhjRwG9PN8QWqkr7bnTHH	Dunebreaker Cenipai	Blue	3	1	3	3				Draconic, Illusionist,
 When Dunebreaker Cenipai is destroyed, create an Ash token.
 
 **Go again**"	Draconic Illusionist Action - Attack						
+gzLPbbGKHBB9fKJdkGdJg	Durendal				3					Warrior, Weapon, Sword, 2H			Once per Turn Action	Attack				"**Once per Turn Action** - {r}: **Attack**
+
+If this has a +1{p} counter, reaction cards get -1{d} while defending it."	Warrior Weapon - Sword (2H)				No	No	
 kPfFLfQ8phzz6tpjd9gMb	Dusk Path Pilgrimage	Red	1	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gains +3{p} and ""If this hits, you may attack an additional time with this weapon this turn.""
 
 **Go again**"	Warrior Action					No	
@@ -7074,6 +7077,9 @@ NMzW9mGgTcFdFQFntwG7P	Overswing	Blue	3	2		3				Guardian, Action		Go again, Heave
 
 **Heave 2**"	Guardian Action						
 LhDDmCt6MkphNPfdFWrj7	Overturn the Results	Blue	3	3	5	3				Reviled, Action, Attack		The Crowd Boos						If you would fail to win a clash revealing this, instead you win the clash and **the crowd boos** you.	Reviled Action - Attack					No	
+wdGWQ6BQfP67F9Tb7CFGT	Overwhelming Swing	Yellow	2	0		3				Warrior, Attack Reaction								"This costs an additional {r} to play for each card defending on the active chain link.
+
+Target weapon attack gets +X{p}, where X is twice the number of cards defending it plus 1."	Warrior Attack Reaction				No	No	
 fDMt9jWjpCQKJPQbfcpWg	Oysten, Heart of Gold	Yellow	2	0	3		1			Pirate, Necromancer, Action, Ally		Watery Grave	Action, Instant	Attack				"**Action** - {t}: Attack
 
 When this dies, create a Gold token.
@@ -7979,11 +7985,21 @@ dMJht8gmwFJG8cKdpzCnw	Raging Onslaught	Yellow	2	3	6	3				Generic, Action, Attack
 DdH9qjhnPGKnpr9fTfNjb	Raging Onslaught	Blue	3	3	5	3				Generic, Action, Attack									Generic Action - Attack						
 K7KgTFCHdGNnqTkJfPtTG	Rain Razors	Yellow	2	0						Ranger, Instant								Arrows have +2{p} while attacking this turn.	Ranger Instant				No	No	
 jkdq8cLQJQjrgGcLmPzM6	Rainbow Goo Trap	Red	1	0		3				Ranger, Defense Reaction, Trap							Dominate, Go again	When this defends an attack with {p} greater than its base, dominate, and go again, the attack gets -2{p} and loses and can't gain abilities.	Ranger Defense Reaction - Trap					No	
+MrHJtqLPBJqcQnJ9fNk9z	Raise Blades	Red	1	0		3				Warrior, Action		Go again						"Draw a card. Put a card from your hand on top of your deck.
+
+Your next sword attack this turn gets +3{p}.
+
+**Go again**"	Warrior Action				No	No	
 JW7fjRH9gMGGLdgQRjNGk	Raise an Army	Yellow	2	0		3				Warrior, Action		Kassai Specialization, Go again						"**Kassai Specialization**
 
 As an additional cost to play this, destroy X Gold you control.
 
 Create X Cintari Sellsword tokens.
+
+**Go again**"	Warrior Action				No	No	
+tPwwHTwt6hkdjgfzDtMfB	Rake Back	Blue	3	2		3				Warrior, Action		Go again			Wager			"You may destroy a Gold you control rather than pay this card's {r} cost.
+
+Your next sword attack this turn gets +2{p} and ""When this attacks, **wager** with the defending hero. The winner may equip an equipment card from their graveyard.""
 
 **Go again**"	Warrior Action				No	No	
 Rp7FC6BPnwwPtMWdhWnJD	Rake Over the Coals	Red	1	0						Draconic, Instant								Draconic attacks get +1{p} this turn.	Draconic Instant					No	
