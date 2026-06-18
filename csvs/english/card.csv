@@ -681,16 +681,16 @@ jPfMCnKDptNbCbp6T96dT	Barbed Castaway									Ranger, Weapon, Bow, 2H			Once per
 
 **Once per Turn Instant** - {r}: You may turn a face down arrow in your arsenal face up. If you do, put an aim counter on it."	Ranger Weapon - Bow (2H)						
 jNbd7cDQccq8zTwgTT8Rb	Barbed Undertow	Red	1	1	5	3				Ranger, Action, Arrow, Attack								"If Barbed Undertow has an aim counter, it gains ""When this hits a hero, choose red, yellow, or blue. Until the start of your next turn, they can't pitch cards of the chosen color."""	Ranger Action - Arrow Attack				No	No	
-CWcTdDfFHrQjKz8dLqfTp	Bare Destruction	Red	1	2	6	3				Brute, Action, Attack	Beat Chest, Go again	Beat Chest, Go again				Beat Chest		"**Beat Chest**
+CWcTdDfFHrQjKz8dLqfTp	Bare Destruction	Red	1	2	6	3				Brute, Action, Attack		Beat Chest, Go again					Beat Chest	"**Beat Chest**
 
 When this attacks, if you've beaten chest this turn and you don't control a chest equipment, this gets **go again** and the next Brute attack action card you play this turn gets +2{p}."	Brute Action - Attack				No	No	
 WDqWgDfRpTjWdMdTMM666	Bare Fangs	Red	1	2	6					Brute, Action, Attack								When this attacks, draw a card then discard a random card. If a card with 6 or more {p} is discarded this way, Bare Fangs gains +2{p}.	Brute Action - Attack						
 zznJbCwttpMHdRkQHccHp	Bare Fangs	Yellow	2	2	5					Brute, Action, Attack								When this attacks, draw a card then discard a random card. If a card with 6 or more {p} is discarded this way, Bare Fangs gains +2{p}.	Brute Action - Attack						
 g7DBTGtKGzCtWWfLKdFcr	Bare Fangs	Blue	3	2	4					Brute, Action, Attack								When this attacks, draw a card then discard a random card. If a card with 6 or more {p} is discarded this way, Bare Fangs gains +2{p}.	Brute Action - Attack						
-M6MBhFjDJcgfrm8mdNccR	Bare Swing	Red	1	3	7	3				Brute, Action, Attack	Beat Chest	Beat Chest				Beat Chest		"**Beat Chest**
+M6MBhFjDJcgfrm8mdNccR	Bare Swing	Red	1	3	7	3				Brute, Action, Attack		Beat Chest					Beat Chest	"**Beat Chest**
 
 When this attacks, if you've beaten chest this turn and you don't control a chest equipment, this gets +2{p}."	Brute Action - Attack					No	
-NNTdggPjQtGCjBmLG99Lc	Bare Swing	Yellow	2	3	6	3				Brute, Action, Attack	Beat Chest	Beat Chest				Beat Chest		"**Beat Chest**
+NNTdggPjQtGCjBmLG99Lc	Bare Swing	Yellow	2	3	6	3				Brute, Action, Attack		Beat Chest					Beat Chest	"**Beat Chest**
 
 When this attacks, if you've beaten chest this turn and you don't control a chest equipment, this gets +2{p}."	Brute Action - Attack					No	
 b9pTrmh7f78CMLGgtTrhB	Bark Obscenities	Red	1	0		2				Brute, Action		Go again						"Your next attack that targets a Guardian hero this turn gets +4{p}.
@@ -1068,7 +1068,7 @@ cCBDbFWGMWN7QgWFBznbw	Blast to Oblivion	Blue	3	0	2	2				Lightning, Action, Attac
 fNWdCp9dwBcCwGtH9F7wT	Blaze Headlong	Red	1	0	4	2				Draconic, Action, Attack		Go again						If you've played another red card this turn, this gets **go again**.	Draconic Action - Attack						
 hJdWJJWrBzNBBFz9BCJDw	Blaze, Firemind						17	4		Wizard, Hero, Young			Once per Turn Instant				Opt	"Whenever you **opt**, put energy counters on Blaze equal to the number of cards looked at this way.
 
-**Once per Turn Instant** - Remove X energy counters from Blaze: Banish a Wizard non-attack action card from your hand with an effect that deals arcane damage equal to X. You may play it this turn as though it were an instant."	Wizard Hero - Young			No	No	No	No
+**Once per Turn Instant** - Remove X energy counters from Blaze: Banish a Wizard non-attack action card from your hand with an effect that deals arcane damage equal to X. You may play it this turn as though it were an instant."	Wizard Hero - Young			No			No
 Fm6dT9jM6BhLtRphtfrFR	Blazen Yoroi					1				Ninja, Equipment, Chest		Blade Break						"While Blazen Yoroi is defending on chain link 4 or higher, it has +4{d}.
 
 **Blade Break**"	Ninja Equipment - Chest				No	No	
@@ -2047,7 +2047,7 @@ mftrgDLcgF69QrzBgK6HB	Clear Conscience	Blue	3	3	6	3				Illusionist, Action, Atta
 **Fragment**"	Illusionist Action - Attack					No	
 qBRhRDtgwwmgTb68dqTQW	Clearing Bellow	Blue	3	0		3				Brute, Action		Intimidate, Go again						"**Intimidate**
 
-**Go again**"	Brute Action					No	
+**Go again**"	Brute Action						
 WffgNjPNdkz9GB9TRT7RT	Clearwater Elixir	Red	1	1		3				Generic, Action		Go again						"Your next attack this turn gets +3{p}.
 
 You may destroy a Bloodrot Pox token you control. If you do, gain 1{h}.
@@ -2220,13 +2220,13 @@ nHTwDwq8BDnkdPrc9c9bW	Comeback Kid	Blue	3	3	5	3				Revered, Action, Attack		The 
 If you've been cheered this turn, this gets +1{p}."	Revered Action - Attack					No	
 BRdKgPG6pJk8pGT7CWCpB	Comet Collision	Red	1	0		3			3	Lightning, Wizard, Action		Starfall						"Deal 3 arcane damage to any target.
 
-**Starfall** - If an instant card has been put into your graveyard this turn, instead deal 4 arcane damage."	Lightning Wizard Instant					No	
+**Starfall** - If an instant card has been put into your graveyard this turn, instead deal 4 arcane damage."	Lightning Wizard Instant						
 kLgnHP8nHtnMwHfqN9zkp	Comet Collision	Yellow	2	0		3			2	Lightning, Wizard, Action		Starfall						"Deal 2 arcane damage to any target.
 
-**Starfall** - If an instant card has been put into your graveyard this turn, instead deal 3 arcane damage."	Lightning Wizard Instant					No	
+**Starfall** - If an instant card has been put into your graveyard this turn, instead deal 3 arcane damage."	Lightning Wizard Instant						
 Mbrg9P78qm9PGCdPLbncD	Comet Collision	Blue	3	0		3			1	Lightning, Wizard, Action		Starfall						"Deal 1 arcane damage to any target.
 
-**Starfall** - If an instant card has been put into your graveyard this turn, instead deal 2 arcane damage."	Lightning Wizard Instant					No	
+**Starfall** - If an instant card has been put into your graveyard this turn, instead deal 2 arcane damage."	Lightning Wizard Instant						
 hNtpt77b8dGgTbkCqzCLB	Comet Storm // Shock	Red	1	2		3			6	Wizard, Action, Lightning, Instant		Meld						"**Meld**
 
 Deal 5 arcane damage to any target.
@@ -3332,7 +3332,7 @@ HMqtjHBBrQMRpRGjkcPpD	Ebbing Arcstride	Yellow	2	0	4	3				Lightning, Illusionist,
 RKDPjzdGtKWMQnNcHBdF8	Ebon Fold					0				Shadow, Equipment, Head		Spellvoid 2	Instant					"**Instant** - {r}, destroy Ebon Fold: Banish a card from your hand. If it's a Shadow card, draw a card.
 
 **Spellvoid 2**"	Shadow Equipment - Head						
-P8KtKdKjn8HN6rLmckJkP	Echo Casque					1				Brute, Equipment, Head	Battleworn	Battleworn				Beat Chest		"Whenever you beat chest, you may {r} and destroy this. If you do, draw a card.
+P8KtKdKjn8HN6rLmckJkP	Echo Casque					1				Brute, Equipment, Head		Battleworn					Beat Chest	"Whenever you beat chest, you may {r} and destroy this. If you do, draw a card.
 
 **Battleworn**"	Brute Equipment - Head						
 wzqz9DGw687RGfqhgBPBm	Echoflash	Yellow	2	1					1	Lightning, Wizard, Instant								"Deal 1 arcane damage to target hero.
@@ -3426,7 +3426,7 @@ Create a Lightning Flow token.
 BBj7tdpTkLpgrhCrq9qRh	Electryn Mindmeld	Yellow	2	1	3	3			1	Lightning, Runeblade, Action, Attack		Quickstrike					Go again	"**Quickstrike** - If this has go again, it gets +1{p} and ""When this attacks a hero, deal 1 arcane damage to them.""
 
 The first time this deals damage to a hero, you may put an instant card from your graveyard on the bottom of your deck."	Lightning Runeblade Action - Attack					No	
-Gn89Bw77qcNMHW6fTCRTj	Elemental Strike	Red	1	0	5	3				Elemental, Action, Attack		Go again, Dominate						As an additional cost to play this, banish a card from your hand. If it's Earth, this gets +2{p}. Lightning, this gets **go again**. Ice, this gets **dominate**. 	Elemental Action - Attack				No	No	
+Gn89Bw77qcNMHW6fTCRTj	Elemental Strike	Red	1	0	5	3				Elemental, Action, Attack		Go again, Dominate						As an additional cost to play this, banish a card from your hand. If it's Earth, this gets +2{p}. Lightning, this gets **go again**. Ice, this gets **dominate**.	Elemental Action - Attack				No	No	
 Tr6LzWfrtqMkKjM7JpHjC	Elliptical Conflux	Yellow	2	1						Lightning, Illusionist, Instant, Aura		Ward 2						"When this leaves the arena, create an Embodiment of Lightning token.
 
 **Ward 2**"	Lightning Illusionist Instant - Aura						
@@ -8497,7 +8497,7 @@ MkwQMWr6GQMDNHdDFgtk9	Ray of Hope	Yellow	2	1						Light, Instant								"Attacks
 If you have less {h} than an opposing Shadow hero, put Ray of Hope into your hero's soul."	Light Instant						
 zBjL8PJJGGwQPqHrk7RnP	Raydn, Duskbane				0					Light, Warrior, Weapon, Sword, 2H			Once per Turn Action	Attack			Charge	"**Once per Turn Action** - 0: **Attack**
 
-If you've **charged** this turn, Raydn gains +3{p}."	Light Warrior Weapon - Sword (2H)				No	No	
+If you've **charged** this turn, Raydn gains +3{p}."	Light Warrior Weapon - Sword (2H)						
 MTkdbnhrJNznC69Jg7NLj	Razor Reflex	Red	1	1		2				Generic, Attack Reaction					Go again			"Choose 1;
 - Target dagger or sword weapon attack gets +3{p}.
 - Target attack action card with cost 1 or less gets +3{p} and ""When this hits, it gets **go again**."""	Generic Attack Reaction						
@@ -10227,14 +10227,14 @@ If Smashing Good Time is played from arsenal, the next attack action card you pl
 **Go again**"	Generic Action					No	
 pB7j8qpB8jcJ98N9MWz8Q	Smashing Ground	Blue	3	3	5	3				Brute, Action, Attack								"If this has 6 or more {p}, it gets ""When this hits a hero, destroy a card in their arsenal."""	Brute Action - Attack					No	
 cHd8RnCfp9h8MNkQnL9Md	Smashing Performance	Yellow	2	3	6					Brute, Action, Attack								When this attacks draw a card, then discard a random card. If a card with 6 or more {p} is discarded this way, destroy a random item in the arena.	Brute Action - Attack				No	No	
-gWHWkrDqc9mKhHGRGrp6p	Smell Fear	Yellow	2	0		3				Brute, Action	Beat Chest, Intimidate, Go again	Beat Chest, Go again, Intimidate				Beat Chest		"**Beat Chest**
+gWHWkrDqc9mKhHGRGrp6p	Smell Fear	Yellow	2	0		3				Brute, Action		Beat Chest, Go again, Intimidate					Beat Chest	"**Beat Chest**
 
 If you've beaten chest this turn, **intimidate**.
 
 Your next Brute attack this turn gets ""If you've intimidated 2 or more times this turn, this gets +3{p}.""
 
 **Go again**"	Brute Action					No	
-QwkRmndddLgfWPBLLMKMB	Smell Fear	Blue	3	0		3				Brute, Action	Beat Chest, Intimidate, Go again	Beat Chest, Go again, Intimidate				Beat Chest		"**Beat Chest**
+QwkRmndddLgfWPBLLMKMB	Smell Fear	Blue	3	0		3				Brute, Action		Beat Chest, Go again, Intimidate					Beat Chest	"**Beat Chest**
 
 If you've beaten chest this turn, **intimidate**.
 
@@ -11379,6 +11379,9 @@ At the beginning of your end phase, destroy a Silver you control. If you don't, 
 QcgncKTnLcdGKQnwDjqdz	The Librarian					3				Illusionist, Mentor							Specialization	"While The Librarian is face down in arsenal, at the start of your turn, you may turn him face up.
 
 While The Librarian is face up in arsenal, once per turn when you create a Spectral Shield token, draw a card and put a lesson counter on The Librarian. Then if there are 3 or more lesson counters on him, banish him, search your deck for a **specialization** card, put it face up into arsenal, and shuffle."	Illusionist Mentor			No	No	No	No
+MkgbKjT77G7hCnBdpdqKH	The Librarian, Magister of History						20	4		Light, Adjudicator, Hero		Go again						"You may have cards with Tome in their name of any class or talent in your deck.
+
+**Action** - {t}, reveal a card with Tome in its name from your inventory: Put it into your hand. Another target hero gets +1{i} until the end of their next turn. **Go again**"	Light Adjudicator Hero		No		No	No	
 qhgBBWfkQcrgzKMTqQ7RC	The Moat Exchange									Event								Each hero may put any number of cards from their hand or arsenal on the bottom of their deck, then they draw a card for each card they put on the bottom this way.	Event		No	No	No	No	No
 QhRMMbB6zPRzJJk7hJQwj	The Old Switcheroo	Blue	3	0	2	3				Reviled, Action, Attack								**Instant** - Discard this: the next time you would clash with target hero this turn, instead you reveal the top card of their deck and they reveal the top card of your deck. If you win the clash, they discard a card.	Reviled Action - Attack					No	
 RBWKndBPqQHwdWCzPnj8k	The Suspense is Killing Me	Blue	3	0		2				Guardian, Instant, Aura		Suspense						"**Suspense**
@@ -11662,7 +11665,7 @@ DhMTNwfDKnwhRqgkPB6gq	Trailblazing Aether	Yellow	2	0		3			2	Wizard, Action		Surg
 DRqfHtKT6mfqNFRDMdDBp	Trailblazing Aether	Blue	3	0		3			1	Wizard, Action		Surge	Go again					"Deal 1 arcane damage to target hero.
 
 **Surge** - If this deals more than 1 damage, it gets **go again**."	Wizard Action						
-bkdFB6qNrhLBgrTrmRpNJ	Trampling Trackers					2				Brute, Equipment, Legs	Temper	Temper				Beat Chest		"Whenever you beat chest, you may destroy this. If you do, create an Agility token.
+bkdFB6qNrhLBgrTrmRpNJ	Trampling Trackers					2				Brute, Equipment, Legs		Temper					Beat Chest	"Whenever you beat chest, you may destroy this. If you do, create an Agility token.
 
 **Temper**"	Brute Equipment - Legs				No	No	
 JqKMJnbpL76gbCMHj7JPt	Tranquil Passing	Red	1	1		2				Illusionist, Action, Aura		Ward 1						"When Tranquil Passing enters the arena, you may banish target aura token or aura permanent with cost 3 or less controlled by an opponent until Tranquil Passing leaves the arena.
@@ -12746,6 +12749,3 @@ MLfgFRDKbTbWj8fBgMrjJ	mBrio Base Vizier					0				Mechanologist, Equipment, Base,
 
 **Arcane Barrier 1**"	Mechanologist Equipment - Base Head						
 dBjPM7HpftQtBRzdTwhQj	mBrio Base Walkers					0				Mechanologist, Equipment, Base, Legs		Quell 1						**Quell 1**	Mechanologist Equipment - Base Legs						
-MkgbKjT77G7hCnBdpdqKH	The Librarian, Magister of History						20	4		Light, Adjudicator, Hero		Go again						"You may have cards with Tome in their name of any class or talent in your deck.
-
-**Action** - {t}, reveal a card with Tome in its name from your inventory: Put it into your hand. Another target hero gets +1{i} until the end of their next turn. **Go again**"	Light Adjudicator Hero		No	No	No	No	No

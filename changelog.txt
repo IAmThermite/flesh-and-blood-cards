@@ -1026,6 +1026,8 @@ TODO:
 - Added images for ANQ000-ANQ037, GEM105-GEM140, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034, TNP001-TNP030 - data assistance credit: manwaring
 - Added TCGPlayer IDs for ANQ000-ANQ037, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034 - data assistance credit: manwaring
 - Fixed issue with Break Stature having Clash instead of Crush listed as a keyword
+- TODO: https://github.com/the-fab-cube/flesh-and-blood-cards/issues/512
+- TODO: https://github.com/the-fab-cube/flesh-and-blood-cards/issues/517
 
 TODO:
 - GEM and OMN
