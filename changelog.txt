@@ -1018,3 +1018,8 @@ HER058, HER059, HER060, HER061, HER062, HER063, HER064, HER065, HER066, JDG001, 
 - Added printing data for FAB484-FAB486, MPW042-MPW044, MPW048-MPW050, MPW052, MPW063, MPW072, MPW084, MPW096-MPW098, and MPW153 - data entry assistance: manwaring
 - Added image data for FAB484-FAB486, MPW042-MPW044, MPW048-MPW050, MPW052, MPW063, MPW072, MPW084, MPW096-MPW098, and MPW153
 - Updated functional text for In the Swing, Run Through (Yellow), and Warrior's Valor
+
+06-17-26:
+- Added card data for Durendal, Overwhelming Swing, Raise Blades, and Rake Back - data entry assistance: manwaring
+- Added card data for MPW008, MPW010-MPW011, MPW024, and MPW032-MPW033 - data entry assistance: manwaring
+- Added image data for MPW008, MPW010-MPW011, MPW024, and MPW032-MPW033 - data entry assistance: manwaring

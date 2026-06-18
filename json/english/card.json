@@ -61356,6 +61356,26 @@
                 "tcgplayer_url": "https://www.tcgplayer.com/product/225505?Language=English&Printing="
             },
             {
+                "unique_id": "Hqd9zCj99thkQ8NphMPnh",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW011",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "L",
+                "expansion_slot": false,
+                "artists": [
+                    "Asur Misoa"
+                ],
+                "art_variations": [
+                    "AA"
+                ],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW011-RF.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "bHt8ncPBCbchmRMrkP7dg",
                 "set_printing_unique_id": "C9dGnhCMDWQdD7rC7QbHj",
                 "id": "WTR116",
@@ -128854,6 +128874,116 @@
         ]
     },
     {
+        "unique_id": "gzLPbbGKHBB9fKJdkGdJg",
+        "name": "Durendal",
+        "color": "",
+        "pitch": "",
+        "cost": "",
+        "power": "3",
+        "defense": "",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Warrior",
+            "Weapon",
+            "Sword",
+            "2H"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [
+            "Once per Turn Action"
+        ],
+        "ability_and_effect_keywords": [
+            "Attack"
+        ],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Once per Turn Action** - {r}: **Attack**\n\nIf this has a +1{p} counter, reaction cards get -1{d} while defending it.",
+        "functional_text_plain": "Once per Turn Action - {r}: Attack\nIf this has a +1{p} counter, reaction cards get -1{d} while defending it.",
+        "type_text": "Warrior Weapon - Sword (2H)",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "gPMnnq7Kh9Fc68wGprzL8",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW008",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Nathaniel Himawan"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW008.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "gPggGfc6GbcC7bp9TzGkW",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW008",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "C",
+                "rarity": "V",
+                "expansion_slot": false,
+                "artists": [
+                    "Nathaniel Himawan"
+                ],
+                "art_variations": [
+                    "FA"
+                ],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW008-MV.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "g7H6tzGzFTmKm9zjLh6Pq",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW008",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "C",
+                "rarity": "V",
+                "expansion_slot": false,
+                "artists": [
+                    "Nathaniel Himawan"
+                ],
+                "art_variations": [
+                    "FA"
+                ],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW008-MV_BACK.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "kPfFLfQ8phzz6tpjd9gMb",
         "name": "Dusk Path Pilgrimage",
         "color": "Red",
@@ -190521,6 +190651,26 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "533038",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/533038?Language=English&Printing=Cold+Foil"
+            },
+            {
+                "unique_id": "6KQ7gpGpJw9KGbKbGkfKT",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW010",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "L",
+                "expansion_slot": false,
+                "artists": [
+                    "Isuardi Therianto"
+                ],
+                "art_variations": [
+                    "AA"
+                ],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW010-RF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -294644,6 +294794,88 @@
         ]
     },
     {
+        "unique_id": "wdGWQ6BQfP67F9Tb7CFGT",
+        "name": "Overwhelming Swing",
+        "color": "Yellow",
+        "pitch": "2",
+        "cost": "0",
+        "power": "",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Warrior",
+            "Attack Reaction"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "This costs an additional {r} to play for each card defending on the active chain link.\n\nTarget weapon attack gets +X{p}, where X is twice the number of cards defending it plus 1.",
+        "functional_text_plain": "This costs an additional {r} to play for each card defending on the active chain link.\nTarget weapon attack gets +X{p}, where X is twice the number of cards defending it plus 1.",
+        "type_text": "Warrior Attack Reaction",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "DggKg9b86WNpM8LRBFWgk",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW024",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Yosi Saputra"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW024.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "97TjHNg6wJrzwfTqqMfQ9",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW024",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Yosi Saputra"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW024.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "fDMt9jWjpCQKJPQbfcpWg",
         "name": "Oysten, Heart of Gold",
         "color": "Yellow",
@@ -329025,6 +329257,90 @@
         ]
     },
     {
+        "unique_id": "MrHJtqLPBJqcQnJ9fNk9z",
+        "name": "Raise Blades",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "0",
+        "power": "",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Warrior",
+            "Action"
+        ],
+        "traits": [],
+        "card_keywords": [
+            "Go again"
+        ],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "Draw a card. Put a card from your hand on top of your deck.\n\nYour next sword attack this turn gets +3{p}.\n\n**Go again**",
+        "functional_text_plain": "Draw a card. Put a card from your hand on top of your deck.\nYour next sword attack this turn gets +3{p}.\nGo again",
+        "type_text": "Warrior Action",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "p8thtLCGLjgmgBjRhTPNt",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW032",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Amtepra"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW032.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "tLRKNqNbn6KLNp6FPcnNK",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW032",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Amtepra"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW032.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "JW7fjRH9gMGGLdgQRjNGk",
         "name": "Raise an Army",
         "color": "Yellow",
@@ -329139,6 +329455,92 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "528089",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/528089?Language=English&Printing=Rainbow+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "tPwwHTwt6hkdjgfzDtMfB",
+        "name": "Rake Back",
+        "color": "Blue",
+        "pitch": "3",
+        "cost": "2",
+        "power": "",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Warrior",
+            "Action"
+        ],
+        "traits": [],
+        "card_keywords": [
+            "Go again"
+        ],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [
+            "Wager"
+        ],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "You may destroy a Gold you control rather than pay this card's {r} cost.\n\nYour next sword attack this turn gets +2{p} and \"When this attacks, **wager** with the defending hero. The winner may equip an equipment card from their graveyard.\"\n\n**Go again**",
+        "functional_text_plain": "You may destroy a Gold you control rather than pay this card's {r} cost.\nYour next sword attack this turn gets +2{p} and \"When this attacks, wager with the defending hero. The winner may equip an equipment card from their graveyard.\"\nGo again",
+        "type_text": "Warrior Action",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "FC6ffKzFrwMWPRDmRMJjD",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW033",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Alifka Hammam"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW033.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "PftCt8bQjqnQnMLBGMDmf",
+                "set_printing_unique_id": "hwtrhRKP8WBtPdhzW7p6G",
+                "id": "MPW033",
+                "set_id": "MPW",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Alifka Hammam"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPW033.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
