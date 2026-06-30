@@ -1023,3 +1023,26 @@ HER058, HER059, HER060, HER061, HER062, HER063, HER064, HER065, HER066, JDG001, 
 - Added card data for Durendal, Overwhelming Swing, Raise Blades, and Rake Back - data entry assistance: manwaring
 - Added card data for MPW008, MPW010-MPW011, MPW024, and MPW032-MPW033 - data entry assistance: manwaring
 - Added image data for MPW008, MPW010-MPW011, MPW024, and MPW032-MPW033 - data entry assistance: manwaring
+
+06-29-26:
+- Added set data for ANQ, PEN, SAR, SAZ, SBR, SDA, SDO, SEN, SFA, SIY, SKA, and SVI
+- Added card data for ANQ, OMN, PEN - data assistance credit: manwaring
+- Added printing data for ANQ000-ANQ037, GEM105-GEM140, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034, TNP001-TNP030 - data assistance credit: manwaring
+- Added images for ANQ000-ANQ037, GEM105-GEM140, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034, TNP001-TNP030 - data assistance credit: manwaring
+- Added TCGPlayer IDs for ANQ000-ANQ037, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034 - data assistance credit: manwaring
+- Updated CC legality for Channel Lightning Valley, Electromagnetic Somersault, Phantom Tidemaw, Reaping Blade, Remembrance, Skyward Serenade, Talk a Big Game, and `Volzar, the Lightning Rod`
+- Updated Silver Age legality for Aether Spindle, Beckoning Haunt, Burn Up // Shock, Cash In, Chane, Deathly Delight, Ebon Fold, Flourish, `Ira, Crimson Haze`, Kano, Kayo, Lightning Press, Reaping Blade, Seeds of Agony, Steelblade Shunt, Vantom Wraith, Vigorous Smashup, `Volzar, the Lightning Rod`
+- Updated functional text for Teklo Pounder
+- Fixed issue with Break Stature having Clash instead of Crush listed as a keyword
+- Fixed issue with functional text for `Tuffnut, Bumbling Hulkster`, Savor Bloodshed  - bugfix credit: manwaring
+- Fixed issue where Quickdodge Flexor GF printing was listed as FAB394 instead of FAB294 - bugfix credit: manwaring
+- Fixed issue with types for Frosthaven Sheath, Leaven Sheath, Stormwind Sheath, By the Book, Lay Down the Challenge - bugfix credit: manwaring
+- Fixed issue with SAR027 being attend to Up Stick and Run (Blue) instead of Red - bugfix credit: manwaring
+- Fixed issue with treatment for PEN321, Macho Grande SBR printing - bugfix credit: manwaring
+- Fixed legality for `Ruu'di, Gem Keeper`, Rotwood Reaper, `Florian, Rotwood Harbinger`, Chane, Flic Flak, `Volzar, the Lightning Rod`, Verdance, Vantom Wraith, Reaping Blade, Phantom Tidemaw - bugfix credit: manwaring
+- Fixed missing images for Enigma Sage deck, ARR002, SEN034 - bugfix credit: manwaring
+- Fixed issue with artist for Ghost Protocol Mainframe, `Enigma, Ledger of Ancestry`, Cut Through the Facade, Scar for a Scar, Flic Flak, Voltbound Duality - bugfix credit: manwaring
+- Fixed missing cards for ARR, APR, AVS, BDD - bugfix credit: manwaring
+- Fixed keywords for Meet Madness - bugfix credit: manwaring
+- Fixed wrong image for SUP270, OMN000, PEN021, PEN267, PEN marvel young heroes, FAB478 - bugfix credit: manwaring
+- Fixed various issues from OMN and PEN (Phillip did so much I no longer have the energy to detail them all :joy:) - bugfix credit: manwaring

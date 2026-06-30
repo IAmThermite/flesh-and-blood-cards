@@ -1,2 +1,5 @@
 11-14-25:
 - Created script
+
+-5-14-26:
+- Fixed a bug where Super Rares weren't being included in Silver Age legality - bugfix credit: brianmadden
