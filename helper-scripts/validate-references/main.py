@@ -85,6 +85,7 @@ legality_csv_filenames = [
     '../../csvs/english/banned-cc.csv',
     '../../csvs/english/banned-commoner.csv',
     '../../csvs/english/banned-ll.csv',
+    '../../csvs/english/banned-silver-age.csv',
     '../../csvs/english/banned-upf.csv',
     '../../csvs/english/living-legend-blitz.csv',
     '../../csvs/english/living-legend-cc.csv',

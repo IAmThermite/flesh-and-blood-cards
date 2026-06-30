@@ -16,6 +16,7 @@
 - [Generate Unique IDs](/helper-scripts/generate-unique-ids/README.md)
 - [JSON Validation](/helper-scripts/json-validation/README.md)
 - [Populate TCGPlayer Product IDs](/helper-scripts/populate-tcgplayer-product-ids/README.md)
+- [Update Card Legality](/helper-scripts/update-card-legality/README.md)
 
 ## Bash Scripts
 
@@ -40,9 +41,11 @@
     - Clean CSVs
     - Validate References
     - Generate Artists
-    - Generate Artists
     - Generate Unique IDs
+    - Update Card Legality
     - Generate JSON
     - Validate JSON
+- `./update-card-legality.sh`
+  - Shortcut to run the Update Card Legality script from the helper-scripts folder.
 - `./validate-json.sh`
   - Shortcut to run the Validate JSON script from the helper-scripts folder.

@@ -145,6 +145,10 @@
                 "description": "A boolean representing if the card is legal in Living Legend (not including bans or suspensions).",
                 "type": "boolean"
             },
+            "silver_age_legal": {
+                "description": "A boolean representing if the card is legal in Silver Age (not including bans or suspensions).",
+                "type": "boolean"
+            },
             "blitz_living_legend": {
                 "description": "A boolean representing if the card is Living Legend in Blitz.",
                 "type": ["boolean"]
@@ -191,6 +195,14 @@
             },
             "ll_banned_start": {
                 "description": "The date the card became banned in Living Legend (will not be present otherwise).",
+                "type": ["string"]
+            },
+            "silver_age_banned": {
+                "description": "A boolean representing if the card is currently banned in Silver Age.",
+                "type": ["boolean"]
+            },
+            "silver_age_banned_start": {
+                "description": "The date the card became banned in Silver Age (will not be present otherwise).",
                 "type": ["string"]
             },
             "upf_banned": {
@@ -379,6 +391,7 @@
             "blitz_legal",
             "cc_legal",
             "commoner_legal",
+            "silver_age_legal",
             "ll_legal",
             "blitz_living_legend",
             "cc_living_legend",
@@ -386,6 +399,7 @@
             "cc_banned",
             "commoner_banned",
             "ll_banned",
+            "silver_age_banned",
             "upf_banned",
             "blitz_suspended",
             "cc_suspended",

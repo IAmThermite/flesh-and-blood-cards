@@ -934,11 +934,115 @@ HER058, HER059, HER060, HER061, HER062, HER063, HER064, HER065, HER066, JDG001, 
 - Added TCGPlayer IDs for APS001-APS030 and MPG001-MPG129
 - Added Revered and Reviled types
 - Added Suspense, The Crowd Boos, and The Crowd Boos keywords
-- Updated functional text for Brothers in Arms, Feisty Locals, Helm of Isen's Peak, New Horizon, and Tear Asunder
+- Updated functional text for Bravo, Brothers in Arms, Buckling Blow, Cartilage Crush, Chokeslam, Crush Confidence, Crush the Weak, Debilitate, Disable, Embolden, Feisty Locals, Heartened Cross Strap, Helm of Isen's Peak, Hope Merchant's Hood, New Horizon, Stonewall Confidence, Tear Asunder, Thunder Quake, Time Skippers
 - Fixed incorrect foiling listed for SEA000 - bug notice credit: manwaring
 - Fixed missing printings for MPG000 and MPG085-MPG091 - bug notice credit: manwaring
 - Fixed incorrect rarity listed for MPG002 - bug notice credit: manwaring
-- Fixed commoner legality for Bravo, Buckling Blow, Cartilage Crush, Chokeslam, Crush Confidence, Crush the Weak, Debilitate, Disable, Embolden, Fault Line, Heartened Cross Strap, Hope Merchant's Hood, Hostile Encroachment, Renounce Grandeur, Stonewall Confidence, Thunder Quake, Time Skippers, and Valda Brightaxe - bug notice credit: manwaring
+- Fixed commoner legality for Clash of Arms, Clash of Chests, Disable, Embolden, Fault Line, Hostile Encroachment, Renounce Grandeur, Thunder Quake, Valda, Brightaxe - bug notice credit: manwaring
 - Fixed incorrect artist for LGS406 and MPG048-MPG049 - bug notice credit: manwaring
 - Replace all instances of Wírawan Pranoto with Wirawan Pranoto - bug notice credit: manwaring
 - Removed RF foiling printing of GEM058 - bug notice credit: n21lv
+
+11-14-25:
+- Breaking: Added new banned-silver-age.csv and associated JSON and documentation, as well as Silver Age Legal field to cards.csv
+
+11-15-25:
+- Added card data for Rage Baiters, Creep, Horrors of the Past, and `Hala, Bladesaint of the Vow`
+- Added printing data for AAC006, AAC009, AAC022, and AHA001
+- Added Sharpen keyword
+- Added set data for AHA
+
+11-24-25:
+- Added card data for Ghost Protocol: Architect and Ghost Protocol: Mainframe
+- Added printing data for LGS443-LGS445
+
+12-06-25:
+- Fixed issue with Savage Sash missing Temper keyword - bug notice credit: PvtVoid
+
+12-11-25:
+- Added card data for Prey Spotters, Inverter's Nightcowl, Stalker's Steps, and Night's Embrace - data entry assistance: manwaring
+- Added remaining printing data for AAC001-AAC031  - data entry assistance: manwaring
+- Added image data for AAC001-AAC031
+- Added image data for ARR005 and AAZ005 - notice credit: PvtVoid
+- Fixed Torc of Vim keywords incorrectly being in the traits and interacts with keywords incorrectly being in the removed keywords fields - bug notice credit: PvtVoid
+- Fixed Gallow health incorrectly being in the defense field - bug notice credit: PvtVoid
+- Fixed art variation for FAB048 - bug notice credit: PvtVoid
+- Fixed image url for SEA245 "marvel" - bug notice credit: PvtVoid
+- Fixed issue with XXX promo versions of young and adult Briar having swapped ids and image urls
+
+12-14-25:
+- Updated CC Legality for Brand with Cinderclaw, Chart the High Seas, Orb-Weaver Spinneret (yellow and blue), Rootbound Carapace, and Wrath of Retribution
+- Updated LL Legality for Count Your Blessings, Deadwood Dirge, Rosetta Thorn, Warmonger's Diplomacy, and Zephyr Needle
+- Fixed incorrect power for Full of Bravado (yellow and blue) - bug notice credit: PvtVoid
+
+12-15-25:
+- Updated CC Legality for `Kano, Dracai of Aether` and Crucible of Aetherweave
+
+01-23-26:
+- Added card data for Edict of Steel (red), Flurry, and Zenith Blade - data entry assistance: manwaring
+- Added printing data for AHA002, AHA012, and AHA027 - data entry assistance: manwaring
+- Added image data for AHA001, AHA002, AHA012, and AHA027
+
+04-08-26:
+- Added remaining card data for AHA cards
+- Added remaining printing data for AHA003-AHA011 and AHA013-AHA026
+- Added remaining image data for AHA003-AHA011 and AHA013-AHA026
+
+04-10-26:
+- Added MPW set and set printing data
+- Added card data for Golden Company, Golden Grail, Hala, Sharpening Sparks, Stand Tall
+- Added printing data for FAB481-FAB483, MPW001-MPW002, MPW004-MPW007, MPW012, MPW026, MPW037, MPW053-MPW055, and MPW156
+- Added image data for FAB481-FAB483, MPW001-MPW002, MPW004-MPW007, MPW012, MPW026, MPW037, MPW053-MPW055, and MPW156
+- Updated functional text for CUrrent Funnel, Dawnblade, `Dorinthea, Quicksilver Prodigy`, Earthlore Bounty, Helm of the Sharp Eye, Merciless Battleaxe, Murky Waters, Northern Winds, Thaw, Pummel, Shifting Tides, Thaw, Valiant Dynamo, and Zephyr Needle
+- Updated CC Legality for `Florian, Rotwood Harbinger`, Rootbound Carapace, Rotwood Reaper, and Scepter of Pain
+- Updated Silver Age Legality for Amulet of Ice, Rake the Embers, Rootbound Carapace, Aether Spindle, Bracers of Belief, Burn Up // Shock, Lightning Press, Sirens of Safe Harbor, and Steelblade Shunt
+
+04-11-26:
+- Fixed incorrect defense values for Golden Company - bug notice credit: Aegisworn
+- Fixed swapped health and intelligence values for Hala - bug notice credit: Aegisworn
+
+04-22-26:
+- Added AOL and DDD set and set printing data
+- Added card data for Back for Seconds, Blade Rush, Cutting Couriers, Odds on Favorite, Run Through (Red), Shove Off, Squire's Bracers, and Steel on Steel - data entry assistance: manwaring
+- Added printing data for AOL001-AOL002, AOL026, and DDD001-DDD016 - data entry assistance: manwaring
+- Added image data for AOL001-AOL002, AOL026, and DDD001-DDD016
+- Updated Blitz Legality for `Hala, Bladesaint of the Vow`
+- Updated Commoner Legality for Backside of the Blade, `Dawnblade, Resplendent`, `Dorinthea, Quicksilver Prodigy`, `Flurry Foot Dance`, Gleam of the Blade, Golden Company, `Hala, Bladesaint of the Vow`, Olé, Sharpening Sparks, Stand Tall, Toe the Line, and Visit the Dawnsmith
+- Updated CC Legality for Hala, `Hala, Bladesaint of the Vow`, Sharpening Sparks, and Stand Tall
+- Updated LL Legality for Ghost Protocol: Architect, Ghost Protocol: Mainframe, and Hala
+- Updated Silver Age Legality for Brimming Blade, `Dawnblade, Resplendent`, `Dorinthea, Quicksilver Prodigy`, Indefensibly Honed, Polished Blade, Reverent Rerebrace, Sharpening Sparks, Silverstride Dodgers, and Stand Tall
+- Updated the pre-commit script and script documentation
+
+04-26-26:
+- Added card data for Donkey, Downswing, Drawing Dead, Run Through (Blue), and Steel on Steel (Red + Yellow) - data entry assistance: manwaring
+- Added printing data for FAB484-FAB486, MPW042-MPW044, MPW048-MPW050, MPW052, MPW063, MPW072, MPW084, MPW096-MPW098, and MPW153 - data entry assistance: manwaring
+- Added image data for FAB484-FAB486, MPW042-MPW044, MPW048-MPW050, MPW052, MPW063, MPW072, MPW084, MPW096-MPW098, and MPW153
+- Updated functional text for In the Swing, Run Through (Yellow), and Warrior's Valor
+
+06-17-26:
+- Added card data for Durendal, Overwhelming Swing, Raise Blades, and Rake Back - data entry assistance: manwaring
+- Added card data for MPW008, MPW010-MPW011, MPW024, and MPW032-MPW033 - data entry assistance: manwaring
+- Added image data for MPW008, MPW010-MPW011, MPW024, and MPW032-MPW033 - data entry assistance: manwaring
+
+06-29-26:
+- Added set data for ANQ, PEN, SAR, SAZ, SBR, SDA, SDO, SEN, SFA, SIY, SKA, and SVI
+- Added card data for ANQ, OMN, PEN - data assistance credit: manwaring
+- Added printing data for ANQ000-ANQ037, GEM105-GEM140, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034, TNP001-TNP030 - data assistance credit: manwaring
+- Added images for ANQ000-ANQ037, GEM105-GEM140, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034, TNP001-TNP030 - data assistance credit: manwaring
+- Added TCGPlayer IDs for ANQ000-ANQ037, PEN001-PEN348, SAR001-SAR039, SAZ001-SAZ036, SBR001-SBR036, SDA001-SDA034, SDO001-SDO036, SEN001-SEN037, SFA001-SFA037, SIY001-SIY035, SKA001-SKA036, SVI001-SVI034 - data assistance credit: manwaring
+- Updated CC legality for Channel Lightning Valley, Electromagnetic Somersault, Phantom Tidemaw, Reaping Blade, Remembrance, Skyward Serenade, Talk a Big Game, and `Volzar, the Lightning Rod`
+- Updated Silver Age legality for Aether Spindle, Beckoning Haunt, Burn Up // Shock, Cash In, Chane, Deathly Delight, Ebon Fold, Flourish, `Ira, Crimson Haze`, Kano, Kayo, Lightning Press, Reaping Blade, Seeds of Agony, Steelblade Shunt, Vantom Wraith, Vigorous Smashup, `Volzar, the Lightning Rod`
+- Updated functional text for Teklo Pounder
+- Fixed issue with Break Stature having Clash instead of Crush listed as a keyword
+- Fixed issue with functional text for `Tuffnut, Bumbling Hulkster`, Savor Bloodshed  - bugfix credit: manwaring
+- Fixed issue where Quickdodge Flexor GF printing was listed as FAB394 instead of FAB294 - bugfix credit: manwaring
+- Fixed issue with types for Frosthaven Sheath, Leaven Sheath, Stormwind Sheath, By the Book, Lay Down the Challenge - bugfix credit: manwaring
+- Fixed issue with SAR027 being attend to Up Stick and Run (Blue) instead of Red - bugfix credit: manwaring
+- Fixed issue with treatment for PEN321, Macho Grande SBR printing - bugfix credit: manwaring
+- Fixed legality for `Ruu'di, Gem Keeper`, Rotwood Reaper, `Florian, Rotwood Harbinger`, Chane, Flic Flak, `Volzar, the Lightning Rod`, Verdance, Vantom Wraith, Reaping Blade, Phantom Tidemaw - bugfix credit: manwaring
+- Fixed missing images for Enigma Sage deck, ARR002, SEN034 - bugfix credit: manwaring
+- Fixed issue with artist for Ghost Protocol Mainframe, `Enigma, Ledger of Ancestry`, Cut Through the Facade, Scar for a Scar, Flic Flak, Voltbound Duality - bugfix credit: manwaring
+- Fixed missing cards for ARR, APR, AVS, BDD - bugfix credit: manwaring
+- Fixed keywords for Meet Madness - bugfix credit: manwaring
+- Fixed wrong image for SUP270, OMN000, PEN021, PEN267, PEN marvel young heroes, FAB478 - bugfix credit: manwaring
+- Fixed various issues from OMN and PEN (Phillip did so much I no longer have the energy to detail them all :joy:) - bugfix credit: manwaring

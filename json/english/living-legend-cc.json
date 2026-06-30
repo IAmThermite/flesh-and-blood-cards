@@ -230,5 +230,61 @@
         "date_announced": "2025-07-15T00:00:00.000Z",
         "date_in_effect": "2025-07-18T00:00:00.000Z",
         "legality_article": "https://fabtcg.com/en/articles/living-legend-azalea-ace-in-the-hole/"
+    },
+    {
+        "unique_id": "Mnb9jrcPpdgtppBPgLCwk",
+        "card_unique_id": "kRPqHdCckKBKfRwjbfzNT",
+        "status_active": true,
+        "date_announced": "2025-12-16T00:00:00.000Z",
+        "date_in_effect": "2025-12-19T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-kano-dracai-of-aether/"
+    },
+    {
+        "unique_id": "q8t69FCHgw8b96wcQw8bC",
+        "card_unique_id": "nzDWrNMqGWgmJfgJhChNb",
+        "status_active": true,
+        "date_announced": "2025-12-16T00:00:00.000Z",
+        "date_in_effect": "2025-12-19T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-kano-dracai-of-aether/"
+    },
+    {
+        "unique_id": "wqQj8kDJJJcM6wdrNNHFF",
+        "card_unique_id": "hjMQGwKgDTh8LzFdnk8Rg",
+        "status_active": true,
+        "date_announced": "2026-01-20T00:00:00.000Z",
+        "date_in_effect": "2026-01-23T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-florian-rotwood-harbinger/"
+    },
+    {
+        "unique_id": "whr6CphHKwczCPGtJLW8J",
+        "card_unique_id": "HmQ8dbfPL8BLMkJDGGGm8",
+        "status_active": true,
+        "date_announced": "2026-01-20T00:00:00.000Z",
+        "date_in_effect": "2026-01-23T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-florian-rotwood-harbinger/"
+    },
+    {
+        "unique_id": "gq9fTL6Qhf8zQcWFTpHMb",
+        "card_unique_id": "jrQcdHwPDPTt8PWTdNLqk",
+        "status_active": true,
+        "date_announced": "2026-06-30T00:00:00.000Z",
+        "date_in_effect": "2026-07-03T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-prism-awakener-of-sol/"
+    },
+    {
+        "unique_id": "7mmcGDJtkNbLWfFq6cDrk",
+        "card_unique_id": "zcHmW9zd8TRqMMGc8PHmh",
+        "status_active": true,
+        "date_announced": "2026-06-30T00:00:00.000Z",
+        "date_in_effect": "2026-07-03T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-prism-awakener-of-sol/"
+    },
+    {
+        "unique_id": "7cCRJDQDPjpHttzHFJhmh",
+        "card_unique_id": "z8GG8N7Lkg6BQR7FnWcwp",
+        "status_active": true,
+        "date_announced": "2026-06-30T00:00:00.000Z",
+        "date_in_effect": "2026-07-03T00:00:00.000Z",
+        "legality_article": "https://fabtcg.com/articles/living-legend-prism-awakener-of-sol/"
     }
 ]

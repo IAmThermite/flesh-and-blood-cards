@@ -36,5 +36,7 @@ def replace_image_url_domain(image_url, url_for_images=None):
         image_url = image_url.replace("https://storage.googleapis.com/fabmaster/cardfaces/", url_for_images)
         image_url = image_url.replace("https://dhhim4ltzu1pj.cloudfront.net/media/images/", url_for_images)
         image_url = image_url.replace("https://d2wlb52bya4y8z.cloudfront.net/media/cards/", url_for_images)
+        image_url = image_url.replace("https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/", url_for_images)
+        image_url = image_url.replace("https://cdn.fabtcg.com/uploads/", url_for_images)
         
     return image_url

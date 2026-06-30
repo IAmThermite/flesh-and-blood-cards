@@ -18,6 +18,7 @@ def generate_json_file():
     banned_cc_json_path = Path(__file__).parent / "../../../json/english/banned-cc.json"
     banned_commoner_json_path = Path(__file__).parent / "../../../json/english/banned-commoner.json"
     banned_ll_json_path = Path(__file__).parent / "../../../json/english/banned-ll.json"
+    banned_silver_age_json_path = Path(__file__).parent / "../../../json/english/banned-silver-age.json"
     banned_upf_json_path = Path(__file__).parent / "../../../json/english/banned-upf.json"
     living_legend_blitz_json_path = Path(__file__).parent / "../../../json/english/living-legend-blitz.json"
     living_legend_cc_json_path = Path(__file__).parent / "../../../json/english/living-legend-cc.json"
@@ -38,6 +39,7 @@ def generate_json_file():
         banned_cc_json_path.open(newline='') as banned_cc_json_file,
         banned_commoner_json_path.open(newline='') as banned_commoner_json_file,
         banned_ll_json_path.open(newline='') as banned_ll_json_file,
+        banned_silver_age_json_path.open(newline='') as banned_silver_age_json_file,
         banned_upf_json_path.open(newline='') as banned_upf_json_file,
         living_legend_blitz_json_path.open(newline='') as living_legend_blitz_json_file,
         living_legend_cc_json_path.open(newline='') as living_legend_cc_json_file,
@@ -53,6 +55,7 @@ def generate_json_file():
         banned_cc_array = json.load(banned_cc_json_file)
         banned_commoner_array = json.load(banned_commoner_json_file)
         banned_ll_array = json.load(banned_ll_json_file)
+        banned_silver_age_array = json.load(banned_silver_age_json_file)
         banned_upf_array = json.load(banned_upf_json_file)
         living_legend_blitz_array = json.load(living_legend_blitz_json_file)
         living_legend_cc_array = json.load(living_legend_cc_json_file)
@@ -95,6 +98,7 @@ def generate_json_file():
             card_object['cc_legal'] = helper_functions.treat_string_as_boolean(row['CC Legal'])
             card_object['commoner_legal'] = helper_functions.treat_string_as_boolean(row['Commoner Legal'])
             card_object['ll_legal'] = helper_functions.treat_string_as_boolean(row['LL Legal'])
+            card_object['silver_age_legal'] = helper_functions.treat_string_as_boolean(row['Silver Age Legal'])
 
             living_legend_blitz_info_array = [x for x in living_legend_blitz_array if x['card_unique_id'] == card_unique_id]
             living_legend_blitz_info = living_legend_blitz_info_array[-1] if len(living_legend_blitz_info_array) > 0 else None
@@ -131,6 +135,12 @@ def generate_json_file():
             card_object['ll_banned'] = banned_ll_info['status_active'] if banned_ll_info != None else False
             if card_object['ll_banned']:
                 card_object['ll_banned_start'] = banned_ll_info['date_in_effect']
+
+            banned_silver_age_info_array = [x for x in banned_silver_age_array if x['card_unique_id'] == card_unique_id]
+            banned_silver_age_info = banned_silver_age_info_array[-1] if len(banned_silver_age_info_array) > 0 else None
+            card_object['silver_age_banned'] = banned_silver_age_info['status_active'] if banned_silver_age_info != None else False
+            if card_object['silver_age_banned']:
+                card_object['silver_age_banned_start'] = banned_silver_age_info['date_in_effect']
 
             banned_upf_info_array = [x for x in banned_upf_array if x['card_unique_id'] == card_unique_id]
             banned_upf_info = banned_upf_info_array[-1] if len(banned_upf_info_array) > 0 else None
@@ -205,6 +215,8 @@ def generate_json_file():
                 card_object['commoner_legal'] = True
             if card_object['ll_legal'] == '':
                 card_object['ll_legal'] = True
+            if card_object['silver_age_legal'] == '':
+                card_object['silver_age_legal'] = True
 
             # card_object['functional_text'] = card_object['functional_text']
             # card_object['functional_text_plain'] = card_object['functional_text_plain']

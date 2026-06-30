@@ -35,6 +35,8 @@ def download_image_from_url(image_url: str):
     cleaned_up_image_url = cleaned_up_image_url.replace("https://storage.googleapis.com/fabmaster/cardfaces/", "")
     cleaned_up_image_url = cleaned_up_image_url.replace("https://dhhim4ltzu1pj.cloudfront.net/media/images/", "")
     cleaned_up_image_url = cleaned_up_image_url.replace("https://d2wlb52bya4y8z.cloudfront.net/media/cards/", "")
+    cleaned_up_image_url = cleaned_up_image_url.replace("https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/", "")
+    cleaned_up_image_url = cleaned_up_image_url.replace("https://cdn.fabtcg.com/uploads/", "")
 
     file_name = "images/" + cleaned_up_image_url
     if exists(file_name):

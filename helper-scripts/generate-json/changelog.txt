@@ -67,5 +67,9 @@
 06-27-25:
 - Updated card to have new color and traits fields
 
-TODO:
+07-02-25:
 - Update script to allow cards without printings to be added to the JSON without throwing an error
+
+11-14-25:
+- Updated to generate new silver-age-banned.json
+- Updated script to have new silver_age_legal field
