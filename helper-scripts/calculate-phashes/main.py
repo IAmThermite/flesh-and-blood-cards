@@ -69,9 +69,10 @@ def download_image(image_url):
     if not exists(target_dir):
         makedirs(target_dir)
     print(f"Downloading {image_url}")
-    img_data = requests.get(image_url).content
+    response = requests.get(image_url)
+    response.raise_for_status()
     with open(target, "wb") as handler:
-        handler.write(img_data)
+        handler.write(response.content)
     return target
 
 
@@ -163,9 +164,13 @@ def read_csv_rows():
 
 
 def write_csv_rows(rows):
-    with CARD_PRINTING_CSV_PATH.open("w", newline="\n", encoding="utf8") as csvfile:
+    with CARD_PRINTING_CSV_PATH.open("w", newline="", encoding="utf8") as csvfile:
         writer = csv.writer(
-            csvfile, delimiter="\t", quotechar='"', quoting=csv.QUOTE_MINIMAL
+            csvfile,
+            delimiter="\t",
+            quotechar='"',
+            quoting=csv.QUOTE_MINIMAL,
+            lineterminator="\n",
         )
         writer.writerows(rows)
 

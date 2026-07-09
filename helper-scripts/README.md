@@ -2,6 +2,7 @@
 
 ## Python Scripts
 
+- [Calculate pHashes](/helper-scripts/calculate-phashes/README.md)
 - [Clean CSVs](/helper-scripts/clean-csvs/README.md)
 - [Download All Images](/helper-scripts/download-all-images/README.md)
 - [Generate Artists](/helper-scripts/generate-artists/README.md)
@@ -20,6 +21,8 @@
 
 ## Bash Scripts
 
+- `./calculate-phashes.sh`
+  - Shortcut to run the Calculate pHashes script from the helper-scripts folder.
 - `./clean-csvs.sh`
   - Shortcut to run the Clean CSVs script from the helper-scripts folder.
 - `./download-all-images.sh`
