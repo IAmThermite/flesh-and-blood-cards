@@ -1060,3 +1060,6 @@ HER058, HER059, HER060, HER061, HER062, HER063, HER064, HER065, HER066, JDG001, 
 - Added remaining image data for MPW cards - data entry assistance: manwaring
 - Updated foiling and image data for AOL002
 - Updated functional text for Deep Blue, Glint the Quicksilver, Hit and Run, In the Swing, Money Where Ya Mouth Is, Nature's Path Pilgrimage, Push Forward, Refraction Bolters, Second Swing, Sharpen Steel, Slice and Dice, and Take the Upper Hand
+
+08-02-26:
+- Added Point of Escalation and Below the Belt, and their associated MPW printing and image data - data entry assistance: manwaring
