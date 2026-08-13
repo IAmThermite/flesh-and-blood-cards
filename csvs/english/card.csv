@@ -1084,7 +1084,7 @@ While this is in your inventory, when **blood debt** reduces your {h} to 13, you
 Once each turn, you may play a card with **blood debt** from your banished zone. Whenever a card is put into your banished zone, turn it face-down. If you would lose {h} from **blood debt**, instead banish the top card of the deck."	Shadow Demi-Hero - Demon				No	No	
 qJ8HCWnpHbPRGRGpt86Cb	Blasmophet, the Soul Harvester				6		6			Shadow, Token, Demon, Ally			Once per Turn Action	Attack				"**Once per Turn Action** - 0: **Attack**
 
-Whenever Blasmophet attacks, you may banish a Shadow card from your hand. If you do, you may banish a card from the defending hero's soul."	Shadow Token - Demon Ally						
+When Blasmophet attacks, you may banish a Shadow card from your hand. If you do, you may banish a card from the defending hero's soul."	Shadow Token - Demon Ally						
 JRNzhJqgLDf7Nr87B9KBT	Blast Rig	Red	1	0	1	3				Mechanologist, Action, Attack		Evo Upgrade, Boost						"**Evo Upgrade** - This gets +1{p} for each Evo you have equipped.
 
 **Boost**"	Mechanologist Action - Attack					No	
@@ -5570,7 +5570,7 @@ HhJtCMW6nLMfzGJLn7g8m	Hold 'em	Yellow	2	1		3				Warrior, Action		Go again, Wager
 WHLRchgdMH8Bjb8TDngkp	Hold 'em	Blue	3	1		3				Warrior, Action		Go again, Wager			Wager			"Your next Warrior attack this turn gets +1{p} and ""When this attacks a hero, you may **wager** a Vigor token with them.""
 
 **Go again**"	Warrior Action						
-6cfpHFn7czfqJDTRhw7fp	Hold Firm					1				Revered, Equipment, Arms		Blade Break	Action	Go again				"**Action** - {r}{r}, destroy this: Create 3 Toughness tokens. Activate this only if you have less {h} than each other hero. **Go again**
+6cfpHFn7czfqJDTRhw7fp	Hold Firm					1				Revered, Equipment, Arms		Blade Break	Action	Go again				"**Action** - {r}{r}{r}, destroy this: Create 3 Toughness tokens. Activate this only if you have less {h} than each other hero. **Go again**
 
 **Blade Break**"	Revered Equipment - Arms						
 mTWd9JgNqM9bGj9H87Jpq	Hold Focus					0				Wizard, Equipment, Arms			Action	Amp 1, Go again				**Action** - Destroy this: **Amp 1**. **Go again**	Wizard Equipment - Arms						
@@ -6076,9 +6076,15 @@ When this hits a hero, steal an item they control until the end of this action p
 hKpL79WLFdLkgBhmhtdQJ	Jack Be Quick	Red	1	0	3	3				Generic, Action, Attack		Go again, Steal						"When this attacks, you may banish a Nimblism from your graveyard. If you do, this gets +1{p} and **go again**.
 
 When this hits a hero, {u} an ally they control, then steal it until the end of this action phase."	Generic Action - Attack					No	
-MqhJWhp7gnBLjtMwzwmm8	Jack-o'-lantern	Red	1	0		2				Shadow, Runeblade, Action		Go again						Banish the top card of your deck. If it's red, create a Runechant token.	Shadow Runeblade Action				No	No	
-KmMWLT6fF88QdfKTJ9GFf	Jack-o'-lantern	Yellow	2	0		2				Shadow, Runeblade, Action		Go again						Banish the top card of your deck. If it's yellow, create a Runechant token.	Shadow Runeblade Action				No	No	
-b9tmpTgLPfDhD6qDJ7FwD	Jack-o'-lantern	Blue	3	0		2				Shadow, Runeblade, Action		Go again						Banish the top card of your deck. If it's blue, create a Runechant token.	Shadow Runeblade Action				No	No	
+MqhJWhp7gnBLjtMwzwmm8	Jack-o'-lantern	Red	1	0		2				Shadow, Runeblade, Action		Go again						"Banish the top card of your deck. If it's red, create a Runechant token.
+
+**Go again**"	Shadow Runeblade Action				No	No	
+KmMWLT6fF88QdfKTJ9GFf	Jack-o'-lantern	Yellow	2	0		2				Shadow, Runeblade, Action		Go again						"Banish the top card of your deck. If it's yellow, create a Runechant token.
+
+**Go again**"	Shadow Runeblade Action				No	No	
+b9tmpTgLPfDhD6qDJ7FwD	Jack-o'-lantern	Blue	3	0		2				Shadow, Runeblade, Action		Go again						"Banish the top card of your deck. If it's blue, create a Runechant token.
+
+**Go again**"	Shadow Runeblade Action				No	No	
 RbpzqdWTwMQDRTpNhwdtp	Jagged Edge	Red	1	1		3				Warrior, Attack Reaction								"Target weapon attack gets +3{p} and ""Damage this would deal can't be prevented."""	Warrior Attack Reaction				No	No	
 9QL68DDb9hCqhWWhgnQgR	Jarl Vetreiði						40	4		Elemental, Guardian, Hero		Essence of Earth and Ice						"Whenever you play an Ice card, create a Frostbite token in an opponent's exposed head, chest, arms, or legs zone.
 
@@ -6100,7 +6106,7 @@ When this deals damage to a hero, **steal** that many items they control.
 **Thrice per Turn Instant** - {t} a cog you control: This gets +1{p}."	Pirate Mechanologist Action - Attack				No	No	
 kfCPfkdm8jrFqmHMNGj8h	Jubeel, Spellbane				3					Warrior, Weapon, Sword, 2H								"**Once per Turn Action** - {r}: **Attack**
 
-Whenever this hits a hero and you don't control a Spellbane Aegis, create a Spellbane Aegis token."	Warrior Weapon - Sword (2H)				No	No	
+When this hits a hero and you don't control a Spellbane Aegis, create a Spellbane Aegis token."	Warrior Weapon - Sword (2H)				No	No	
 D9N8LLTrcrbm9pk7HnPqN	Judge, Jury, Executioner	Red	1	1	5	3				Ranger, Action, Arrow, Attack		Legendary, Azalea Specialization						"**Legendary Azalea Specialization**
 
 If this has an aim counter, it gets ""When this hits a hero, they discard all but 1 card from their hand."""	Ranger Action - Arrow Attack				No	No	
@@ -6780,7 +6786,9 @@ RnjfWPNBLBd9nGR8RdhnT	Mask of Perdition					1				Assassin, Equipment, Head		Batt
 qdzjnDqPpGjnHHqPgzmQC	Mask of Recurring Nightmares					2				Mystic, Assassin, Equipment, Head		Blade Break	Once per Turn Attack Reaction					"**Once per Turn Attack Reaction** - {c}{c}{c}: Target defending hero banishes a card from their hand.
 
 **Blade Break**"	Mystic Assassin Equipment - Head				No	No	
-bbr8GPmnDkdphMkdpWkcM	Mask of Shifting Perspectives					1				Assassin, Ninja, Equipment, Head		Blade Break	Attack Reaction					**Attack Reaction** - Destroy Mask of Shifting Perspectives: Whenever a dagger hits this turn, you may put a card from your hand on the bottom of your deck. If you do, draw a card.	Assassin / Ninja Equipment - Head						
+bbr8GPmnDkdphMkdpWkcM	Mask of Shifting Perspectives					1				Assassin, Ninja, Equipment, Head		Blade Break	Attack Reaction					"**Attack Reaction** - Destroy Mask of Shifting Perspectives: Whenever a dagger hits this turn, you may put a card from your hand on the bottom of your deck. If you do, draw a card.
+
+**Blade Break**"	Assassin / Ninja Equipment - Head						
 pdCLkLqDkmFhBtp7MFMfP	Mask of Three Tails					0				Ninja, Equipment, Head								**Instant** - Destroy this: Draw a card. Activate this ability only if you've hit 3 or more times this combat chain.	Ninja Equipment - Head						
 W9G8Kpb9cNTqNqpm8nJdz	Mask of Wizened Whiskers					1				Ninja, Equipment, Head		Blade Break					Combo	"When this defends, put a card with **combo** from your graveyard on the bottom of your deck.
 
@@ -7738,7 +7746,7 @@ tPqfbKjpBmrNfBnFgDFMH	Phantasmaclasm	Red	1	3	9	3				Illusionist, Action, Attack	
 **Phantasm**"	Illusionist Action - Attack				No	No	
 HDKn8nJQDRBKdgdTcjqh9	Phantasmal Footsteps					0				Illusionist, Equipment, Legs								"Once per turn, when an Illusionist attack action card you control is destroyed, you may pay {r}. If you do, gain 1 action point.
 
-Whenever this defends, you may pay {r}. If you do, its {d} becomes 1 until end of turn.
+When this defends, you may pay {r}. If you do, its {d} becomes 1 until end of turn.
 
 When Phantasmal Footsteps is defending a non-Illusionist attack with 6 or more {p}, destroy it when the combat chain closes."	Illusionist Equipment - Legs				No	No	
 6KwJ86P99FbcRKnbnRpnj	Phantasmal Haze	Red	1	3	8	3				Illusionist, Action, Attack		Phantasm						"**Phantasm**
@@ -10514,10 +10522,10 @@ BnN6JDzQwHnC8NTGPnrJB	Solforge Gauntlet					1				Light, Equipment, Arms		Arcane 
 PPhTHwN7HKT6Hj9JNbDmt	Solid Ground	Blue	3	3		5				Guardian, Defense Reaction								This costs {r} less to play for each Seismic Surge you control.	Guardian Defense Reaction				No	No	
 NwK66fmnJNBBbTBprQkFG	Solitary Companion	Red	1	0		2				Illusionist, Action, Aura		Ward 3						"When this enters the arena, if you control no other Illusionist auras, create a Spectral Shield token.
 
-**Ward 1**"	Illusionist Action - Aura						
+**Ward 3**"	Illusionist Action - Aura						
 qRcQbB7TW7kzt66g7cKMM	Solitary Companion	Yellow	2	0		2				Illusionist, Action, Aura		Ward 2						"When this enters the arena, if you control no other Illusionist auras, create a Spectral Shield token.
 
-**Ward 1**"	Illusionist Action - Aura						
+**Ward 2**"	Illusionist Action - Aura						
 WpfnDkqH9NqLMtWCfCgnh	Solitary Companion	Blue	3	0		2				Illusionist, Action, Aura		Ward 1						"When this enters the arena, if you control no other Illusionist auras, create a Spectral Shield token.
 
 **Ward 1**"	Illusionist Action - Aura						
@@ -10888,7 +10896,7 @@ If you control a Vigor token, this gets +1{d}.
 ggMjPPrkLjJJwWPFGdnDq	Stand Strong					1				Guardian, Equipment, Legs		Blade Break	Action	Go again			Suspense	"**Action** - {r}{r}{r}, destroy this: Create a Confidence token. Activate this only if you control an aura of suspense. **Go again**
 
 **Blade Break**"	Guardian Equipment - Legs						
-PPhWjKkrPQmCFfrrWcddD	Stand Tall	Yellow	2			3				Warrior, Block								While this is defending, whenever the attacking hero plays or activates a reaction this chain link, this gets +2{p}.	Warrior Block				No	No	
+PPhWjKkrPQmCFfrrWcddD	Stand Tall	Yellow	2			3				Warrior, Block								While this is defending, whenever the attacking hero plays or activates a reaction this chain link, this gets +2{d}.	Warrior Block				No	No	
 GCWFNNQtKW9JFqJjqtCjP	Standing Order	Red	1	0	4	3				Generic, Action, Attack								When this attacks or defends, you may put a card from your arsenal on the bottom of your deck. If you do, this gets +2{p} and +2{d}.	Generic Action - Attack				No	No	
 GzWDLbC8WgKLHkgBnQ8mc	Standing Ovation	Blue	3	6	8	3				Revered, Guardian, Action, Attack							Suspense	"If 3 or more auras of suspense have left the arena this turn, this gets ""When this hits a hero, take an extra turn after this one. At the beginning of the next end phase, they draw up to their {i}."""	Revered Guardian Action - Attack				No	No	
 m7NGBRdNftTh9ntBzppbB	Star Fall				1					Lightning, Runeblade, Weapon, Sword, 2H		Go again	Once per Turn Action	Attack				"**Once per Turn Action** - {r}: **Attack**
@@ -12093,7 +12101,9 @@ CdDbm8CBpkbBRg9d6Hdck	Two Steps Ahead	Blue	3	0		3				Reviled, Guardian, Action, 
 Twn68rHRjHKDjmnpDQddH	Two Steps Forward					1				Ninja, Equipment, Legs		Battleworn	Instant					"**Instant** - Destroy this: Create an Agility token. Activate this only if you've hit 2 or more times this combat chain.
 
 **Battleworn**"	Ninja Equipment - Legs						
-n6twqPttCHFQnTLKBfzKz	Two-Faced					1				Reviled, Equipment, Head		Blade Break						When this defends, the attacking hero draws a card, then look at their hand and choose a card. They discard the chosen card.	Reviled Equipment - Head				No	No	
+n6twqPttCHFQnTLKBfzKz	Two-Faced					1				Reviled, Equipment, Head		Blade Break						"When this defends, the attacking hero draws a card, then look at their hand and choose a card. They discard the chosen card.
+
+**Blade Break**"	Reviled Equipment - Head				No	No	
 gmR7DG76HhtdgwwTqQngT	Under Loop	Red	1	1	4	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
 When this hits, put it on the bottom of its owner's deck."	Mechanologist Action - Attack				Yes	Yes	
