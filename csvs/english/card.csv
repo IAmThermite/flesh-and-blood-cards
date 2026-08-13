@@ -200,7 +200,7 @@ LPkdwMCjwHHMC6wkHCbRb	Amulet of Ignition	Yellow	2	0						Generic, Action, Item		
 **Instant** - Destroy this: The next ability you activate this turn costs {r} less to activate. Activate this only if you haven't played a card or activated an ability this turn."	Generic Action - Item					No	
 77HjThGWgwMQMqDRNBLMc	Amulet of Intervention	Blue	3	0						Generic, Action, Item		Go again	Instant					"**Go again**
 
-**Instant** - Destroy Amulet of Intervention: Prevent the next 1 damage that would be dealt to your hero this turn. Activate this ability only while your hero is the target of a source that would deal damage equal to or greater than your hero's {h}."	Generic Action - Item					No	
+**Instant** - Destroy this: Prevent the next 1 damage that would be dealt to you this turn. Activate this only while your hero is the target of a source that would deal lethal damage."	Generic Action - Item					No	
 fCzgQtjJ9Q8gdrPq9t7Wc	Amulet of Lightning	Blue	3	0						Lightning, Action, Item		Go again	Instant		Go again			"**Go again**
 
 **Instant** - Destroy this: Target action card gets **go again**. Activate this only if you've **Lightning fused** this turn."	Lightning Action - Item						
@@ -564,19 +564,19 @@ phCFwdjG8dKDCmr7d7F7M	Awakening	Blue	3	2						Elemental, Guardian, Instant		Eart
 If you have less {h} than an opposing hero, create Seismic Surge tokens equal to the difference. If this was **fused**, instead create twice that many.
 
 Search your deck for a Guardian attack action card with cost less than or equal to the number of Seismic Surge tokens you control, reveal it, put it into your hand, then shuffle."	Elemental Guardian Instant				No	No	
-9cwfNrcbMw6CTpLWWwKnh	Awakening Bellow	Red	1	1		3				Brute, Action		Intimidate, Go again						"The next Brute attack action card you play this turn gets +3{p}.
+9cwfNrcbMw6CTpLWWwKnh	Awakening Bellow	Red	1	1		3				Brute, Action		Intimidate, Go again						"**Intimidate**
 
-**Intimidate**
-
-**Go again**"	Brute Action						
-TLGkJ699BFbzQpDKTKj9M	Awakening Bellow	Yellow	2	1		3				Brute, Action		Intimidate, Go again						"The next Brute attack action card you play this turn gets +2{p}.
-
-**Intimidate**
+The next Brute attack action card you play this turn gets +3{p}.
 
 **Go again**"	Brute Action						
-GbLCWhpPJL9Fdh8zk6RMW	Awakening Bellow	Blue	3	1		3				Brute, Action		Intimidate, Go again						"The next Brute attack action card you play this turn gets +1{p}.
+TLGkJ699BFbzQpDKTKj9M	Awakening Bellow	Yellow	2	1		3				Brute, Action		Intimidate, Go again						"**Intimidate**
 
-**Intimidate**
+The next Brute attack action card you play this turn gets +2{p}.
+
+**Go again**"	Brute Action						
+GbLCWhpPJL9Fdh8zk6RMW	Awakening Bellow	Blue	3	1		3				Brute, Action		Intimidate, Go again						"**Intimidate**
+
+The next Brute attack action card you play this turn gets +1{p}.
 
 **Go again**"	Brute Action						
 Fc8mPQBjrNq6Fg9LW9RLc	Azalea						20	4		Ranger, Hero, Young			Once per Turn Action	Go again	Dominate			**Once per Turn Action** - 0: Put a card from your arsenal on the bottom of your deck. If you do, put the top card of your deck face-up into your arsenal. If it's an arrow, it gets **dominate** until end of turn. **Go again**	Ranger Hero - Young			No			No
@@ -1105,13 +1105,13 @@ Fm6dT9jM6BhLtRphtfrFR	Blazen Yoroi					1				Ninja, Equipment, Chest		Blade Break
 mjKPwTWCd7MTFkBpg6QzM	Blazing Aether	Red	1	0		3			X	Wizard, Action		Kano Specialization						"**Kano Specialization**
 
 Deal X arcane damage to target hero, where X is the total arcane damage you've dealt to them this turn."	Wizard Action				No	No	
-gcnq79gmpgkBRdwdGMmTw	Bleed Out	Red	1	2	4	2				Assassin, Ninja, Action, Attack		Go again						"Bleed Out costs X resource points less to play, where X is the total damage you've dealt with daggers this combat chain.
+gcnq79gmpgkBRdwdGMmTw	Bleed Out	Red	1	2	4	2				Assassin, Ninja, Action, Attack		Go again						"This costs {x} less to play, where X is the total damage you've dealt with daggers this combat chain.
 
 **Go again**"	Assassin / Ninja Action - Attack					No	
-7phjhw9DRfW7pcrkWbfnK	Bleed Out	Yellow	2	2	3	2				Assassin, Ninja, Action, Attack		Go again						"Bleed Out costs X resource points less to play, where X is the total damage you've dealt with daggers this combat chain.
+7phjhw9DRfW7pcrkWbfnK	Bleed Out	Yellow	2	2	3	2				Assassin, Ninja, Action, Attack		Go again						"This costs {x} less to play, where X is the total damage you've dealt with daggers this combat chain.
 
 **Go again**"	Assassin / Ninja Action - Attack					No	
-Gfzj9pdzzFB6GtfQLr8kK	Bleed Out	Blue	3	2	2	2				Assassin, Ninja, Action, Attack		Go again						"Bleed Out costs X resource points less to play, where X is the total damage you've dealt with daggers this combat chain.
+Gfzj9pdzzFB6GtfQLr8kK	Bleed Out	Blue	3	2	2	2				Assassin, Ninja, Action, Attack		Go again						"This costs {x} less to play, where X is the total damage you've dealt with daggers this combat chain.
 
 **Go again**"	Assassin / Ninja Action - Attack					No	
 TrbtmgBqkrbJJkHhzFKMP	Blessing of Aegis	Yellow	2	0		3				Light, Action, Aura		Go again						"**Go again**
@@ -1363,7 +1363,7 @@ fCNzFrbKLkdgtrnMdp7D8	Bolt'n' Shot	Blue	3	0	2	3				Ranger, Action, Arrow, Attack
 76KHBFmKK6NdFdc7zcmHk	Bolting Blade	Yellow	2	4	7	3				Light, Warrior, Action, Attack							Charge	This costs {r}{r} less to play for each time you've **charged** this turn.	Light Warrior Action - Attack				No	No	
 Fmf8trg9w8B8BBbWrf8w9	Boltyn						20	4		Light, Warrior, Hero, Young			Attack Reaction		Go again		Charge	"If you've charged this turn, your attacks get +1{p} while defended by an attack action card.
 
-**Attack Reaction** - Banish a card from Boltyn's soul: Target attack with {p} greater than its base {p} gains **go again**."	Light Warrior Hero - Young			No			No
+**Attack Reaction** - Banish a card from your soul: Target attack with {p} greater than its base gets **go again**."	Light Warrior Hero - Young			No			No
 wJtCpBD9Hd8TzNRghPzFM	Bonds of Agony	Blue	3	0	1	3				Assassin, Action, Attack		Stealth						"**Stealth**
 
 If you've played or activated 3 or more attack reactions this chain link, this gets +3{p} and ""When this hits a hero, look at their hand and choose a card. Search their hand, deck, and graveyard and banish up to 3 cards with the same name as the chosen card. They shuffle."""	Assassin Action - Attack				No	No	
@@ -2463,7 +2463,7 @@ PhWgpcwRmzjQ6bDcqcPbW	Cosmic Suture	Yellow	2	2					1	Lightning, Wizard, Instant	
 JRmqMNgWfmdffrT8WKrLf	Cosmic Suture	Blue	3	2					1	Lightning, Wizard, Instant		Starfall						"Prevent the next 2 damage that would be dealt to you this turn.
 
 **Starfall** - If an instant card has been put into your graveyard this turn, deal 1 arcane damage to target hero."	Lightning Wizard Instant						
-zMC89pqnzTP7bkmfjmTzQ	Cosmo, Scroll of Ancestral Tapestry									Illusionist, Weapon, Scroll, 2H					Go again		Ward	"During your turn, auras you control with **ward** are weapons with base {p} equal to their **ward** and **Once per Turn Action - {r}: Attack**
+zMC89pqnzTP7bkmfjmTzQ	Cosmo, Scroll of Ancestral Tapestry									Illusionist, Weapon, Scroll, 2H					Go again		Ward	"During your turn, auras you control with **ward** are weapons with base {p} equal to their **ward** and ""**Once per Turn Action** - {r}: **Attack**""
 
 Your aura attacks with one or more +1{p} counters get **go again**."	Illusionist Weapon - Scroll (2H)						
 cP6jRNBkfK9L8HzGjgpmw	Count Your Blessings	Red	1	2						Generic, Instant								Gain X{h}, where X is 3 plus the number of Count Your Blessings in your graveyard.	Generic Instant					No	
@@ -2708,10 +2708,10 @@ rFpG8LW6fRmGgJ6dpWj8Q	Darling of the Crowd	Yellow	2			3				Revered, Block							
 kftPnNkrBLJ7rPmFGgQCm	Dash						20	4		Mechanologist, Hero, Young								You may start the game with a Mechanologist item with cost 2 or less in the arena.	Mechanologist Hero - Young			No			No
 LkqQpr7QL8KpnqMh7dHpR	Dash I/O						36	4		Mechanologist, Hero								"You may look at the top card of your deck at any time.
 
-Once per turn, you may play a Mechanologist item with cost 0 or 1 from the top of your deck as though it were an instant. It costs an additional {r} to play."	Mechanologist Hero		No		No	No	
+Once per turn, you may play a Mechanologist item with cost 1 or less from the top of your deck as though it were an instant. It costs an additional {r} to play."	Mechanologist Hero		No		No	No	
 N6TDqDNWfKfrz6G6jNrQQ	Dash, Database						18	4		Mechanologist, Hero, Young								"You may look at the top card of your deck at any time.
 
-Once per turn, you may play a Mechanologist item with cost 0 or 1 from the top of your deck as though it were an instant. It costs an additional {r} to play."	Mechanologist Hero - Young			No			No
+Once per turn, you may play a Mechanologist item with cost 1 or less from the top of your deck as though it were an instant. It costs an additional {r} to play."	Mechanologist Hero - Young			No			No
 6CcjWGnThrTmTQFQ9zHMN	Dash, Inventor Extraordinaire						40	4		Mechanologist, Hero								You may start the game with a Mechanologist item with cost 2 or less in the arena.	Mechanologist Hero		No		No	No	
 8m9Tr996zccnJhHcQKhFr	Dashing Flashfoot	Yellow	2	1	3	3			1	Lightning, Runeblade, Action, Attack		Quickstrike					Go again	"**Quickstrike** - If this has go again, it gets +1{p} and ""When this attacks a hero, deal 1 arcane damage to them.""
 
@@ -3905,7 +3905,7 @@ hNkCtbWQNhtGkb77cFzhF	Evo Circuit Breaker	Red	1	0		0				Mechanologist, Instant, 
 Whenever you **boost**, you may destroy a card under this. If you do, shuffle 2 attack action cards from your banished zone into your deck."	Mechanologist Instant Equipment - Evo Head				No	No	
 gDhRftBzcK9cMp7tRmCTB	Evo Cogspitter	Yellow	2	0		2				Mechanologist, Action, Equipment, Evo, Arms		Transform, Blade Break	Once per Turn Instant					"If you have a base arms equipped, **transform** it into this, then equip this.
 
-**Once per Turn Instant** - Destroy a card under this: Put an item with cost 0 or 1 from your hand into the arena.
+**Once per Turn Instant** - Destroy a card under this: Put an item with cost 1 or less from your hand into the arena.
 
 **Blade Break**"	Mechanologist Action Equipment - Evo Arms						
 G9PPQckWnzpDTBpWnt9M8	Evo Command Center	Yellow	2	3		3				Mechanologist, Action, Equipment, Evo, Head		Transform, Blade Break	Once per Turn Instant					"If you have a base head equipped, **transform** it into this, then equip this.
@@ -3941,7 +3941,7 @@ LHkFKd9GfdqN7cR6PgPQG	Evo Mach Breaker	Red	1	0		0				Mechanologist, Instant, Equ
 Whenever you **boost**, you may destroy a card under this. If you do, create a Quicken token."	Mechanologist Instant Equipment - Evo Legs				No	No	
 DDTHnwBGLRMwrDLd6bMwc	Evo Magneto	Blue	3	1		2				Mechanologist, Action, Equipment, Evo, Arms		Temper						"If you have a base arms equipped, **transform** it into this, then equip this.
 
-When this defends, you may destroy a card under it. If you do, gain control of target item with cost 0 or 1 controlled by the attacking hero.
+When this defends, you may destroy a card under it. If you do, gain control of target item with cost 1 or less controlled by the attacking hero.
 
 **Temper**"	Mechanologist Action Equipment - Evo Arms				No	No	
 RMcmPNFfqQp6rpn6dkJ9H	Evo Rapid Fire	Blue	3	3		2				Mechanologist, Action, Equipment, Evo, Legs		Transform, Battleworn			Go again			"If you have a base legs equipped, **transform** it into this, then equip this.
@@ -4036,13 +4036,13 @@ wzB7GqTmmpNTjqtQcMk7C	Excessive Bloodloss	Blue	3	1	3	3				Assassin, Action, Atta
 When this hits a hero, banish the top card of their deck. If it's red, repeat this process once."	Assassin Action - Attack						
 dHGPHrcmzW8TJT6m8mrPp	Expedite	Red	1	0	3	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits, you may put an item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Attack						
+When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
 LjzDff6gRW8cmMRCn6MpN	Expedite	Yellow	2	0	2	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits, you may put an item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Attack						
+When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
 9wKjTzmD9hzNBRc6PjLwf	Expedite	Blue	3	0	1	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits, you may put an item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Attack						
+When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
 LhN9jPcQHGJ796r79BqGR	Expedition to Azuro Keys	Red	1	0	4	2				Pirate, Action, Attack								When this attacks, you may put a gold counter on Treasure Island.	Pirate Action - Attack						
 qpnnMW6TWQPQqMLqrbD8d	Expedition to Blackwater Strait	Red	1	1	5	2				Pirate, Action, Attack								When this attacks, you may put a gold counter on Treasure Island.	Pirate Action - Attack						
 nDzNGcF9bfPwfHrztkHdL	Expedition to Dreadfall Reach	Red	1	2	6	2				Pirate, Action, Attack								When this attacks, you may put a gold counter on Treasure Island.	Pirate Action - Attack						
@@ -4215,13 +4215,13 @@ PkQPFgMNLn69hmMnq7jCC	Felling of the Crown	Red	1	3	4	3				Earth, Action, Attack	
 **Decompose** - When this attacks, you may banish 2 Earth cards and an action card from your graveyard. If you do, each hero puts a card from their hand on the bottom of their deck."	Earth Action - Attack				No	No	
 FjH7WBT6NtmQjrBHBkbTk	Fender Bender	Red	1	1	4	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-This gets +X{p}, where X is the number of equipment defending it."	Mechanologist Action - Attack						
+This gets +1{p} for each equipment defending it."	Mechanologist Action - Attack						
 RQTzJCzpBPBbNHDRF8DCN	Fender Bender	Yellow	2	1	3	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-This gets +X{p}, where X is the number of equipment defending it."	Mechanologist Action - Attack						
+This gets +1{p} for each equipment defending it."	Mechanologist Action - Attack						
 gjCWLwWCRRfm6J66cNL7q	Fender Bender	Blue	3	1	2	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-This gets +X{p}, where X is the number of equipment defending it."	Mechanologist Action - Attack						
+This gets +1{p} for each equipment defending it."	Mechanologist Action - Attack						
 CPNhjTPwJ9W6Mm6cNRFHd	Feral Instinct	Yellow	2	3	6	3				Brute, Action, Attack							Intimidate	If you've intimidated an opponent this turn, this costs {r}{r}{r} less to play.	Brute Action - Attack				No	No	
 BM9WbbJkzGzdmtqMcMLJ6	Fertile Ground	Red	1	2						Earth, Instant								"Gain 2{h}
 
@@ -4281,7 +4281,7 @@ qrhLKPQDzcR99cHLz7jgq	Figment of War	Yellow	2	4						Light, Illusionist, Instant
 
 When this enters the arena, create a Courage token."	Light Illusionist Instant - Figment				No	No	
 wrn8fmpTQHjKLzzHtqwNG	Final Act	Red	1	1	1	3				Bard, Action, Attack								When this attacks, it gets +X{p}, where X is twice the number of cards in all pitch zones.	Bard Action - Attack				No	No	
-PHz8kWCt6rw6Q6jMgbdQC	Find Center	Blue	3	0	2	3				Ninja, Action, Attack		Combo						"**Combo** - If Crane Dance was the last attack this combat chain, Find Center can't be defended by cards with {r} cost less than the number of chain links you control and it gets ""When this hits, create a Zen State token."""	Ninja Action - Attack				No	No	
+PHz8kWCt6rw6Q6jMgbdQC	Find Center	Blue	3	0	2	3				Ninja, Action, Attack		Combo						"**Combo** - If Crane Dance was the last attack this combat chain, this can't be defended by cards with cost less than the number of chain links you control and it gets ""When this hits, create a Zen State token."""	Ninja Action - Attack				No	No	
 PgCtkKz6JjJQ9mgKK679T	Fingers of Fragmentation					0				Illusionist, Equipment, Arms			Instant				Fragment	**Instant** - {r}{r}, destroy this: Target attack action card that has fragmented gets +2{p}.	Illusionist Equipment - Arms						
 fJ6NzRBP9hRRcQLPLTDrf	Fire Tenet: Strike First	Red	1	0	3	2				Ninja, Action, Attack		Go again						"When this attacks, your next Draconic attack this combat chain gets +1{p}.
 
@@ -5358,7 +5358,7 @@ While this is equipped face-down, at the start of your turn, if you have exactly
 **Blade Break**"	Mystic Ninja Equipment - Chest						
 NmRw7kHM96FTDqDF69qJ9	Heist	Red	1	2	5	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits a hero, you may put an item with cost 0 or 1 from any banished zone into the arena under your control."	Mechanologist Action - Attack				No	No	
+When this hits a hero, you may put an item with cost 1 or less from any banished zone into the arena under your control."	Mechanologist Action - Attack				No	No	
 gjgpkHgC6p7HNTPpCJdCh	Helio's Mitre					0				Generic, Equipment, Head			Instant					**Instant** - {r}{r}: Prevent the next 1 damage that would be dealt to you this turn by a source of your choice. Destroy this at the beginning of the end phase.	Generic Equipment - Head						
 zMbD7hqPwGNQCcDC6DPB9	Hell Hammer				6					Shadow, Brute, Weapon, Hammer, 2H		Blood Debt	Once per Turn Action	Attack				"**Once per Turn Action** - {r}{r}: **Attack**
 
@@ -5398,9 +5398,9 @@ PMh8LjJm6jmBKfm8FqfkW	Helmsman's Peak					1				Generic, Equipment, Head		Blade B
 JbhrgT86TGzH9rWPpzHBc	Hemorrhage Bore	Red	1	1	5	3				Ranger, Action, Arrow, Attack								"If this has an aim counter, it gets ""When this hits a hero, destroy a card in their arsenal."""	Ranger Action - Arrow Attack						
 KWpp9Jg6QBftjK9HKNNKW	Hemorrhage Bore	Yellow	2	1	4	3				Ranger, Action, Arrow, Attack								"If this has an aim counter, it gets ""When this hits a hero, destroy a card in their arsenal."""	Ranger Action - Arrow Attack						
 9hMdhNp7G6p6jqcrQD6Gd	Hemorrhage Bore	Blue	3	1	3	3				Ranger, Action, Arrow, Attack								"If this has an aim counter, it gets ""When this hits a hero, destroy a card in their arsenal."""	Ranger Action - Arrow Attack						
-9BPFcP6dTCwRdJKJBbqCc	Herald of Erudition	Yellow	2	2	5	3				Light, Illusionist, Action, Attack		Dominate, Phantasm						"When this hits, put it into your soul and draw 2 cards.
+9BPFcP6dTCwRdJKJBbqCc	Herald of Erudition	Yellow	2	2	5	3				Light, Illusionist, Action, Attack		Dominate, Phantasm						"**Dominate**
 
-**Dominate**
+When this hits, put it into your soul and draw 2 cards.
 
 **Phantasm**"	Light Illusionist Action - Attack				No	No	
 z7fKMTdrJ6jGBFWTMTbnF	Herald of Judgment	Yellow	2	2	6	3				Light, Illusionist, Action, Attack		Prism Specialization, Phantasm						"**Prism Specialization**
@@ -6194,11 +6194,11 @@ qdLHRPTdGkw6TjpMjPTW7	Kayo, Armed and Dangerous						40	4		Brute, Hero								"Y
 Attack action cards you own get +1{p} while they are in any zone other than the combat chain.
 
 The first time you discard a card with 6 or more {p} during each of your action phases, create a Might token."	Brute Hero		No		No	No	
-NcQMQ79gb9P7CTMfWfBz8	Kayo, Berserker Runt						19	4		Brute, Hero, Young								"Whenever you play an attack action card with base power 6 or more {p}, roll a 6 sided die. On;
+NcQMQ79gb9P7CTMfWfBz8	Kayo, Berserker Runt						19	4		Brute, Hero, Young								"Whenever you play an attack action card with 6 or more base {p}, roll a 6 sided die. On;
 
-- 1 to 4 - Halve the attack's base {p}, rounded down.
+- 1-4, halve the attack's base {p}, rounded down.
 
-- 5 to 6 - Double the attack's base {p}."	Brute Hero - Young			No			No
+- 5-6, double the attack's base {p}."	Brute Hero - Young			No			No
 rwntmhkHtPGcKCbzJWjNn	Kayo, Strong-arm						20	4		Reviled, Brute, Hero, Young			Instant				The Crowd Boos	"You start the game with 1 weapon zone.
 
 **Instant** - {r}{r}{r}{r}, {t}: Target attack action card you control has 6 base {p}.
@@ -6271,9 +6271,9 @@ jbDgmHNWr6GGD6GqmBCTf	Korshem, Crossroad of Elements			1						Elemental, Action,
 
 **Go again**
 
-Whenever a hero reveals 1 or more cards, they choose 1; Gain {r}, or gain 1{h}, or their next attack this turn gets +1{p}, or the next action card they defend with this turn gets +1{d}.
+Whenever a hero reveals 1 or more cards, they gain {r}, or gain 1{h}, or their next attack this turn gets +1{p}, or the next action card they defend with this turn gets +1{d}.
 
-At the beginning of the end phase, if no hero has gained {r} or {h} from a card effect and no card or token controlled by a hero has had {p} or {d} increased this turn, destroy Korshem, Crossroads of the Elements."	Elemental Action - Landmark	Yes			No	No	
+At the beginning of the end phase, if no hero has gained {r} or {h} from an effect and no card controlled by a hero has had {p} or {d} increased this turn, destroy this."	Elemental Action - Landmark	Yes			No	No	
 Cd6PTGH6CqTHmt7LQmBMp	Kraken's Aethervein								1	Wizard, Weapon, Staff, 2H			Once per Turn Instant					**Once per Turn Instant** - {r}{r}{r}: Deal 1 arcane damage to target opposing hero. Draw a card for each arcane damage dealt this way.	Wizard Weapon - Staff (2H)				No	No	
 kcf6QQMkQC8Mw9DBk78KN	Kunai of Retribution				1					Draconic, Ninja, Weapon, Dagger, 1H			Once per Turn Action	Attack, Go again				**Once per Turn Action** - {r}, destroy this when the combat chain closes: **Attack**. **Go again**	Draconic Ninja Weapon - Dagger (1H)						
 PHgMJBpk9fJcWNrrnqztz	Kyloria				4		2			Draconic, Illusionist, Dragon, Ally								Whenever Kyloria hits a hero, gain control of an item they control. Otherwise, draw a card.	Draconic Illusionist - Dragon Ally					No	
@@ -6439,7 +6439,7 @@ DGNn7nRKwBjzf9f9rmzJM	Lesson in Lava	Yellow	2	1		3			3	Wizard, Action		Kano Spec
 
 Deal 3 arcane damage to target opposing hero.
 
-If Lesson in Lava deals damage, you may search your deck for a Wizard card with {r} cost equal to or less than the damage dealt by Lesson in Lava, reveal it, then shuffle your deck and put it on top of your deck."	Wizard Action					No	
+If this deals damage, you may search your deck for a Wizard card with cost less than or equal to the damage dealt by this, reveal it, then shuffle and put it on top."	Wizard Action					No	
 RbQQFDFMgLp8MrGnzGNLc	Lessons Learned	Blue	3	0						Warrior, Instant								Shuffle up to 3 attack reaction cards with different names from your graveyard into your deck.	Warrior Instant				No	No	
 tgkMhwLnr8kh6pcR86nR6	Let Me Buy You a Drink									Event								"Destroy a Gold you control.
 
@@ -6508,9 +6508,9 @@ hcPBRGtmCKRBDMFBTJFbT	Light Up the Leaves	Red	1	3		3			6	Earth, Wizard, Action		
 
 **Lightning Fusion**
 
-If Light it Up was **fused**, it gets ""When this hits a hero, deal 1 damage to them for each equipment they control.""
+If this was **fused**, it gets ""When this hits a hero, deal damage to them equal to the number of equipment they control.""
 
-If Light it Up deals damage to a hero equal to or greater than the number of equipment they control, equipment they control lose and can't gain activated abilities until the end of their next turn."	Elemental Ranger Action - Arrow Attack				No	No	
+Whenever this deals damage to a hero equal to or greater than the number of equipment they control, equipment they control lose and can't gain activated abilities until the end of their next turn."	Elemental Ranger Action - Arrow Attack				No	No	
 76cHnpRhNn7GWNNfFbNhL	Light of Sol	Yellow	2							Light, Resource, Gem		Legendary						"**Legendary**
 
 When this is pitched, reveal the top card of your deck. If it's yellow, you may put it into your soul."	Light Resource - Gem				No	No	
@@ -6677,9 +6677,9 @@ HBpzWTwf7hkB8JC8FgNRG	Lunar Mirage	Red	1	0	3	3				Illusionist, Action, Attack		G
 **Go again**
 
 **Mirage**"	Illusionist Action - Attack				No	No	
-7nR6NLzNWChgrQQCgFbPT	Lunartide Plunderer	Red	1	3	7	2				Shadow, Action, Attack								If Lunartide Plunderer hits a hero, banish this and a card from their soul.	Shadow Action - Attack						
-GkJfHHnhbDNWnfwGNTznm	Lunartide Plunderer	Yellow	2	3	6	2				Shadow, Action, Attack								If Lunartide Plunderer hits a hero, banish this and a card from their soul.	Shadow Action - Attack						
-wFPpjqhRHHNdNkDbRffBF	Lunartide Plunderer	Blue	3	3	5	2				Shadow, Action, Attack								If Lunartide Plunderer hits a hero, banish this and a card from their soul.	Shadow Action - Attack						
+7nR6NLzNWChgrQQCgFbPT	Lunartide Plunderer	Red	1	3	7	2				Shadow, Action, Attack								When this hits a hero, banish this and up to 1 card from their soul.	Shadow Action - Attack						
+GkJfHHnhbDNWnfwGNTznm	Lunartide Plunderer	Yellow	2	3	6	2				Shadow, Action, Attack								When this hits a hero, banish this and up to 1 card from their soul.	Shadow Action - Attack						
+wFPpjqhRHHNdNkDbRffBF	Lunartide Plunderer	Blue	3	3	5	2				Shadow, Action, Attack								When this hits a hero, banish this and up to 1 card from their soul.	Shadow Action - Attack						
 KTHGJMmtDhhmTdbm9zcQC	Lunging Press	Blue	3	0		2				Generic, Attack Reaction								Target attack action card gets +1{p}.	Generic Attack Reaction						
 QrHJnzKzpMwgfJMcKQ8Dp	Lyath Goldmane						20	5		Reviled, Guardian, Hero, Young			Instant	The Crowd Boos			The Crowd Boos	"The base {p} and {d} of cards you control are halved, rounded up.
 
@@ -6880,9 +6880,9 @@ If you've dealt arcane damage to an opposing hero this turn, this gets **go agai
 kMHrRGnggnJtkzk7PhbH8	Meat and Greet	Blue	3	1	2	3				Runeblade, Action, Attack		Go again						"When this hits, create a Runechant token.
 
 If you've dealt arcane damage to an opposing hero this turn, this gets **go again**."	Runeblade Action - Attack						
-KFh8LdDmdJdmn9RJc8hhJ	Mechanical Strength	Red	1	3	5	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +X{p}, where X is the number of Evos you have equipped.	Mechanologist Action - Attack					No	
-pHCcrc7zRQnTFLfqcpgjd	Mechanical Strength	Yellow	2	3	4	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +X{p}, where X is the number of Evos you have equipped.	Mechanologist Action - Attack					No	
-7FfRqNrB8z7L6HjzTpbJd	Mechanical Strength	Blue	3	3	3	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +X{p}, where X is the number of Evos you have equipped.	Mechanologist Action - Attack					No	
+KFh8LdDmdJdmn9RJc8hhJ	Mechanical Strength	Red	1	3	5	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +1{p} for each Evo you have equipped.	Mechanologist Action - Attack					No	
+pHCcrc7zRQnTFLfqcpgjd	Mechanical Strength	Yellow	2	3	4	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +1{p} for each Evo you have equipped.	Mechanologist Action - Attack					No	
+7FfRqNrB8z7L6HjzTpbJd	Mechanical Strength	Blue	3	3	3	3				Mechanologist, Action, Attack		Evo Upgrade						**Evo Upgrade** - This gets +1{p} for each Evo you have equipped.	Mechanologist Action - Attack					No	
 BWQhCMHmkKGCnHfNQ8jKH	Medkit	Blue	3	0						Mechanologist, Action, Item			Action					**Action** - Put this on the bottom of its owner's deck: Gain 2{h}	Mechanologist Action - Item					No	
 GmnHWfMKzgJgpWKhQBmrM	Meet Madness	Red	1	0	3	3				Chaos, Assassin, Action, Attack		Stealth						"**Stealth**
 
@@ -6925,13 +6925,13 @@ GgRFLW8zdKbNJtgfFTFkp	Meridian Pathway									Mystic, Illusionist, Equipment, L
 Whenever you pitch a Chi, you may have this get **ward 3** until end of turn."	Mystic Illusionist Equipment - Legs				No	No	
 FPCtrDJKLwTRHh7C6ckd6	MetEx	Red	1	1	4	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits, you may put an item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Attack						
+When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
 qtnfPdFjH8RTzn6DhHzfC	MetEx	Yellow	2	1	3	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits, you may put an item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Attack						
+When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
 krRzDjQr7CKM9wWkGgLpg	MetEx	Blue	3	1	2	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
-When this hits, you may put an item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Attack						
+When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
 RDTDDzfpjwLc9QrLWhqtB	Metacarpus Node					0				Wizard, Equipment, Arms		Arcane Barrier 1						"Whenever you play a card with an arcane damage effect, you may pay {r}. If you do, instead it deals that much arcane damage plus 1, and destroy Metacarpus Node at the beginning of the end phase.
 
 **Arcane Barrier 1**"	Wizard Equipment - Arms				No	No	
@@ -7323,9 +7323,9 @@ MghLPDjq8CfBJ8RzNc7Ft	Nuu, Alluring Desire						40	4		Mystic, Assassin, Hero			I
 JfJ7hNnCDL9GDCwfrWBBc	Oaken Old	Red	1	3	7	3				Elemental, Guardian, Action, Attack		Earth and Ice Fusion, Dominate						"**Earth and Ice Fusion**
 
 If this was **fused**, it gets +2{p}, **dominate**, and ""When this hits a hero, they put 2 random cards from their hand on the bottom of their deck in any order."""	Elemental Guardian Action - Attack				No	No	
-wfNk87CBNfmjfPwrW8t8M	Oasis Respite	Red	1	1						Generic, Instant								Prevent the next 4 damage that would be dealt to target hero this turn by a source of your choice. If they have less life than each other hero, they may gain 1{h}.	Generic Instant						
-MLLHrD676q8LL6ngKMb6c	Oasis Respite	Yellow	2	1						Generic, Instant								Prevent the next 3 damage that would be dealt to target hero this turn by a source of your choice. If they have less life than each other hero, they may gain 1{h}.	Generic Instant						
-BDCgz7kkmPCdbGFMhnMr8	Oasis Respite	Blue	3	1						Generic, Instant								Prevent the next 2 damage that would be dealt to target hero this turn by a source of your choice. If they have less life than each other hero, they may gain 1{h}.	Generic Instant						
+wfNk87CBNfmjfPwrW8t8M	Oasis Respite	Red	1	1						Generic, Instant								Prevent the next 4 damage that would be dealt to target hero this turn by a source of your choice. If they have less {h} than each other hero, they may gain 1{h}.	Generic Instant						
+MLLHrD676q8LL6ngKMb6c	Oasis Respite	Yellow	2	1						Generic, Instant								Prevent the next 3 damage that would be dealt to target hero this turn by a source of your choice. If they have less {h} than each other hero, they may gain 1{h}.	Generic Instant						
+BDCgz7kkmPCdbGFMhnMr8	Oasis Respite	Blue	3	1						Generic, Instant								Prevent the next 2 damage that would be dealt to target hero this turn by a source of your choice. If they have less {h} than each other hero, they may gain 1{h}.	Generic Instant						
 NdCm9WBnzPthfNNLrNggG	Oath of Loyalty	Red	1	0	4	3				Draconic, Action, Attack		Go again						"This may only be played if it's the first action of your turn.
 
 When this is played, until end of turn, you may only play cards that are Draconic.
@@ -7545,15 +7545,15 @@ btndHckBR7ffBqCwHRJfD	Over Flex	Blue	3	1		2				Ranger, Action		Reload, Go again	
 **Reload**
 
 **Go again**"	Ranger Action						
-RrjhFCHBwjJHg7PQc6Prk	Over Loop	Red	1	2	5	3				Mechanologist, Action, Attack		Boost						"**Boost**
+RrjhFCHBwjJHg7PQc6Prk	Over Loop	Red	1	2	5	3				Mechanologist, Action, Attack		Boost						"When this hits, put it on the bottom of its owner's deck.
 
-When this hits, put it on the bottom of its owner's deck."	Mechanologist Action - Attack						
-d8qtfb87mk97GKMDPgDKb	Over Loop	Yellow	2	2	4	3				Mechanologist, Action, Attack		Boost						"**Boost**
+**Boost**"	Mechanologist Action - Attack						
+d8qtfb87mk97GKMDPgDKb	Over Loop	Yellow	2	2	4	3				Mechanologist, Action, Attack		Boost						"When this hits, put it on the bottom of its owner's deck.
 
-When this hits, put it on the bottom of its owner's deck."	Mechanologist Action - Attack						
-CMTbqWQL99gDnd8L7tthp	Over Loop	Blue	3	2	3	3				Mechanologist, Action, Attack		Boost						"**Boost**
+**Boost**"	Mechanologist Action - Attack						
+CMTbqWQL99gDnd8L7tthp	Over Loop	Blue	3	2	3	3				Mechanologist, Action, Attack		Boost						"When this hits, put it on the bottom of its owner's deck.
 
-When this hits, put it on the bottom of its owner's deck."	Mechanologist Action - Attack						
+**Boost**"	Mechanologist Action - Attack						
 BRQTgW6LNkTcB7MQFWTNL	Over the Top	Red	1	3	6	3				Guardian, Action, Attack		Overpower						If this has {p} greater than its base, it gets **overpower**.	Guardian Action - Attack					No	
 6LHg9KT9MK8GzCJ8HGPpN	Over the Top	Yellow	2	3	5	3				Guardian, Action, Attack		Overpower						If this has {p} greater than its base, it gets **overpower**.	Guardian Action - Attack					No	
 WJJfW7bHMPbfLPbK8Q9Wm	Over the Top	Blue	3	3	4	3				Guardian, Action, Attack		Overpower						If this has {p} greater than its base, it gets **overpower**.	Guardian Action - Attack					No	
@@ -7563,9 +7563,9 @@ Lb7cgqWB6RpKLMH7hJQdN	Overbear	Red	1	0		2				Generic, Action		Go again			Dominat
 mzzkQRbJp8KjGcw6M8z6j	Overbearing Presence					1				Brute, Equipment, Chest		Blade Break	Action	Go again				"**Action** - {r}{r}{r}, destroy this: Create 3 Vigor tokens. Activate this only if there is a card with 6 or more {p} in your pitch zone. **Go again**
 
 **Blade Break**"	Brute Equipment - Chest						
-wpLckQt7zw66h87TbjcWt	Overblast	Red	1	2	5	3				Mechanologist, Action, Attack							Boost	Overblast gains +X{p}, where X is the number of times you have **boosted** this combat chain.	Mechanologist Action - Attack						
-MHkLpfgkgh7hNwbrTJrDF	Overblast	Yellow	2	2	4	3				Mechanologist, Action, Attack							Boost	Overblast gains +X{p}, where X is the number of times you have **boosted** this combat chain.	Mechanologist Action - Attack						
-JHRhwNCKG97trbQLfhg9j	Overblast	Blue	3	2	3	3				Mechanologist, Action, Attack							Boost	Overblast gains +X{p}, where X is the number of times you have **boosted** this combat chain.	Mechanologist Action - Attack						
+wpLckQt7zw66h87TbjcWt	Overblast	Red	1	2	5	3				Mechanologist, Action, Attack							Boost	This gets +1{p} for each time you've **boosted** this combat chain.	Mechanologist Action - Attack						
+MHkLpfgkgh7hNwbrTJrDF	Overblast	Yellow	2	2	4	3				Mechanologist, Action, Attack							Boost	This gets +1{p} for each time you've **boosted** this combat chain.	Mechanologist Action - Attack						
+JHRhwNCKG97trbQLfhg9j	Overblast	Blue	3	2	3	3				Mechanologist, Action, Attack							Boost	This gets +1{p} for each time you've **boosted** this combat chain.	Mechanologist Action - Attack						
 WLw6Ft6qgMDH7fwMpNdWR	Overcharge	Red	1	1	1	3				Lightning, Action, Attack		Go again						"If you've played an instant card this chain link, this gets +3{p}.
 
 **Go again**"	Lightning Action - Attack						
@@ -7947,11 +7947,11 @@ When this is pitched, for each opponent, choose Frailty, Inertia, or Bloodrot Po
 bPKFtQtwzWcRjWkFwztdf	Plan for the Worst	Blue	3	0		3				Ranger, Action								"Look at target hero's hand and arsenal. At the beginning of their next end phase, they discard all cards in their hand and destroy all cards in their arsenal.
 
 Search your deck for up to 3 traps, reveal them, put them into your hand, then shuffle 2 cards from your hand into your deck."	Ranger Action				No	No	
-KPMtkfh8Dd6Dt9LJjGQLw	Plasma Barrel Shot				X					Mechanologist, Weapon, Gun, 2H			Once per Turn Action, Action	Attack, Go again			Boost	"**Once per Turn Action** - Remove a steam counter from Plasma Barrel Shot: **Attack**
+KPMtkfh8Dd6Dt9LJjGQLw	Plasma Barrel Shot				X					Mechanologist, Weapon, Gun, 2H			Once per Turn Action, Action	Attack, Go again			Boost	"**Once per Turn Action** - Remove a steam counter from this: **Attack**
 
-**Action** - {r}{r}: If there are no steam counters on Plasma Barrel Shot, put a steam counter on it. **Go again**
+**Action** - {r}{r}: If this has no steam counters, put a steam counter on it. **Go again**
 
-X is equal to 1 plus the number of times you have **boosted** this combat chain."	Mechanologist Weapon - Gun (2H)						
+This card's {p} is equal to 1 plus the number of times you've **boosted** this combat chain."	Mechanologist Weapon - Gun (2H)						
 fCmcQjBCJ9BRGBQDWk9Dw	Plasma Mainline	Red	1	2						Mechanologist, Action, Item								"This enters the arena with 5 steam counters. When it has none, destroy it.
 
 Whenever a Mechanologist item with cost 2 or less enters the arena under your control, you may move a steam counter from this to that item."	Mechanologist Action - Item				No	No	
@@ -8315,7 +8315,7 @@ KcrNLmMjgffQ6hqBbnBrL	Prizeworn Plating					2				Warrior, Equipment, Chest		Guar
 G7WBwbd7TnnMMp8R9tkMw	Proclaim Vengeance	Red	1	0						Draconic, Instant		Mark						**Mark** target opposing hero. If that hero is Arakni, gain {r}.	Draconic Instant						
 wQcpct8M6ddWK6BkKMMgC	Proclamation of Abundance									Adjudicator, Equipment, Off-Hand			Action					**Action** - {r}{r}{r}, destroy this: Each hero draws up to their {i}.	Adjudicator Equipment - Off-Hand		No	No	No	No	No
 LwtRft6CKgLFgbDKrwTJn	Proclamation of Combat									Adjudicator, Equipment, Off-Hand			Action					**Action** - Destroy this: Until the start of your next turn, the only actions heroes may play or activate are weapon and attacks actions.	Adjudicator Equipment - Off-Hand		No	No	No	No	No
-7tzgdpf9qnJbqRp6PTNj7	Proclamation of Production									Adjudicator, Equipment, Off-Hand			Action					**Action** - Destroy this: Each hero may search their deck for an item with cost 0 or 1, put it into the arena, then shuffle. Each hero who doesn't put an item into the arena this way discards a card.	Adjudicator Equipment - Off-Hand		No	No	No	No	No
+7tzgdpf9qnJbqRp6PTNj7	Proclamation of Production									Adjudicator, Equipment, Off-Hand			Action					**Action** - Destroy this: Each hero may search their deck for an item with cost 1 or less, put it into the arena, then shuffle. Each hero who doesn't put an item into the arena this way discards a card.	Adjudicator Equipment - Off-Hand		No	No	No	No	No
 nPNcp7BDrghp6dLPfHnNp	Proclamation of Requisition									Adjudicator, Equipment, Off-Hand			Action					**Action** - Discard a red card, destroy Proclamation of this: Each opponent chooses an item or landmark they control. Gain control of the chosen permanents.	Adjudicator Equipment - Off-Hand		No	No	No	No	No
 BLCMLHnwnbRKbdhPJ9DQp	Professor Teklovossen						20	4		Mechanologist, Hero, Young								"Evos cost {r} less to play for each opponent.
 
@@ -8532,7 +8532,7 @@ c8tGz8c7GKmBJRLTcQHfJ	Quantum Processor	Yellow	2	1						Mechanologist, Action, I
 
 This enters the arena with a steam counter. At the start of your turn, destroy this unless you remove a steam counter from it.
 
-**Once per Turn Instant** - 0: Put a Mechanologist item with cost 0 or 1 from your hand into the arena."	Mechanologist Action - Item				No	No	
+**Once per Turn Instant** - 0: Put a Mechanologist item with cost 1 or less from your hand into the arena."	Mechanologist Action - Item				No	No	
 KbcGqTJFnNLmLWMpfzPbT	Quartermaster's Boots					1				Generic, Equipment, Legs		Blade Break	Action	Go again				"**Action** - {r}{r}, destroy this: The next non-attack action card you play this turn gets **go again**. **Go again**
 
 **Blade Break**"	Generic Equipment - Legs						
@@ -8982,13 +8982,13 @@ At the beginning of your end phase, destroy all Runechants you control.
 **Go again**"	Runeblade Action				No	No	
 8qnmTn7hKdCQzbhF7bNHD	Reverberate	Red	1	1		3			3	Wizard, Action								"Deal 3 arcane damage to target opposing hero.
 
-If this deals damage, you may banish a Wizard non-attack action card from your hand with {r} cost less than or equal to the damage dealt by this. If you do, you may play it this turn as though it were an instant."	Wizard Action						
+If this deals damage, you may banish a Wizard non-attack action card from your hand with cost less than or equal to the damage dealt by this. If you do, you may play it this turn as though it were an instant."	Wizard Action						
 nDWTKLbTdknK7Rfbp8mPM	Reverberate	Yellow	2	1		3			2	Wizard, Action								"Deal 2 arcane damage to target opposing hero.
 
-If this deals damage, you may banish a Wizard non-attack action card from your hand with {r} cost less than or equal to the damage dealt by this. If you do, you may play it this turn as though it were an instant."	Wizard Action						
+If this deals damage, you may banish a Wizard non-attack action card from your hand with cost less than or equal to the damage dealt by this. If you do, you may play it this turn as though it were an instant."	Wizard Action						
 JBKPrLhtDj77ttccNgnqD	Reverberate	Blue	3	1		3			1	Wizard, Action								"Deal 1 arcane damage to target opposing hero.
 
-If this deals damage, you may banish a Wizard non-attack action card from your hand with {r} cost less than or equal to the damage dealt by this. If you do, you may play it this turn as though it were an instant."	Wizard Action						
+If this deals damage, you may banish a Wizard non-attack action card from your hand with cost less than or equal to the damage dealt by this. If you do, you may play it this turn as though it were an instant."	Wizard Action						
 FfHjRwfgzHqngmjCpdCHf	Reverent Rerebrace					2				Warrior, Equipment, Arms		Sharpen, Temper					Sharpen	"If you would sharpen a Zenith Blade, instead you may pay {r} and destroy this. If you do, **sharpen** it an additional time.
 
 **Temper**"	Warrior Equipment - Arms				No	No	
@@ -9898,7 +9898,7 @@ WQtbdGwPbtmLmmkRjQzqj	Send Packing	Yellow	2	3	6	3				Brute, Action, Attack						
 **Go again**"	Guardian Action				No	No	
 QrKGJL7bHCFKbr9N9MNpm	Ser Boltyn, Breaker of Dawn						40	4		Light, Warrior, Hero			Attack Reaction		Go again		Charge	"If you've charged this turn, your attacks get +1{p} while defended by an attack action card.
 
-**Attack Reaction** - Banish a card from Boltyn's soul: Target attack with {p} greater than its base {p} gains **go again**."	Light Warrior Hero		No		No	No	
+**Attack Reaction** - Banish a card from your soul: Target attack with {p} greater than its base gets **go again**."	Light Warrior Hero		No		No	No	
 PBkK9jFkGPKGqTwmTwrzW	Serpent's Kiss	Blue	3	0	1	3				Mystic, Assassin, Action, Attack		Stealth					Transcend	"**Stealth**
 
 When this attacks, create a Fang Strike or Slither in your hand. If you've transcended this turn, instead create both.
@@ -10635,7 +10635,7 @@ NqkBRhGqcjNCjBhMq8qpF	Song of the Shining Knight	Blue	3	0		3				Bard, Action, So
 mdMHPhNzNwbQnHLrgLccp	Song of the Wandering Mind	Blue	3	0		3				Bard, Action, Song								Each other hero draws a card.	Bard Action - Song						
 fbm7LndJccMBQqdCWQmd6	Sonic Boom	Yellow	2	2		3			3	Wizard, Action								"Deal 3 arcane damage to target opposing hero.
 
-If Sonic Boom deals damage, look at the top card of your deck. If it's a Wizard non-attack action card, you may banish it. If you do, you may play it this turn as though it were an instant and it costs X resource points less to play, where X is the damage dealt by Sonic Boom."	Wizard Action				No	No	
+If this deals damage, look at the top card of your deck. If it's a Wizard non-attack action card, you may banish it. If you do, you may play it this turn as though it were an instant and it costs {x} less to play, where X is the damage dealt by this."	Wizard Action				No	No	
 hJkWQRCjndN6DnFpWnmdt	Soul Bond Belief	Red	1	0	3	3				Light, Action, Attack								When this attacks, reveal the top card of your deck. If it's yellow, put it into your soul and this gets +1{p}.	Light Action - Attack						
 K9HdghRPpD7mJzfBpmBMP	Soul Bond Belief	Yellow	2	0	2	3				Light, Action, Attack								When this attacks, reveal the top card of your deck. If it's yellow, put it into your soul and this gets +1{p}.	Light Action - Attack						
 DBKDQNcLQkpLWfp7HFB8f	Soul Bond Belief	Blue	3	0	1	3				Light, Action, Attack								When this attacks, reveal the top card of your deck. If it's yellow, put it into your soul and this gets +1{p}.	Light Action - Attack						
@@ -10814,9 +10814,9 @@ F66PN6K8KQGwkcB9PzGjN	Spew Shadow	Blue	3	2		2				Shadow, Action		Go again						"
 **Go again**"	Shadow Action						
 hDzHTgkgGfqFCn8mmR9M6	Spider's Bite				1					Assassin, Weapon, Dagger, 1H		Piercing 1	Once per Turn Action	Attack, Go again				"**Once per Turn Action** - {r}{r}: **Attack**. **Go again**
 
-**Piercing 1**
+When this hits a hero, the next time they defend with 1 or more attack action cards this turn, those cards get -1{d} while defending.
 
-When this hits a hero, the next time they defend with 1 or more attack action cards this turn, those cards get -1{d} while defending."	Assassin Weapon - Dagger (1H)						
+**Piercing 1**"	Assassin Weapon - Dagger (1H)						
 zRPmCL8MkNKkwkKb7GRbn	Spike Pit Trap	Blue	3	0		3				Ranger, Defense Reaction, Trap		Legendary, Riptide Specialization						"**Legendary Riptide Specialization**
 
 When this defends and the attacking hero has played or activated a reaction this chain link, put the top card of their deck into their graveyard, then they lose X{h}, where X is the number of cards in their graveyard with that name."	Ranger Defense Reaction - Trap				No	No	
@@ -11207,7 +11207,7 @@ At the beginning of your action phase, destroy this, then your next attack this 
 RdDHPzqPQmtJhjpcgcRhh	Strongest Survive	Red	1	3	7	3				Brute, Action, Attack								When this hits a hero, they discard a card unless they reveal a card from their hand with {p} greater than the damage dealt this way.	Brute Action - Attack					No	
 BQtMNCrD8BHhPdjgmMpMN	Strongest Survive	Yellow	2	3	6	3				Brute, Action, Attack								When this hits a hero, they discard a card unless they reveal a card from their hand with {p} greater than the damage dealt this way.	Brute Action - Attack					No	
 mgbKnbTJP7Tj6kBFmgrLJ	Strongest Survive	Blue	3	3	5	3				Brute, Action, Attack								When this hits a hero, they discard a card unless they reveal a card from their hand with {p} greater than the damage dealt this way.	Brute Action - Attack					No	
-wj7qpMrzMjDbn8tmtfPL7	Stubby Hammerers					0				Generic, Equipment, Arms			Action	Go again				**Action** - Destroy Stubby Hammerers: Attack action cards with 3 or less base power gain +1{p} while attacking this turn. **Go again**	Generic Equipment - Arms						
+wj7qpMrzMjDbn8tmtfPL7	Stubby Hammerers					0				Generic, Equipment, Arms			Action	Go again				**Action** - Destroy this: Attack action cards with 3 or less base {p} get +1{p} while attacking this turn. **Go again**	Generic Equipment - Arms						
 czMNmPkcRdNwQ87L77gW8	Stun Star	Blue	3	0	1	2				Ninja, Instant, Shuriken, Item		Legendary	Action	Attack, Go again				"**Legendary**
 
 **Action** - {r}, {t}, destroy this when the combat chain closes: **Attack**. **Go again**
@@ -11390,7 +11390,7 @@ HGKWRtMqN8D6rtGHkb7RB	Synapse Sparkcap					1				Mechanologist, Equipment, Base, 
 
 **Battleworn**"	Mechanologist Equipment - Base Head				No	No	
 GTWTq8HRqQM9nCCqQcTPD	System Failure	Yellow	2	1		2				Mechanologist, Action								Remove all steam counters from target equipment, item, or weapon. If 2 or more steam counters are removed this way, deal 2 damage to its controller.	Mechanologist Action				No	No	
-bh7RktHmCjjn9mKNmT6QK	System Reset	Yellow	2	X		3				Mechanologist, Action								Banish X Mechanologist items you control with cost 0 or 1, then return them to the arena under their owners' control.	Mechanologist Action				No	No	
+bh7RktHmCjjn9mKNmT6QK	System Reset	Yellow	2	X		3				Mechanologist, Action								Banish X Mechanologist items you control with cost 1 or less, then return them to the arena under their owners' control.	Mechanologist Action				No	No	
 7kwDMdkW6h7bMH8ctTjPC	T-Bone	Red	1	0	3	3				Mechanologist, Action, Attack		Boost					Boost	"If you control a card on the combat chain that was **boosted**, the defending hero must defend this with an equipment they control if able.
 
 **Boost**"	Mechanologist Action - Attack					No	
@@ -11758,9 +11758,9 @@ NKpphfCpKhWhntbBzBghc	Throw Yourself at Them	Blue	3	1	1	2				Assassin, Ninja, Ac
 
 **Go again**"	Assassin / Ninja Action - Attack						
 M6pzcFzDLQDQLFLqPz9nd	Thrust	Red	1	1		2				Generic, Attack Reaction								Target sword attack gets +3{p}.	Generic Attack Reaction						
-pLDmjKLjJzFBWNqTFnRwb	Thump	Red	1	4	6	3				Guardian, Action, Attack		Dominate						"While Thump's {p} is greater than its base {p}, it gets **dominate** and ""When this hits a hero, they discard a card."""	Guardian Action - Attack						
-KqkGkTqrW7f8w8TfBhWQm	Thump	Yellow	2	4	5	3				Guardian, Action, Attack		Dominate						"While Thump's {p} is greater than its base {p}, it gets **dominate** and ""When this hits a hero, they discard a card."""	Guardian Action - Attack						
-JdNthFgr8LrmfPffWTmGd	Thump	Blue	3	4	4	3				Guardian, Action, Attack		Dominate						"While Thump's {p} is greater than its base {p}, it gets **dominate** and ""When this hits a hero, they discard a card."""	Guardian Action - Attack						
+pLDmjKLjJzFBWNqTFnRwb	Thump	Red	1	4	6	3				Guardian, Action, Attack		Dominate						"If this card's {p} is greater than its base, it gets **dominate** and ""When this hits a hero, they discard a card."""	Guardian Action - Attack						
+KqkGkTqrW7f8w8TfBhWQm	Thump	Yellow	2	4	5	3				Guardian, Action, Attack		Dominate						"If this card's {p} is greater than its base, it gets **dominate** and ""When this hits a hero, they discard a card."""	Guardian Action - Attack						
+JdNthFgr8LrmfPffWTmGd	Thump	Blue	3	4	4	3				Guardian, Action, Attack		Dominate						"If this card's {p} is greater than its base, it gets **dominate** and ""When this hits a hero, they discard a card."""	Guardian Action - Attack						
 8L9nbmwtGjCRCDdDBqRQc	Thunder Quake	Red	1	6	10	3				Guardian, Action, Attack		Heave 3						**Heave 3**	Guardian Action - Attack						
 P8CJhgBHBcQwFQrK6jzWq	Thunder Quake	Yellow	2	6	9	3				Guardian, Action, Attack		Heave 3						**Heave 3**	Guardian Action - Attack						
 MfFH89gTLWnFjfJjF9WFw	Thunder Quake	Blue	3	6	8	3				Guardian, Action, Attack		Heave 3						**Heave 3**	Guardian Action - Attack						
@@ -12345,9 +12345,9 @@ As an additional cost to play this, you may charge your soul any number of times
 
 Your attacks this combat chain get +1{p} for each Light card charged this way."	Light Warrior Action - Attack					No	
 TCPqgq6QMqD9FqJ6DPQjD	Valahai Riven	Yellow	2			3				Guardian, Block								When this defends, you may pay up to {r}{r}{r}. Create that many Seismic Surge tokens.	Guardian Block					No	
-zWhGF8kMMdmKdhMNdj6NH	Valda Brightaxe						21	4		Guardian, Hero, Young					Dominate		Crush	"Whenever an opponent draws a card during an action phase, create a Seismic Surge token for each card drawn this way.
+zWhGF8kMMdmKdhMNdj6NH	Valda Brightaxe						21	4		Guardian, Hero, Young					Dominate		Crush	"Whenever an opponent draws 1 or more cards during an action phase, create that many Seismic Surge tokens.
 
-At the start of your turn, if you control 3 or more Seismic Surge tokens, cards you own with **crush** gain **dominate** this turn."	Guardian Hero - Young			No			No
+At the start of your turn, if you control 3 or more Seismic Surge tokens, cards you own with crush get **dominate** this turn."	Guardian Hero - Young			No			No
 bjLbTMgMm6QRWBRrw8chQ	Valda, Seismic Impact						40	4		Guardian, Hero					Dominate		Crush	"Whenever an opponent draws 1 or more cards during an action phase, create that many Seismic Surge tokens.
 
 At the start of your turn, if you control 3 or more Seismic Surge tokens, cards you own with crush get **dominate** this turn."	Guardian Hero		No		No	No	
@@ -12388,15 +12388,15 @@ Destroy an aura permanent with cost X or less and/or up to X aura tokens, where 
 //
 
 Deal 1 arcane damage to any target."	Runeblade Instant // Lightning Instant	Yes			No	No	
-HzC8krcLnWNQLrDdHGgCr	Veiled Intentions	Red	1	1		2				Illusionist, Action		Go again						"**Go again**
+HzC8krcLnWNQLrDdHGgCr	Veiled Intentions	Red	1	1		2				Illusionist, Action		Go again						"The next attack action card you play this turn is Illusionist, and gets +4{p}, **phantasm**, and ""When this is destroyed, draw a card.""
 
-The next attack action card you play this turn is Illusionist in addition to its other card types, and gets +4{p}, **phantasm**, and ""When this is destroyed, draw a card."""	Illusionist Action						
-hnzRDH86Qm9PGp7PJ9qPG	Veiled Intentions	Yellow	2	1		2				Illusionist, Action		Go again						"**Go again**
+**Go again**"	Illusionist Action						
+hnzRDH86Qm9PGp7PJ9qPG	Veiled Intentions	Yellow	2	1		2				Illusionist, Action		Go again						"The next attack action card you play this turn is Illusionist, and gets +3{p}, **phantasm**, and ""When this is destroyed, draw a card.""
 
-The next attack action card you play this turn is Illusionist in addition to its other card types, and gets +3{p}, **phantasm**, and ""When this is destroyed, draw a card."""	Illusionist Action						
-dJKCwTcJtrgGFdpDBNg9w	Veiled Intentions	Blue	3	1		2				Illusionist, Action		Go again						"**Go again**
+**Go again**"	Illusionist Action						
+dJKCwTcJtrgGFdpDBNg9w	Veiled Intentions	Blue	3	1		2				Illusionist, Action		Go again						"The next attack action card you play this turn is Illusionist, and gets +2{p}, **phantasm**, and ""When this is destroyed, draw a card.""
 
-The next attack action card you play this turn is Illusionist in addition to its other card types, and gets +2{p}, **phantasm**, and ""When this is destroyed, draw a card."""	Illusionist Action						
+**Go again**"	Illusionist Action						
 JfGgTRqtGKdzpcQKTrFRf	Vela Flash	Red	1	1	5	3				Elemental, Runeblade, Action, Attack		Lightning Fusion						"**Lightning Fusion**
 
 If this was **fused**, you may play your next non-attack action card this turn as though it were an instant."	Elemental Runeblade Action - Attack						
@@ -12702,7 +12702,7 @@ bqC9n87LnkhrWRTFBjqgJ	War Cry of Themis	Yellow	2	0		3				Light, Illusionist, Act
 **Go again**
 
 **Instant** - Discard this, banish X cards from your soul: Turn X target cards in a banished zone face-down."	Light Illusionist Action				No	No	
-h6MnCpMCpWw8jn6GL6TtD	War Machine	Red	1	6	6	3				Mechanologist, Action, Attack		Overpower						"If you have 1 or more Evos equipped, this gets ""When this hits a hero, destroy all cards in their arsenal,""""
+h6MnCpMCpWw8jn6GL6TtD	War Machine	Red	1	6	6	3				Mechanologist, Action, Attack		Overpower						"If you have 1 or more Evos equipped, this gets ""When this hits a hero, destroy all cards in their arsenal,""
 
 - 2 or more, this costs {r}{r}{r} less to play,
 - 3 or more, this gets **overpower**,
