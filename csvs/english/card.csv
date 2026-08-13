@@ -1153,13 +1153,13 @@ hwhRPmcc9nMh6tTjLz6fw	Blessing of Patience	Yellow	2	1		3				Guardian, Action, Au
 TjwzWpWmkqtGd6WhLCmwN	Blessing of Qi	Red	1	1		3				Ninja, Action, Aura								At the start of your turn, destroy this, then create a Crouching Tiger in your banished zone. It gets +3{p} and you may play it this turn.	Ninja Action - Aura					No	
 m7ThmjJFr8DhTq96q9BJc	Blessing of Qi	Yellow	2	1		3				Ninja, Action, Aura								At the start of your turn, destroy this, then create a Crouching Tiger in your banished zone. It gets +2{p} and you may play it this turn.	Ninja Action - Aura					No	
 G9WT8dKmmQFdP7jmtqwqC	Blessing of Qi	Blue	3	1		3				Ninja, Action, Aura								At the start of your turn, destroy this, then create a Crouching Tiger in your banished zone. It gets +1{p} and you may play it this turn.	Ninja Action - Aura					No	
-wrBQwfbdTLz8HzMWFQWRn	Blessing of Salvation	Red	1	1		2				Light, Action								"If a card has been put into you hero's soul this turn, you may play this as though it were and instant.
+wrBQwfbdTLz8HzMWFQWRn	Blessing of Salvation	Red	1	1		2				Light, Action								"If a card has been put into your soul this turn, you may play this as though it were an instant.
 
 Gain 3{h}"	Light Action					No	
-hNkccNq9LrkjCNwnfFcfh	Blessing of Salvation	Yellow	2	1		2				Light, Action								"If a card has been put into you hero's soul this turn, you may play this as though it were and instant.
+hNkccNq9LrkjCNwnfFcfh	Blessing of Salvation	Yellow	2	1		2				Light, Action								"If a card has been put into your soul this turn, you may play this as though it were an instant.
 
 Gain 2{h}"	Light Action					No	
-8gG7TFrTqGj6rGFCCHztP	Blessing of Salvation	Blue	3	1		2				Light, Action								"If a card has been put into you hero's soul this turn, you may play this as though it were and instant.
+8gG7TFrTqGj6rGFCCHztP	Blessing of Salvation	Blue	3	1		2				Light, Action								"If a card has been put into your soul this turn, you may play this as though it were an instant.
 
 Gain 1{h}"	Light Action					No	
 MdwP9pznTNRcCR7z7LhgK	Blessing of Savagery	Red	1	1		3				Brute, Action, Aura								At the start of your turn, destroy this then your next attack with 6 or more base {p} this turn gets +3{p}.	Brute Action - Aura					No	
@@ -6002,7 +6002,7 @@ QjT7Pt8nTWqtfT6GbrQnJ	Invoke Nekria	Red	1	3		3				Draconic, Illusionist, Action,
 PWGBRjB7mhQJNkq896RNz	Invoke Ouvia	Red	1	2		3				Draconic, Illusionist, Action, Invocation		Transform, Go again						**Transform** target ash you control into Ouvia. **Go again**	Draconic Illusionist Action - Invocation					No	
 J6bjpTRPwRCmLTMcWTPWH	Invoke Suraya	Yellow	2	2		3				Light, Illusionist, Action, Invocation		Legendary, Transform, Go again						"**Legendary**
 
-**Transform** target Spectral Shield you control into Suraya, Arcane Herald.
+**Transform** target Spectral Shield you control into Suraya, Archangel of Knowledge.
 
 **Go again**"	Light Illusionist Action - Invocation				No	No	
 8htBPWMfPrM8bzjf8LrCr	Invoke Themai	Red	1	2		3				Draconic, Illusionist, Action, Invocation		Transform, Go again						**Transform** target ash you control into Themai. **Go again**	Draconic Illusionist Action - Invocation					No	
@@ -6573,9 +6573,9 @@ Pbw7BCzT7RnLTqz7R8TgN	Long Shot	Yellow	2	0	2	3				Ranger, Action, Arrow, Attack	
 wcQzjTdhBwLkDWQbjLG8c	Long Shot	Blue	3	0	1	3				Ranger, Action, Arrow, Attack								If this has an aim counter, it gets +2{p}.	Ranger Action - Arrow Attack						
 969HqThPzMmQtFhM9mNq8	Long Whisker Loyalty	Red	1	0		3				Draconic, Warrior, Attack Reaction								"For each Draconic chain link you control, choose 1;
 
-* Target dagger attack gets +2{p}.
-* You may attack with target dagger an additional time this turn.
-* The next time target dagger hits a hero this turn, **mark** them."	Draconic Warrior Attack Reaction				No	No	
+- Target dagger attack gets +2{p}.
+- You may attack with target dagger an additional time this turn.
+- The next time target dagger hits a hero this turn, **mark** them."	Draconic Warrior Attack Reaction				No	No	
 tNBLJKrbDpBL9TMb678wM	Longdraw Half-glove					1				Ranger, Equipment, Arms		Battleworn	Instant					"**Instant** - Destroy this, put 2 cards from your hand and/or arsenal on the bottom of your deck: Your next arrow attack this turn gets +4{p}.
 
 **Battleworn**"	Ranger Equipment - Arms				No	No	
@@ -7442,7 +7442,7 @@ Bd8JQMtjbmwQ7W6GLt7KL	Oscilio, Constella Intelligence						36	4		Elemental, Wiza
 
 **Essence of Lightning**"	Elemental Wizard Hero		No		No	No	
 nqbttmdCrgTbFBjJBzLtz	Oscilio, Forked Continuum						38	4		Lightning, Wizard, Hero			Instant					**Instant** - {r}, {t}, destroy a Lightning Flow you control: Discard a card and create a Ponder token. If an instant is discard this way, you may play it this turn.	Lightning Wizard Hero		No		No	No	
-bdD7LdLhpgdfLwzCq6jBc	Oscilio, Scion of the Third Age						19	4		Lightning, Wizard, Hero, Young			Instant					**Instant** - {r}, {t}, destroy a Lightning Flow you control: Discard a card and create a Ponder token. If an instant is discard this way, you may play it this turn.	Lightning Wizard Hero - Young			No			No
+bdD7LdLhpgdfLwzCq6jBc	Oscilio, Scion of the Third Age						19	4		Lightning, Wizard, Hero, Young			Instant					**Instant** - {r}, {t}, destroy a Lightning Flow you control: Discard a card and create a Ponder token. If an instant is discarded this way, you may play it this turn.	Lightning Wizard Hero - Young			No			No
 qgzjH8rNPpg6Jb6PgzggC	Out Muscle	Red	1	3	6	2				Generic, Action, Attack		Go again						While Out Muscle isn't defended by a card with equal or greater {p}, it has **go again**.	Generic Action - Attack					No	
 dRFbtRTF8qzzBwbqHkWtF	Out Muscle	Yellow	2	3	5	2				Generic, Action, Attack		Go again						While Out Muscle isn't defended by a card with equal or greater {p}, it has **go again**.	Generic Action - Attack					No	
 Tt9bDKwjdn6dLqhGNc9Rc	Out Muscle	Blue	3	3	4	2				Generic, Action, Attack		Go again						While Out Muscle isn't defended by a card with equal or greater {p}, it has **go again**.	Generic Action - Attack					No	
@@ -11425,8 +11425,8 @@ npt7bHwQtJJr8wKKgB79N	Tap Lessons Past	Blue	3	1		3			2	Lightning, Wizard, Action
 If this deals damage, you may {t} your hero. If you do, put an instant card from your graveyard on the bottom of your deck."	Lightning Wizard Action						
 BfCHDqCQHfNgqQGckhq7d	Tarantula Toxin	Red	1	0		3				Assassin, Attack Reaction							Stealth	"Choose 1 or both;
 
-* Target dagger attack gets +3{p}.
-* Target card defending an attack with **stealth** gets -3{d} this turn."	Assassin Attack Reaction				No	No	
+- Target dagger attack gets +3{p}.
+- Target card defending an attack with **stealth** gets -3{d} this turn."	Assassin Attack Reaction				No	No	
 QBPpDnWkrTkRMnJBkjHLq	Target Totalizer									Ranger, Equipment, Head			Action	Go again				**Action** - Destroy this: Whenever an arrow with an aim counter hits this turn, draw a card. **Go again**	Ranger Equipment - Head				No	No	
 BPHDqTPTT6nKHGjRqjFzR	Tarpit Trap	Yellow	2	0		3				Ranger, Defense Reaction, Trap							Go again	When this defends an attack with **go again**, the next time an attack action card hits this turn, effects don't trigger.	Ranger Defense Reaction - Trap					No	
 PkD89rQPqTmdPjzH6GMhf	Taylor						18	4		Shapeshifter, Hero, Young								"You may have equipment of any class or talent in your inventory. Each equipment in your starting inventory must have a different name.
@@ -11485,9 +11485,9 @@ tBqFrtGcBNQt7GnMFTPPB	Teklo Foundry Heart					2				Mechanologist, Equipment, Che
 **Battleworn**"	Mechanologist Equipment - Chest				No	No	
 JR8LzTchKj8QmqkCN7GHw	Teklo Leveler				2					Mechanologist, Weapon, Gun, 2H			Once per Turn Action	Attack, Go again				"If you have 1 or more Evos equipped, this gets ""**Once per Turn Action** - {r}{r}{r}: **Attack**,""
 
-* 2 or more, this costs {r}{r} less to activate,
-* 3 or more, this gets **go again**,
-* 4 or more, this gets +1{p}."	Mechanologist Weapon - Gun (2H)						
+- 2 or more, this costs {r}{r} less to activate,
+- 3 or more, this gets **go again**,
+- 4 or more, this gets +1{p}."	Mechanologist Weapon - Gun (2H)						
 fNFqtdWLq6tCPnnwjLLWL	Teklo Plasma Pistol				2					Mechanologist, Weapon, Pistol, 2H			Action	Attack, Go again				"**Action** - Remove a steam counter from Teklo Plasma Pistol: **Attack**
 
 **Action** - {r}: If there are no steam counters on Teklo Plasma Pistol, put a steam counter on it. **Go again**"	Mechanologist Weapon - Pistol (2H)						
