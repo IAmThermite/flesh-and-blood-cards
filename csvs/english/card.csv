@@ -12026,9 +12026,9 @@ Create a Gold token."	Event		No	No	No	No	No
 M9wMDWRkKRKjz7MBLMWLk	Tremor of Resistance					0				Guardian, Equipment, Off-Hand		Blade Break						"If you control a Seismic Surge token, this gets +2{d}.
 
 **Blade Break**"	Guardian Equipment - Off-Hand						
-hwndKRTjTJtn9FwFhMNWK	Tremor of i'Arathael	Red	1	1	4	2				Generic, Action, Attack								If a card has been put into your banished zone this turn, Tremor of i'Arathael gains +2{p}.	Generic Action - Attack					No	
-6mmfrKtTWkcBJDcphpLdc	Tremor of i'Arathael	Yellow	2	1	3	2				Generic, Action, Attack								If a card has been put into your banished zone this turn, Tremor of i'Arathael gains +2{p}.	Generic Action - Attack					No	
-gpbqrrjM8cpnFbm8dLcKz	Tremor of i'Arathael	Blue	3	1	2	2				Generic, Action, Attack								If a card has been put into your banished zone this turn, Tremor of i'Arathael gains +2{p}.	Generic Action - Attack					No	
+hwndKRTjTJtn9FwFhMNWK	Tremor of i'Arathael	Red	1	1	4	2				Generic, Action, Attack								If a card has been put into your banished zone this turn, this gets +2{p}.	Generic Action - Attack					No	
+6mmfrKtTWkcBJDcphpLdc	Tremor of i'Arathael	Yellow	2	1	3	2				Generic, Action, Attack								If a card has been put into your banished zone this turn, this gets +2{p}.	Generic Action - Attack					No	
+gpbqrrjM8cpnFbm8dLcKz	Tremor of i'Arathael	Blue	3	1	2	2				Generic, Action, Attack								If a card has been put into your banished zone this turn, this gets +2{p}.	Generic Action - Attack					No	
 mwWqPrQzL7fmQkzCFfttc	Tremorshield Sabatons					1				Guardian, Equipment, Legs		Blade Break	Instant					"**Instant** - Destroy this: Prevent the next 1 arcane damage that would be dealt to you this turn. If you've controlled a Seismic Surge token this turn, instead prevent the next 2.
 
 **Blade Break**"	Guardian Equipment - Legs				No	No	
