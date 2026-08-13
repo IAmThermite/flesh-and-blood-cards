@@ -3320,13 +3320,13 @@ When Dunebreaker Cenipai is destroyed, create an Ash token.
 gzLPbbGKHBB9fKJdkGdJg	Durendal				3					Warrior, Weapon, Sword, 2H			Once per Turn Action	Attack				"**Once per Turn Action** - {r}: **Attack**
 
 If this has a +1{p} counter, reaction cards get -1{d} while defending it."	Warrior Weapon - Sword (2H)				No	No	
-kPfFLfQ8phzz6tpjd9gMb	Dusk Path Pilgrimage	Red	1	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gains +3{p} and ""If this hits, you may attack an additional time with this weapon this turn.""
+kPfFLfQ8phzz6tpjd9gMb	Dusk Path Pilgrimage	Red	1	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gets +3{p} and ""When this hits, you may attack an additional time with this weapon this turn.""
 
 **Go again**"	Warrior Action					No	
-GwqcBWBWfNQkW8tzBhfLc	Dusk Path Pilgrimage	Yellow	2	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gains +2{p} and ""If this hits, you may attack an additional time with this weapon this turn.""
+GwqcBWBWfNQkW8tzBhfLc	Dusk Path Pilgrimage	Yellow	2	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gets +2{p} and ""When this hits, you may attack an additional time with this weapon this turn.""
 
 **Go again**"	Warrior Action					No	
-ntr99CMKDbhqRkBRFMbJN	Dusk Path Pilgrimage	Blue	3	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gains +1{p} and ""If this hits, you may attack an additional time with this weapon this turn.""
+ntr99CMKDbhqRkBRFMbJN	Dusk Path Pilgrimage	Blue	3	1		3				Warrior, Action		Go again						"Your next weapon attack this turn gets +1{p} and ""When this hits, you may attack an additional time with this weapon this turn.""
 
 **Go again**"	Warrior Action					No	
 HkDzFgnhCBGn6K9w7RWtC	Duskblade				2					Runeblade, Weapon, Sword, 2H			Once per Turn Action	Attack				"**Once per Turn Action** - {r}: **Attack**
@@ -4888,8 +4888,8 @@ H6nDPCh7gTgWLfzGdhHB7	Golden Cog									Mechanologist, Token, Cog, Item		Crank	
 
 This enters the arena with a steam counter. At the start of your turn, destroy this unless you remove a steam counter from it."	Mechanologist Token - Cog Item						
 bnQmtqDtDLfpqzfLfFqMR	Golden Company	Red	1	2		6				Warrior, Defense Reaction								You may destroy a Gold you control rather than pay this card's {r} cost.	Warrior Defense Reaction					No	
-f8B7rM7kBcncrTftJtntn	Golden Company	Yellow	2	2		6				Warrior, Defense Reaction								You may destroy a Gold you control rather than pay this card's {r} cost.	Warrior Defense Reaction					No	
-cF8ftkLJ8W8jzpTzzGHTc	Golden Company	Blue	3	2		6				Warrior, Defense Reaction								You may destroy a Gold you control rather than pay this card's {r} cost.	Warrior Defense Reaction					No	
+f8B7rM7kBcncrTftJtntn	Golden Company	Yellow	2	2		5				Warrior, Defense Reaction								You may destroy a Gold you control rather than pay this card's {r} cost.	Warrior Defense Reaction					No	
+cF8ftkLJ8W8jzpTzzGHTc	Golden Company	Blue	3	2		4				Warrior, Defense Reaction								You may destroy a Gold you control rather than pay this card's {r} cost.	Warrior Defense Reaction					No	
 hWW6zdd6hQ7CwbBt6wc7d	Golden Gait					2				Warrior, Equipment, Legs		Legendary, Olympia Specialization, Temper						"**Legendary Olympia Specialization**
 
 This counts as a Gold.
@@ -6036,9 +6036,9 @@ DWRBqLngTDmHThkjT6LFn	Ironsong Pride	Red	1	1						Warrior, Instant, Aura								
 When this leaves the arena, remove all +1{p} counters from swords you control.
 
 At the beginning of your end phase, if a sword has not hit this turn, destroy this."	Warrior Instant - Aura				No	No	
-9Kp6GPmC6WKb7NqNPwNrd	Ironsong Response	Red	1	0		3				Warrior, Attack Reaction		Reprise						**Reprise** - If the defending hero has defended with a card from their hand this chain link, target weapon attack gains +3{p}.	Warrior Attack Reaction						
-L7jKNGkRd9WwpN6NQKGbf	Ironsong Response	Yellow	2	0		3				Warrior, Attack Reaction		Reprise						**Reprise** - If the defending hero has defended with a card from their hand this chain link, target weapon attack gains +2{p}.	Warrior Attack Reaction						
-tnLDhJDNRMRQrcTzBkTF9	Ironsong Response	Blue	3	0		3				Warrior, Attack Reaction		Reprise						**Reprise** - If the defending hero has defended with a card from their hand this chain link, target weapon attack gains +1{p}.	Warrior Attack Reaction						
+9Kp6GPmC6WKb7NqNPwNrd	Ironsong Response	Red	1	0		3				Warrior, Attack Reaction		Reprise						**Reprise** - If the defending hero has defended with a card from their hand this chain link, target weapon attack gets +3{p}.	Warrior Attack Reaction						
+L7jKNGkRd9WwpN6NQKGbf	Ironsong Response	Yellow	2	0		3				Warrior, Attack Reaction		Reprise						**Reprise** - If the defending hero has defended with a card from their hand this chain link, target weapon attack gets +2{p}.	Warrior Attack Reaction						
+tnLDhJDNRMRQrcTzBkTF9	Ironsong Response	Blue	3	0		3				Warrior, Attack Reaction		Reprise						**Reprise** - If the defending hero has defended with a card from their hand this chain link, target weapon attack gets +1{p}.	Warrior Attack Reaction						
 JtPhDg9PkWmHb6jpCCPjz	Ironsong Versus					2				Warrior, Equipment, Arms		Temper	Once per Turn Action	Go again				"**Once per Turn Action** - **{r}:** Your next sword attack this turn gets ""When this hits a hero, create a Courage token.""  **Go again**
 
 **Temper**"	Warrior Equipment - Arms				No	No	
@@ -8243,7 +8243,7 @@ This enters the arena with a steam counter. At the start of your turn, destroy t
 KHwWtFzhjTgbrJJrkGjFc	Prismatic Shield	Red	1	3						Illusionist, Instant								Create 3 Spectral Shield tokens.	Illusionist Instant					No	
 GwNppkqrrrfrMgRWhT9rr	Prismatic Shield	Yellow	2	3						Illusionist, Instant								Create 2 Spectral Shield tokens.	Illusionist Instant					No	
 bFjnrzdmFLkwdBbWHnGfR	Prismatic Shield	Blue	3	3						Illusionist, Instant								Create a Spectral Shield token.	Illusionist Instant					No	
-mRCfW6wBLjzRzjnNrKqQn	Prized Galea					2				Warrior, Equipment, Head		Olympia Specialization, Temper	Attack Reaction					"**Olympia Specialization**
+mRCfW6wBLjzRzjnNrKqQn	Prized Galea					2				Warrior, Equipment, Head		Olympia Specialization, Temper, Wager	Attack Reaction					"**Olympia Specialization**
 
 **Attack Reaction** - {r}, destroy this: Target weapon attack you control **wagers** a Gold token with the defending hero.
 
@@ -10040,13 +10040,13 @@ When Show Time! enters the arena, search your deck for a Guardian attack action 
 
 At the beginning of your action phase, destroy Show Time! then draw a card."	Guardian Action - Aura					No	
 Jdn7kNmFnCNPDRjp7mg9m	Show of Strength	Red	1	2	8	3				Brute, Action, Attack								This gets -1{p} for each card with 6 or more {p} defending it.	Brute Action - Attack				No	No	
-dLHqbBN9bkQ6DtLtprJ7g	Showdown	Red	1	1		3				Warrior, Action		Go again					Wager	"Your next sword attack this turn gets +3{p} and ""When this attacks, **wager** with the defending hero. The winner creates a Flurry token.""
+dLHqbBN9bkQ6DtLtprJ7g	Showdown	Red	1	1		3				Warrior, Action		Go again, Wager					Wager	"Your next sword attack this turn gets +3{p} and ""When this attacks, **wager** with the defending hero. The winner creates a Flurry token.""
 
 **Go again**"	Warrior Action						
-dHHDMCPmjB9nfctGcbfDF	Showdown	Yellow	2	1		3				Warrior, Action		Go again					Wager	"Your next sword attack this turn gets +2{p} and ""When this attacks, **wager** with the defending hero. The winner creates a Flurry token.""
+dHHDMCPmjB9nfctGcbfDF	Showdown	Yellow	2	1		3				Warrior, Action		Go again, Wager					Wager	"Your next sword attack this turn gets +2{p} and ""When this attacks, **wager** with the defending hero. The winner creates a Flurry token.""
 
 **Go again**"	Warrior Action						
-RPKmTWBNkJRdCQk79mHPR	Showdown	Blue	3	1		3				Warrior, Action		Go again					Wager	"Your next sword attack this turn gets +1{p} and ""When this attacks, **wager** with the defending hero. The winner creates a Flurry token.""
+RPKmTWBNkJRdCQk79mHPR	Showdown	Blue	3	1		3				Warrior, Action		Go again, Wager					Wager	"Your next sword attack this turn gets +1{p} and ""When this attacks, **wager** with the defending hero. The winner creates a Flurry token.""
 
 **Go again**"	Warrior Action						
 88L7NzD77t8wk8QdnrwKR	Shred	Red	1	0		3				Assassin, Attack Reaction								Target card defending an Assassin attack gets -4{d} this combat chain.	Assassin Attack Reaction					No	
@@ -10945,9 +10945,9 @@ gt6TDJd9dG8CcMfwHqdtP	Steel on Steel	Blue	3	0		1				Warrior, Defense Reaction			
 6GcRhhrGgk8TwpLJpCjPk	Steel to the Dome	Red	1	1		3				Warrior, Action		Go again						"Your next sword attack this turn gets +4{p} and ""When this hits a Warrior hero, they discard a card.""
 
 **Go again**"	Warrior Action					No	
-dmnK9rtgp6tmCbN9LR9qQ	Steelblade Shunt	Red	1	1		6				Warrior, Defense Reaction								If Steelblade Shunt defends a weapon attack, deal 1 damage to the attacking hero.	Warrior Defense Reaction					No	
-JbTJprLM9CcMPHwFgL888	Steelblade Shunt	Yellow	2	1		5				Warrior, Defense Reaction								If Steelblade Shunt defends a weapon attack, deal 1 damage to the attacking hero.	Warrior Defense Reaction					No	
-CqjGDbBG9WMHfdcpF8fqJ	Steelblade Shunt	Blue	3	1		4				Warrior, Defense Reaction								If Steelblade Shunt defends a weapon attack, deal 1 damage to the attacking hero.	Warrior Defense Reaction					No	
+dmnK9rtgp6tmCbN9LR9qQ	Steelblade Shunt	Red	1	1		6				Warrior, Defense Reaction								If this defends a weapon attack, deal 1 damage to the attacking hero.	Warrior Defense Reaction					No	
+JbTJprLM9CcMPHwFgL888	Steelblade Shunt	Yellow	2	1		5				Warrior, Defense Reaction								If this defends a weapon attack, deal 1 damage to the attacking hero.	Warrior Defense Reaction					No	
+CqjGDbBG9WMHfdcpF8fqJ	Steelblade Shunt	Blue	3	1		4				Warrior, Defense Reaction								If this defends a weapon attack, deal 1 damage to the attacking hero.	Warrior Defense Reaction					No	
 LD76nrjCTwzcf6Qk8cCjW	Steelblade Supremacy	Red	1	1		3				Warrior, Action		Dorinthea Specialization, Go again						"**Dorinthea Specialization**
 
 Until end of turn, target weapon gains +2{p} and ""Whenever this weapon hits, draw a card.""
@@ -12730,8 +12730,8 @@ DHrjJHjkLLHGd8FPnBrwW	Wee Wrecking Ball	Yellow	2	0	3	3				Guardian, Action, Atta
 
 **Crush** - When this deals 4 or more damage to a hero, destroy a card in their arsenal."	Guardian Action - Attack						
 MctmJQnjfD8Nj8qWrCDmK	Weeping Battleground	Red	1	0		3			1	Runeblade, Defense Reaction								You may banish an aura from your graveyard. If you do, deal 1 arcane damage to target hero.	Runeblade Defense Reaction						
-F6g7zmkKfkC6kRGnJf6GK	Weeping Battleground	Yellow	2	0		3			1	Runeblade, Defense Reaction								You may banish an aura from your graveyard. If you do, deal 1 arcane damage to target hero.	Runeblade Defense Reaction						
-m7p7hTRTHwWpBMrpW7HzD	Weeping Battleground	Blue	3	0		3			1	Runeblade, Defense Reaction								You may banish an aura from your graveyard. If you do, deal 1 arcane damage to target hero.	Runeblade Defense Reaction						
+F6g7zmkKfkC6kRGnJf6GK	Weeping Battleground	Yellow	2	0		2			1	Runeblade, Defense Reaction								You may banish an aura from your graveyard. If you do, deal 1 arcane damage to target hero.	Runeblade Defense Reaction						
+m7p7hTRTHwWpBMrpW7HzD	Weeping Battleground	Blue	3	0		1			1	Runeblade, Defense Reaction								You may banish an aura from your graveyard. If you do, deal 1 arcane damage to target hero.	Runeblade Defense Reaction						
 zngmGjhrGpJfmnbMP87JP	Well Grounded					0				Earth, Equipment, Legs			Instant					**Instant** - Destroy this: Prevent the next 2 damage that would be dealt to you this turn. Activate this only if there are 4 or more Earth cards in your banished zone.	Earth Equipment - Legs						
 zLcR9wbtJCfBQLFpntDFg	What Happens Next?	Blue	3	0		2				Guardian, Instant, Aura		Suspense						"**Suspense**
 
