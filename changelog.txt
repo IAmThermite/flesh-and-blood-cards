@@ -1086,3 +1086,6 @@ HER058, HER059, HER060, HER061, HER062, HER063, HER064, HER065, HER066, JDG001, 
 - Updated functional text for Dusk Path Pilgrimage, Ironsong Response, and Steelblade Shunt - update credit: manwaring
 - Fixed wrong block value on Golden Company (Yellow and Blue) and Weeping Battleground (Yellow and Blue) - bugfix credit: manwaring
 - Fixed missing Wager keyword on Prized Galea - bugfix credit: manwaring
+
+08-15-26:
+- Sync updated functional text with CardVault - update credit: manwaring
