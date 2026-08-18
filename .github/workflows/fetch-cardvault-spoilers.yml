@@ -20,10 +20,10 @@ on:
         required: false
         type: boolean
         default: false
-      base:
-        description: "Branch to cut the spoilers branch from. Blank uses develop. Point this
-          at a feature branch to try the workflow out before it's merged - the job runs the
-          scripts from whatever it checks out, so they have to exist on this branch."
+      data:
+        description: "Branch whose CSVs to read, cut the spoilers branch from, and open the
+          pull request against. Blank uses the default branch. The helper scripts themselves
+          always come from the default branch whatever this says."
         required: false
         type: string
 
@@ -32,7 +32,13 @@ permissions:
   pull-requests: write
 
 env:
-  BASE_BRANCH: ${{ inputs.base || 'develop' }}
+  # The tooling always comes from the default branch, so a run can't be using a stale copy of
+  # the scripts that happens to be sitting on a data branch.
+  SCRIPT_BRANCH: ${{ github.event.repository.default_branch }}
+  # The CSVs, on the other hand, are read from whichever branch is being worked on: the
+  # spoilers branch is cut from it and the pull request opened against it. Handy when the
+  # sets being spoiled need adding to set.csv on a branch first.
+  DATA_BRANCH: ${{ inputs.data || github.event.repository.default_branch }}
   # Sets that share a release date belong in one group, because a card printed in both would
   # otherwise land on two branches at once. Edit this list as spoiler seasons start and end.
   SPOILER_GROUPS: '["IAR AMA", "MPA AMO"]'
@@ -82,19 +88,36 @@ jobs:
 
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.BASE_BRANCH }}
+          ref: ${{ env.DATA_BRANCH }}
           fetch-depth: 0
 
       - name: Continue the group's branch, or start it
         env:
           BRANCH: ${{ steps.group.outputs.branch }}
         run: |
+          git fetch --no-tags origin "$SCRIPT_BRANCH" "$DATA_BRANCH"
           if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
             echo "Continuing $BRANCH"
             git checkout -B "$BRANCH" "origin/$BRANCH"
           else
-            echo "Starting $BRANCH from $BASE_BRANCH"
-            git checkout -B "$BRANCH" "origin/$BASE_BRANCH"
+            echo "Starting $BRANCH from $DATA_BRANCH"
+            git checkout -B "$BRANCH" "origin/$DATA_BRANCH"
+          fi
+
+      - name: Take the helper scripts from the default branch
+        run: |
+          # The working tree is the data branch, which may carry an older copy of the tooling -
+          # a long lived spoilers branch was cut from whatever develop looked like at the time.
+          # Overwrite helper-scripts with the default branch's version so every run uses the
+          # same tooling against whatever data it was pointed at.
+          #
+          # --worktree leaves the index alone, so these files can't end up in the commit. The
+          # commit step stages csvs and json by name anyway, but belt and braces.
+          if [ "$(git rev-parse HEAD)" = "$(git rev-parse "origin/$SCRIPT_BRANCH")" ]; then
+            echo "Already on the default branch's tooling, nothing to overlay"
+          else
+            git restore --source "origin/$SCRIPT_BRANCH" --worktree -- helper-scripts
+            echo "helper-scripts taken from origin/$SCRIPT_BRANCH"
           fi
 
       # Python first: node-gyp needs a python on PATH to build json-validation's pajv.
@@ -219,7 +242,7 @@ jobs:
           else
             python helper-scripts/fetch-cardvault-spoilers/checklist.py \
               --items "$CHECKLIST" --output "$body"
-            gh pr create --base "$BASE_BRANCH" --head "$BRANCH" \
+            gh pr create --base "$DATA_BRANCH" --head "$BRANCH" \
               --title "CardVault spoilers: $SETS" --body-file "$body"
           fi
 
