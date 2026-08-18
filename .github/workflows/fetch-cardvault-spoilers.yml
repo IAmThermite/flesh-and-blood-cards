@@ -20,13 +20,19 @@ on:
         required: false
         type: boolean
         default: false
+      base:
+        description: "Branch to cut the spoilers branch from. Blank uses develop. Point this
+          at a feature branch to try the workflow out before it's merged - the job runs the
+          scripts from whatever it checks out, so they have to exist on this branch."
+        required: false
+        type: string
 
 permissions:
   contents: write
   pull-requests: write
 
 env:
-  BASE_BRANCH: develop
+  BASE_BRANCH: ${{ inputs.base || 'develop' }}
   # Sets that share a release date belong in one group, because a card printed in both would
   # otherwise land on two branches at once. Edit this list as spoiler seasons start and end.
   SPOILER_GROUPS: '["IAR AMA", "MPA AMO"]'
@@ -74,7 +80,7 @@ jobs:
           echo "slug=$slug" >> "$GITHUB_OUTPUT"
           echo "branch=spoilers/$slug" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ env.BASE_BRANCH }}
           fetch-depth: 0
@@ -92,11 +98,11 @@ jobs:
           fi
 
       # Python first: node-gyp needs a python on PATH to build json-validation's pajv.
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version-file: helper-scripts/fetch-cardvault-spoilers/.python-version
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version-file: helper-scripts/generate-unique-ids/.nvmrc
 
