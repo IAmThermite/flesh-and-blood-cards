@@ -4,6 +4,7 @@
 
 - [Clean CSVs](/helper-scripts/clean-csvs/README.md)
 - [Download All Images](/helper-scripts/download-all-images/README.md)
+- [Fetch CardVault Spoilers](/helper-scripts/fetch-cardvault-spoilers/README.md)
 - [Generate Artists](/helper-scripts/generate-artists/README.md)
 - [Generate CSV HTMLs](/helper-scripts/generate-artists/README.md)
 - [Generate JSON](/helper-scripts/generate-json/README.md)
@@ -24,6 +25,8 @@
   - Shortcut to run the Clean CSVs script from the helper-scripts folder.
 - `./download-all-images.sh`
   - Shortcut to run the Download All Images script from the helper-scripts folder.
+- `./fetch-cardvault-spoilers.sh`
+  - Shortcut to run the Fetch CardVault Spoilers script from the helper-scripts folder.
 - `./generate-artists.sh`
   - Shortcut to run the Generate Artists script from the helper-scripts folder.
 - `./generate-htmls.sh`

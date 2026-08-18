@@ -1,0 +1,224 @@
+name: Fetch CardVault spoilers
+
+# CardVault publishes a batch of cards at once when an embargo lifts, so most runs find
+# nothing and then one finds a hundred. Each group of sets gets its own branch and its own
+# pull request, which stay open and grow for the length of the spoiler season.
+
+on:
+  schedule:
+    # 6 hourly. The publishing times aren't predictable, but they're scheduled rather than
+    # continuous, so an hour's latency costs nothing - a person still has to do the data entry.
+    - cron: "15 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      sets:
+        description: 'One-off group, e.g. "MPW AOL". Blank runs the groups listed in the workflow.'
+        required: false
+        type: string
+      full:
+        description: "Re-check every card in the set, not just unseen set numbers"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  BASE_BRANCH: develop
+  # Sets that share a release date belong in one group, because a card printed in both would
+  # otherwise land on two branches at once. Edit this list as spoiler seasons start and end.
+  SPOILER_GROUPS: '["IAR AMA", "MPA AMO"]'
+
+jobs:
+  groups:
+    name: Work out the groups
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.pick.outputs.matrix }}
+    steps:
+      - name: Pick the dispatch group or the scheduled ones
+        id: pick
+        env:
+          REQUESTED: ${{ inputs.sets }}
+        run: |
+          if [ -n "$REQUESTED" ]; then
+            matrix=$(jq -cn --arg g "$REQUESTED" '[$g]')
+          else
+            matrix=$(jq -c . <<< "$SPOILER_GROUPS")
+          fi
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+          echo "Groups: $matrix" >> "$GITHUB_STEP_SUMMARY"
+
+  spoilers:
+    name: ${{ matrix.group }}
+    needs: groups
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        group: ${{ fromJson(needs.groups.outputs.matrix) }}
+    concurrency:
+      # Two runs of the same group would race on the same branch.
+      group: cardvault-spoilers-${{ matrix.group }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Name the branch for this group
+        id: group
+        env:
+          GROUP: ${{ matrix.group }}
+        run: |
+          slug=$(printf '%s\n' $GROUP | tr '[:upper:]' '[:lower:]' | sort | paste -sd- -)
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          echo "branch=spoilers/$slug" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BASE_BRANCH }}
+          fetch-depth: 0
+
+      - name: Continue the group's branch, or start it
+        env:
+          BRANCH: ${{ steps.group.outputs.branch }}
+        run: |
+          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+            echo "Continuing $BRANCH"
+            git checkout -B "$BRANCH" "origin/$BRANCH"
+          else
+            echo "Starting $BRANCH from $BASE_BRANCH"
+            git checkout -B "$BRANCH" "origin/$BASE_BRANCH"
+          fi
+
+      # Python first: node-gyp needs a python on PATH to build json-validation's pajv.
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: helper-scripts/fetch-cardvault-spoilers/.python-version
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: helper-scripts/generate-unique-ids/.nvmrc
+
+      - name: Install helper scripts dependencies
+        run: |
+          # generate-json is the only Python script with a dependency; the rest are stdlib.
+          python -m pip install --quiet Markdown
+          # The .sh wrappers never install these themselves, so do it here.
+          for dir in generate-unique-ids update-card-legality json-validation; do
+            npm ci --silent --prefix "helper-scripts/$dir"
+          done
+
+      - name: Fetch newly published cards
+        id: fetch
+        working-directory: helper-scripts/fetch-cardvault-spoilers
+        env:
+          SPOILER_SETS: ${{ matrix.group }}
+          FULL_SWEEP: ${{ inputs.full && '--full' || '' }}
+        run: |
+          set +e
+          python main.py $FULL_SWEEP
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Make sure the branch matches what the script ran
+        env:
+          EXPECTED: ${{ steps.group.outputs.slug }}
+          ACTUAL: ${{ steps.fetch.outputs.slug }}
+          BRANCH: ${{ steps.group.outputs.branch }}
+        run: |
+          if [ "$EXPECTED" != "$ACTUAL" ]; then
+            echo "::error::checked out $BRANCH but the run is for '$ACTUAL' - the workflow and"
+            echo "::error::main.py disagree about how a group's slug is built"
+            exit 1
+          fi
+
+      - name: Put the run report in the job summary
+        if: always() && steps.fetch.outputs.report != ''
+        env:
+          REPORT: ${{ steps.fetch.outputs.report }}
+        run: '[ -f "$REPORT" ] && cat "$REPORT" >> "$GITHUB_STEP_SUMMARY" || true'
+
+      - name: Mint the Unique IDs and regenerate the data set
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          # main.py leaves Unique IDs blank because generate-unique-ids is what mints them,
+          # so --link has to come after it to fill in the references that needed them.
+          ./helper-scripts/generate-unique-ids.sh 2>&1 | tee -a /tmp/pipeline.log
+          python helper-scripts/fetch-cardvault-spoilers/main.py --link 2>&1 | tee -a /tmp/pipeline.log
+          ./helper-scripts/pre-commit-scripts.sh 2>&1 | tee -a /tmp/pipeline.log
+
+      - name: Check nothing in the pipeline failed quietly
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          # Most of the helper-script wrappers end with `cd ..`, so a Python script that dies
+          # still leaves the wrapper exiting 0 and pre-commit-scripts.sh reporting success.
+          # Treat an unexpected traceback in the output as a failure instead.
+          total=$(grep -c "Traceback (most recent call last)" /tmp/pipeline.log || true)
+
+          # validate-references reads row['Art Variation'] where the column is called
+          # 'Art Variations', so it dies part way through on every run, on unmodified repo
+          # data, whatever this workflow added. Tolerate that one until it's fixed and the
+          # reference checks can actually run; fail on anything new.
+          known=$(grep -c "KeyError: 'Art Variation'" /tmp/pipeline.log || true)
+
+          if [ "$total" -gt "$known" ]; then
+            echo "::error::a helper script raised an unexpected exception"
+            grep -A6 "Traceback (most recent call last)" /tmp/pipeline.log | head -60
+            exit 1
+          fi
+          if [ "$known" -gt 0 ]; then
+            echo "::warning::validate-references still crashes on row['Art Variation'] - the"
+            echo "::warning::reference checks are not running. See helper-scripts/validate-references."
+          fi
+
+      - name: Commit to the group's branch
+        if: steps.fetch.outputs.changed == 'true'
+        env:
+          BRANCH: ${{ steps.group.outputs.branch }}
+          SETS: ${{ steps.fetch.outputs.sets }}
+          CARDS: ${{ steps.fetch.outputs.cards }}
+          PRINTINGS: ${{ steps.fetch.outputs.printings }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Named paths rather than -A: the run leaves a report, a checklist and a pending
+          # associations file in the script folder that have no business being committed.
+          git add csvs json
+          if git diff --cached --quiet; then
+            echo "Nothing staged after regenerating - not committing"
+            exit 0
+          fi
+          git commit -m "Add $CARDS cards and $PRINTINGS printings for $SETS from CardVault"
+          git push origin "$BRANCH"
+
+      - name: Open the pull request, or add to the one that's open
+        if: steps.fetch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ steps.group.outputs.branch }}
+          SETS: ${{ steps.fetch.outputs.sets }}
+          CHECKLIST: ${{ steps.fetch.outputs.checklist }}
+        run: |
+          body=$(mktemp)
+          number=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+
+          if [ -n "$number" ]; then
+            # Read the body back and merge into it, so a box someone ticked stays ticked.
+            gh pr view "$number" --json body --jq .body > "$body"
+            python helper-scripts/fetch-cardvault-spoilers/checklist.py \
+              --items "$CHECKLIST" --body "$body" --output "$body"
+            gh pr edit "$number" --body-file "$body"
+            echo "Updated PR #$number"
+          else
+            python helper-scripts/fetch-cardvault-spoilers/checklist.py \
+              --items "$CHECKLIST" --output "$body"
+            gh pr create --base "$BASE_BRANCH" --head "$BRANCH" \
+              --title "CardVault spoilers: $SETS" --body-file "$body"
+          fi
+
+      - name: Fail if the run couldn't handle something
+        if: steps.fetch.outputs.exit_code != '0'
+        run: |
+          echo "::error::the fetch reported blocked sets or errors - see the job summary"
+          exit 1
