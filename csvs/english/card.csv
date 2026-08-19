@@ -1327,6 +1327,13 @@ If the discarded card has 6 or more {p}, draw 2 cards and this gets **go again**
 nGHhHDgKmGgb7gjwWjHJF	Bloodsheath Skeleta					2				Runeblade, Equipment, Chest		Temper	Instant					"**Instant** - Destroy this: The next attack action card and non-attack action card you play this turn get ""This card costs {r} less to play for each Runechant you control.""
 
 **Temper**"	Runeblade Equipment - Chest				No	No	
+NJBjjBCBw9qKRBrrKMnHh	Bloodsong Gloomblade	Red	1	0	2	3				Shadow, Runeblade, Action, Attack								"You may play this from your banished zone.
+
+**Usurp**
+
+When this hits a hero, you may banish target aura permanent they control.
+
+**Blood Debt**"	Shadow Runeblade Action - Attack					No	
 qMJTpNtk6pbwMTqkRzhRG	Bloodspill Invocation	Red	1	1		2				Runeblade, Action, Aura		Go again						"**Go again**
 
 When an attack action card you control hits, destroy this, then create 3 Runechant tokens.
@@ -3643,6 +3650,11 @@ ncdtKzpTdWBQLQq8bqtKk	Emboldened by the Crowd	Yellow	2	3		6				Revered, Defense 
 7LBccf7qnHMdgb996CcWz	Embrace Adversity					2				Generic, Equipment, Arms		Blade Break						"This may only defend an attack if the attack's controller has destroyed a Might token this turn.
 
 **Blade Break**"	Generic Equipment - Arms						
+kRqrmDcRPWq6hJT9mddz6	Embrace Sin	Yellow	2	1		2				Shadow, Runeblade, Action								"Your next attack this turn gets +2{p}.
+
+You may play an aura with Runechant in its name from your banished zone this turn.
+
+**Go again**"	Shadow Runeblade Action					No	
 8D9wTFwLWtN9hkFwDgRWW	Embraforged Gauntlet					2				Shadow, Equipment, Arms		Temper, Blood Debt						"If this would be put into your graveyard from anywhere, instead banish it.
 
 **Temper**
@@ -5272,6 +5284,9 @@ pBBtgw6Ft8RrfLHrjnnp6	Hand Behind the Pen	Red	1	2	6	2				Generic, Action, Attack
 8qzF9KbHtkNHpGzpdGWhk	Hand of Vengeance					1				Draconic, Equipment, Arms		Blade Break	Attack Reaction					"**Attack Reaction** - Destroy this: Target attack that is attacking Arakni gets +1{p}.
 
 **Blade Break**"	Draconic Equipment - Arms						
+rWG9McLr7RFGtDPjzRQF6	Harbinger of Destruction	Red	1	8	13	3				Shadow, Action, Attack								"As an additional cost to play this, banish a card from your hand. If a Shadow card was banished this way, this gets ""When this hits, create 2 Gate to i'Arathael tokens.""
+
+**Blood Debt**"	Shadow Action - Attack					No	
 6j78cmbzJ6RkG9FKBgfp9	Hard Knuckle					0				Generic, Equipment, Arms								When you play an attack action card, you may destroy this. If you do, the attack gets +1{p}.	Generic Equipment - Arms						
 gTNzqJLcQhkLkhBwKrpBQ	Harmonized Kodachi				1					Ninja, Weapon, Dagger, 1H		Go again	Once per Turn Action	Attack				"**Once per Turn Action** - {r}: **Attack**
 
@@ -10086,6 +10101,12 @@ If 1 or more cards with 6 or more {p} are banished this way, this gets +1{p}. 2 
 68DfhgPTKWg6PgHDKm68h	Shadowrealm Reaper	Yellow	2	2	5	3				Shadow, Action, Attack								"If this was played from your banished zone, it gets +1{p} and **go again**.
 
 **Blood Debt **"	Shadow Action - Attack					No	
+CDP7nGdbQCqq6kqHTjngC	Shadowrealm Strength	Red	1	0		3				Shadow, Necromancer, Action								"You may put a card from your banished zone into your graveyard. If it's a zombie, your next attack this turn gets +3{p}.
+
+**Go again**"	Shadow Necromancer Action						
+NfBL88JhWPGhFGNtrDjqw	Shadowrealm Strength	Blue	3	0		3				Shadow, Necromancer, Action								"You may put a card from your banished zone into your graveyard. If it's a zombie, your next attack this turn gets +1{p}.
+
+**Go again**"	Shadow Necromancer Action						
 DMH8PRWDTmMm6mWtQqttn	Shake Down	Red	1	2	6	3				Assassin, Action, Attack		Uzuri Specialization						"**Uzuri Specialization**
 
 If you've played or activated an attack reaction this chain link, this gets ""When this hits a hero, choose red, yellow, or blue. They reveal their hand. Banish a card of the chosen color."""	Assassin Action - Attack				No	No	
@@ -12202,6 +12223,9 @@ t6C6cwNqDpQpRQKPtpk8p	Tribute to Demolition	Blue	3	2	4	3				Shadow, Brute, Actio
 If a card with 6 or more {p} is banished this way, this gets +2{p}.
 
 **Blood Debt**"	Shadow Brute Action - Attack						
+cWNQ9wGnPWqMG9cNtWrBz	Tribute to Greater Power	Red	1	2	6	2				Shadow, Action, Attack								"**Instant** - Banish this from your hand: Your next attack this turn gets **overpower**.
+
+**Blood Debt**"	Shadow Action - Attack					No	
 wBDCLLQfL9TF6MCfTFGWT	Tribute to the Legions of Doom	Red	1	3	7	3				Shadow, Brute, Action, Attack		Blood Debt						"As an additional cost to play this, banish a random card from your hand.
 
 If a card with 6 or more {p} is banished this way, this gets +2{p}.
@@ -12603,6 +12627,27 @@ WnnC99QDftcbRMNcKKwmk	Vestige of Flagellation					2				Shadow, Equipment, Chest	
 PTjbDJpDMHwR6TdJkBLtr	Vestige of Sol					1				Light, Equipment, Chest		Blade Break						"If a card has been put into your soul this turn, if you pitch a Light card, instead gain that many {r} plus 1.
 
 **Blade Break**"	Light Equipment - Chest				No	No	
+jt7wqDbcJ8nkWj8hrQPNn	Vexing Gloomblade	Red	1	3	5	3				Shadow, Runeblade, Action, Attack								"You may play this from your banished zone.
+
+**Usurp**
+
+When this hits a hero, deal 2 arcane damage to any target.
+
+**Blood Debt**"	Shadow Runeblade Action - Attack					No	
+K7CGzfH9Qjp9GGcMwTzwR	Vexing Gloomblade	Yellow	2	3	4	3				Shadow, Runeblade, Action, Attack								"You may play this from your banished zone.
+
+**Usurp**
+
+When this hits a hero, deal 2 arcane damage to any target.
+
+**Blood Debt**"	Shadow Runeblade Action - Attack					No	
+NDC7RPmDbzDKjRpCbcdKh	Vexing Gloomblade	Blue	3	3	3	3				Shadow, Runeblade, Action, Attack								"You may play this from your banished zone.
+
+**Usurp**
+
+When this hits a hero, deal 2 arcane damage to any target.
+
+**Blood Debt**"	Shadow Runeblade Action - Attack					No	
 BCBhknzq8gBBhFFFFTGLc	Vexing Malice	Red	1	1	3	3			2	Runeblade, Action, Attack								When this attacks, deal 2 arcane damage to target hero.	Runeblade Action - Attack					No	
 WppPJNLCfdp8kwwjHDgBT	Vexing Malice	Yellow	2	1	2	3			2	Runeblade, Action, Attack								When this attacks, deal 2 arcane damage to target hero.	Runeblade Action - Attack					No	
 7zjjndpnJwKGK9gLzmzKq	Vexing Malice	Blue	3	1	1	3			2	Runeblade, Action, Attack								When this attacks, deal 2 arcane damage to target hero.	Runeblade Action - Attack					No	
