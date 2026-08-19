@@ -1432,7 +1432,7 @@ ffTGRRhMJmDGQQK9WPw6t	Boneyard Marauder	Yellow	2	1	5	3				Shadow, Brute, Action,
 cW9DC9PbTtg8nqwr7JcLD	Boneyard Marauder	Blue	3	1	4	3				Shadow, Brute, Action, Attack		Blood Debt						"As an additional cost to play this, banish 3 random cards from your graveyard.
 
 **Blood Debt**"	Shadow Brute Action - Attack						
-8gGBjzcNg9D9fnFQRpMqz	Boo, Resident Spook	Yellow	2	1	2	2				Pirate, Necromancer, Action, Ally		Spellvoid 2, Watery Grave	Action	Attack				"**Action** - {t}: **Attack**
+8gGBjzcNg9D9fnFQRpMqz	Boo, Resident Spook	Yellow	2	1	2		2			Pirate, Necromancer, Action, Ally		Spellvoid 2, Watery Grave	Action	Attack				"**Action** - {t}: **Attack**
 
 If this is untapped, it gets **spellvoid 2**.
 
@@ -1619,7 +1619,7 @@ qhPfDmWPHpHT8gpFmNkkr	Brutal Assault	Blue	3	2	4	3				Generic, Action, Attack				
 Dh8tPtFJwkqg8jbGTjNWQ	Brutus, Summa Rudis						20	4		Adjudicator, Hero							Clash	"You may have cards with **clash** of any class or talent in your deck.
 
 If all heroes in a **clash** would fail to win, instead choose which hero wins the clash."	Adjudicator Hero		No		No	No	
-QNjHwWjJFcDtq8KqpHRjP	Bubba-Lubba, Run Aground	Yellow	2	3	1	5				Pirate, Necromancer, Action, Ally		Watery Grave	Action	Attack, Go again				"This enters the arena with a +1{p} counter.
+QNjHwWjJFcDtq8KqpHRjP	Bubba-Lubba, Run Aground	Yellow	2	3	1		5			Pirate, Necromancer, Action, Ally		Watery Grave	Action	Attack, Go again				"This enters the arena with a +1{p} counter.
 
 **Action** - {r}, {t}: **Attack**
 
