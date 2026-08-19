@@ -1,6 +1,5 @@
 import csv
 import getopt
-import json
 import sys
 from os import makedirs
 from os.path import exists
@@ -27,7 +26,7 @@ FULL_COLUMN = "Image Hash Full"
 PRIMARY_IMAGE_DIR = Path(__file__).parent / "../download-all-images/images"
 SEARCH_IMAGE_DIRS = [PRIMARY_IMAGE_DIR, Path(__file__).parent / "images"]
 
-CARD_JSON_PATH = Path(__file__).parent / "../../json/english/card.json"
+CARD_CSV_PATH = Path(__file__).parent / "../../csvs/english/card.csv"
 CARD_PRINTING_CSV_PATH = Path(__file__).parent / "../../csvs/english/card-printing.csv"
 
 # The same CDN prefixes that download-all-images strips to derive a local path.
@@ -158,8 +157,8 @@ def compute_hashes(image_url, image_rotation_degrees, art_variations, played_hor
 # --- CSV read/write helpers ---
 
 
-def read_csv_rows():
-    with CARD_PRINTING_CSV_PATH.open(newline="") as csvfile:
+def read_csv_rows(path):
+    with path.open(newline="") as csvfile:
         return list(csv.reader(csvfile, delimiter="\t", quotechar='"'))
 
 
@@ -191,47 +190,76 @@ def ensure_hash_columns(header):
     return idx_art, idx_full
 
 
-# --- Printing selection from card.json ---
+# --- Printing selection from card-printing.csv ---
 
 
-def iter_printings(set_id_filter, min_id, max_id):
-    with CARD_JSON_PATH.open(newline="", encoding="utf-8") as jsonfile:
-        card_array = json.load(jsonfile)
+def load_played_horizontally():
+    """Card Unique ID -> played horizontally, read from card.csv."""
+    rows = read_csv_rows(CARD_CSV_PATH)
+    header = rows[0]
+    idx_unique_id = header.index("Unique ID")
+    idx_horizontal = header.index("Card Played Horizontally")
+    return {row[idx_unique_id]: row[idx_horizontal] == "Yes" for row in rows[1:]}
 
-    for card in card_array:
-        played_horizontally = card["played_horizontally"]
-        for printing in card["printings"]:
-            image_url = printing["image_url"]
-            if image_url is None:
+
+def iter_printings(rows, set_id_filter, min_id, max_id):
+    header = rows[0]
+    idx = {
+        column: header.index(column)
+        for column in (
+            "Unique ID",
+            "Card Unique ID",
+            "Card ID",
+            "Set ID",
+            "Art Variations",
+            "Image URL",
+            "Image Rotation Degrees",
+        )
+    }
+    played_horizontally_by_card = load_played_horizontally()
+
+    for row in rows[1:]:
+        image_url = row[idx["Image URL"]].strip()
+        if image_url == "":
+            continue
+
+        card_id = row[idx["Card ID"]]
+        if set_id_filter is not None:
+            if row[idx["Set ID"]] != set_id_filter:
+                continue
+            card_id_number = int(card_id[3:])
+            if min_id is not None and card_id_number < min_id:
+                continue
+            if max_id is not None and card_id_number > max_id:
                 continue
 
-            card_id_number = int(printing["id"][3:])
-            if set_id_filter is not None:
-                if printing["set_id"] != set_id_filter:
-                    continue
-                if min_id is not None and card_id_number < min_id:
-                    continue
-                if max_id is not None and card_id_number > max_id:
-                    continue
+        rotation = row[idx["Image Rotation Degrees"]].strip()
+        art_variations = [
+            variation
+            for variation in row[idx["Art Variations"]].split(", ")
+            if variation.strip() != ""
+        ]
 
-            yield {
-                "unique_id": printing["unique_id"],
-                "id": printing["id"],
-                "image_url": image_url,
-                "image_rotation_degrees": printing.get("image_rotation_degrees", 0),
-                "art_variations": printing.get("art_variations", []),
-                "played_horizontally": played_horizontally,
-            }
+        yield {
+            "unique_id": row[idx["Unique ID"]],
+            "id": card_id,
+            "image_url": image_url,
+            "image_rotation_degrees": int(rotation) if rotation != "" else 0,
+            "art_variations": art_variations,
+            "played_horizontally": played_horizontally_by_card.get(
+                row[idx["Card Unique ID"]], False
+            ),
+        }
 
 
 def run(set_id_filter, min_id, max_id, force):
-    rows = read_csv_rows()
+    rows = read_csv_rows(CARD_PRINTING_CSV_PATH)
     header = rows[0]
     idx_art, idx_full = ensure_hash_columns(header)
 
     row_by_unique_id = {row[0]: row for row in rows[1:]}
 
-    printings = list(iter_printings(set_id_filter, min_id, max_id))
+    printings = list(iter_printings(rows, set_id_filter, min_id, max_id))
     total = len(printings)
     print(f"Computing pHashes for {total} printings with images...")
 
@@ -280,7 +308,9 @@ def debug_crop(print_id):
     if not exists(out_dir):
         makedirs(out_dir)
 
-    for printing in iter_printings(None, None, None):
+    rows = read_csv_rows(CARD_PRINTING_CSV_PATH)
+
+    for printing in iter_printings(rows, None, None, None):
         if printing["id"] != print_id:
             continue
 
@@ -302,7 +332,7 @@ def debug_crop(print_id):
             print(f"Saved {out_path}")
         return
 
-    print(f"Could not find a printing with id {print_id} (and an image) in card.json")
+    print(f"Could not find a printing with id {print_id} (and an image) in card-printing.csv")
 
 
 HELP_STRING = (
