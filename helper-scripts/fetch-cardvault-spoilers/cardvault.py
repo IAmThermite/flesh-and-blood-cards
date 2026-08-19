@@ -17,6 +17,9 @@ import urllib.request
 
 BASE_URL = "https://api.cardvault.fabtcg.com/carddb/api/v1"
 
+# The site the API sits behind, for linking a report entry to the card someone has to read.
+SITE_URL = "https://cardvault.fabtcg.com"
+
 # The API doesn't care what the User-Agent is - it answers a bare urllib request happily -
 # so say who we actually are rather than pretending to be a browser. If this ever needs rate
 # limiting or blocking, whoever runs the API can see what it is and where it came from.
@@ -27,6 +30,20 @@ REQUEST_TIMEOUT_SECONDS = 30
 RETRY_DELAYS_SECONDS = [1, 3, 10]
 
 REQUEST_DELAY_SECONDS = 0.25
+
+
+def card_url(card_id, print_id):
+    """
+    Where a person can go and look at the printing.
+
+    card_id is the slug the API indexes a card by - "driving-blade-1" - and print_id the set
+    number as CardVault writes it, treatment suffix and all, so 1HP171 and MPW134-MV both
+    land on the right page. The site is a single page app that routes these in the browser,
+    so every one of them answers a plain GET with a 404 and the empty shell; the only way to
+    tell a good link from a bad one is to open it.
+    """
+
+    return f"{SITE_URL}/card/{card_id}/{print_id}"
 
 
 class CardVaultError(Exception):

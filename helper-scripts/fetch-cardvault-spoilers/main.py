@@ -160,6 +160,44 @@ def english_prints_for_set(card, set_code):
     return selected
 
 
+def cardvault_link(label, card_id, print_id):
+    """
+    `label` as a markdown link to the printing on cardvault.fabtcg.com.
+
+    Both the report and the pull request checklist are read as markdown, and every entry in
+    them is something a person has to go and look at the card to settle. The card_id the API
+    indexes by is the slug the site wants, so the link can point at the printing itself
+    rather than at a search for it.
+    """
+
+    return f"[{label}]({cardvault.card_url(card_id, print_id)})"
+
+
+def check_set_range(report, set_code, start_card_id, end_card_id, codes):
+    """
+    Say something when the set's cards no longer fit the range in set-printing.csv.
+
+    Checked against every card the CSVs have for the set rather than just the ones this run
+    added, so the line describes where the set actually starts and ends. A batch is a slice
+    of the set: "6 cards outside, IAR082 to IAR120" is true of the batch and misleading
+    about the set, and it changes every run, which is no good in a checklist that lasts the
+    whole spoiler season.
+    """
+
+    if not (start_card_id and end_card_id and codes):
+        return
+
+    outside = {code for code in codes if not start_card_id <= code <= end_card_id}
+    if not outside:
+        return
+
+    report.check_set_range.append(
+        f"{set_code}: set-printing.csv says {start_card_id}-{end_card_id}, but "
+        f"{len(outside)} of the set's cards are outside that - the full range is "
+        f"{min(codes)}-{max(codes)}"
+    )
+
+
 def collect_set(set_code, existing, report, full_sweep):
     """
     Work out what's new for one set and return the rows to append.
@@ -200,6 +238,9 @@ def collect_set(set_code, existing, report, full_sweep):
 
     if not card_ids:
         print(f"  nothing new in {set_code}")
+        # A quiet run still restates the range, so the checklist line doesn't disappear
+        # while another set in the group is what triggered the commit.
+        check_set_range(report, set_code, start_card_id, end_card_id, known_codes)
         return [], [], []
 
     print(f"  fetching {len(card_ids)} card details...")
@@ -209,15 +250,16 @@ def collect_set(set_code, existing, report, full_sweep):
     associations = []
     seen_card_keys = set()
     written_this_run = {}
-    out_of_range = set()
+    codes_in_set = set(known_codes)
     queued_cards = {}
 
-    def ensure_card(core, face, code):
+    def ensure_card(core, face, code, code_link):
         """
         Queue a card.csv row for a core we haven't seen before, and return its key.
 
         `code` is the set number of the printing that turned the card up, carried through so
-        the report and the checklist can name the card the way it'll be looked up.
+        the report and the checklist can name the card the way it'll be looked up, and
+        `code_link` is that set number pointing at the printing on CardVault.
         """
 
         card_key = mapping.card_key(core, face)
@@ -240,7 +282,7 @@ def collect_set(set_code, existing, report, full_sweep):
             seen_card_keys.add(card_key)
             existing_cards[card_key] = ""
             report.new_cards.append(
-                f"{code} {card_key[0]}" + (f" ({card_key[1]})" if card_key[1] else "")
+                f"{code_link} {card_key[0]}" + (f" ({card_key[1]})" if card_key[1] else "")
             )
 
             # A card that's new only because the pitch disagrees is usually a real new pitch
@@ -250,7 +292,7 @@ def collect_set(set_code, existing, report, full_sweep):
             known_pitches = existing_pitches.get(card_key[0])
             if known_pitches:
                 report.check_pitch.append(
-                    f"{card_key[0]!r}: added with pitch {card_key[1] or '(none)'}, but "
+                    f"{code_link} {card_key[0]!r}: added with pitch {card_key[1] or '(none)'}, but "
                     f"card.csv already has pitch {', '.join(sorted(p or '(none)' for p in known_pitches))} "
                     f"- confirm it's a new variant rather than a duplicate"
                 )
@@ -270,15 +312,16 @@ def collect_set(set_code, existing, report, full_sweep):
 
         for print_data in english_prints_for_set(card, set_code):
             print_id = print_data.get("print_id")
+            print_link = cardvault_link(print_id, card_id, print_id)
             faces = mapping.faces_in_order(print_data)
 
             if not faces:
-                report.errors.append(f"{set_code}: {print_id} has no faces")
+                report.errors.append(f"{set_code}: {print_link} has no faces")
                 continue
 
             if len(faces) > 2:
                 report.skipped.append(
-                    f"{set_code}: {print_id} has {len(faces)} faces - add by hand"
+                    f"{set_code}: {print_link} has {len(faces)} faces - add by hand"
                 )
                 continue
 
@@ -289,7 +332,7 @@ def collect_set(set_code, existing, report, full_sweep):
                 rarity = mapping.rarity_for(print_data)
             except mapping.UnmappedValue as error:
                 report.skipped.append(
-                    f"{set_code}: {print_id} has an {error} - add by hand and add the value "
+                    f"{set_code}: {print_link} has an {error} - add by hand and add the value "
                     f"to mapping.py"
                 )
                 continue
@@ -304,7 +347,7 @@ def collect_set(set_code, existing, report, full_sweep):
 
             if already_entered:
                 report.skipped.append(
-                    f"{set_code}: {print_id} is half entered - the CSV has {already_entered} "
+                    f"{set_code}: {print_link} is half entered - the CSV has {already_entered} "
                     f"of its {len(faces)} faces, so finish it by hand"
                 )
                 continue
@@ -322,7 +365,7 @@ def collect_set(set_code, existing, report, full_sweep):
                     unresolved_face = face.get("printed_name") or face.get("face_id") or "?"
                     break
 
-                card_key = ensure_card(core, face, code)
+                card_key = ensure_card(core, face, code, cardvault_link(code, card_id, print_id))
 
                 try:
                     fields = mapping.printing_fields(
@@ -341,14 +384,14 @@ def collect_set(set_code, existing, report, full_sweep):
 
             if unresolved_face is not None:
                 report.skipped.append(
-                    f"{set_code}: {print_id} has a face ({unresolved_face}) whose card data "
+                    f"{set_code}: {print_link} has a face ({unresolved_face}) whose card data "
                     f"CardVault doesn't return - add by hand"
                 )
                 continue
 
             if unmapped is not None:
                 report.skipped.append(
-                    f"{set_code}: {print_id} has an {unmapped} - add by hand and add the "
+                    f"{set_code}: {print_link} has an {unmapped} - add by hand and add the "
                     f"value to mapping.py"
                 )
                 continue
@@ -376,16 +419,16 @@ def collect_set(set_code, existing, report, full_sweep):
                     }
                 )
                 report.face_associations.append(
-                    f"{print_id}: {front['Card Name']} / {back['Card Name']} "
+                    f"{print_link}: {front['Card Name']} / {back['Card Name']} "
                     f"(Is DFC: {associations[-1]['is_dfc']})"
                 )
-            report.new_printings.append(f"{print_id} ({published_at})")
+            report.new_printings.append(f"{print_link} ({published_at})")
 
             if any(
                 mapping.art_variation_needs_checking(rarity, foiling, fields["Art Variations"])
                 for fields, _ in rows_for_print
             ):
-                report.check_art_variation.append(print_id)
+                report.check_art_variation.append(print_link)
 
             # Every printing has an artist, but CardVault occasionally returns an empty one.
             # A marvel's back face borrows the front's above, because it's the same card;
@@ -394,18 +437,12 @@ def collect_set(set_code, existing, report, full_sweep):
                 if not fields["Artists"]:
                     image = fields["Image URL"].rsplit("/", 1)[-1] or "no image"
                     report.missing_artist.append(
-                        f"{print_id} {fields['Card Name']} ({image})"
+                        f"{print_link} {fields['Card Name']} ({image})"
                     )
 
-            if start_card_id and end_card_id and not (start_card_id <= code <= end_card_id):
-                out_of_range.add(code)
+            codes_in_set.add(code)
 
-    if out_of_range:
-        report.check_set_range.append(
-            f"{set_code}'s set-printing.csv range is {start_card_id}-{end_card_id}, but "
-            f"{len(out_of_range)} added cards fall outside it "
-            f"({min(out_of_range)} to {max(out_of_range)}) - update the range"
-        )
+    check_set_range(report, set_code, start_card_id, end_card_id, codes_in_set)
 
     return new_cards, printing_plans, associations
 

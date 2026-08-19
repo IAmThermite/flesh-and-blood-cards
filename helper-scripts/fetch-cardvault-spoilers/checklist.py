@@ -84,6 +84,13 @@ SECTIONS = [
 
 HEADINGS = {heading: key for key, heading, _ in SECTIONS}
 
+# Sections holding one standing statement per set rather than one job per card. Their
+# wording moves as more of the set arrives - "38 of the set's cards are outside that"
+# becomes "44" - so matching on the text would leave a trail of superseded lines, each of
+# them now wrong. They're matched on the set code they start with instead, and the newest
+# wording replaces the old line in place.
+RESTATED = {"range", "blocked"}
+
 ITEM = re.compile(r"^- \[([ xX])\]\s+(.*?)\s*$")
 HEADING = re.compile(r"^### (.+?)\s*$")
 
@@ -92,6 +99,14 @@ PREAMBLE = (
     "it's here so the manual columns can be shared out without two people doing the same "
     "card twice."
 )
+
+
+def item_key(section, text):
+    """What makes two items the same item, for deciding whether one is already listed."""
+
+    if section in RESTATED:
+        return text.split(":", 1)[0].strip()
+    return text
 
 
 def items_from_report(report):
@@ -166,17 +181,36 @@ def merge(entries, new_items):
     """
     Add items the checklist doesn't have yet, leaving the ones it does alone.
 
-    Matching is on the item's text, so re-running over the same cards adds nothing. Items
-    are never removed - a box someone already ticked is a record of work done, and dropping
-    it because a later run didn't mention the card would throw that away.
+    Matching is on the item's key, which for most sections is the text itself, so re-running
+    over the same cards adds nothing. Items are never removed - a box someone already ticked
+    is a record of work done, and dropping it because a later run didn't mention the card
+    would throw that away.
+
+    A RESTATED item is the exception, because it isn't a record of work: it's what the CSVs
+    look like right now. The newest wording replaces the old one where it stands, unticked,
+    since what it says has changed. Older copies of the same statement are dropped, which
+    also tidies up the trail left by runs before this was keyed.
     """
 
-    seen = {(section, text) for section, text, _ in entries}
-    merged = list(entries)
-    added = 0
+    latest = {
+        (item["section"], item_key(item["section"], item["text"])): item["text"]
+        for item in new_items
+    }
 
+    merged = []
+    seen = set()
+
+    for section, text, ticked in entries:
+        key = (section, item_key(section, text))
+        if section in RESTATED and key in seen:
+            continue
+        seen.add(key)
+        current = latest.get(key, text)
+        merged.append((section, current, ticked and current == text))
+
+    added = 0
     for item in new_items:
-        key = (item["section"], item["text"])
+        key = (item["section"], item_key(item["section"], item["text"]))
         if key in seen:
             continue
         seen.add(key)
