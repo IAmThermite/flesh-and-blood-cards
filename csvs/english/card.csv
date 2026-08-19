@@ -585,7 +585,7 @@ PTFnJCdhWD9cFgMMNPqQj	Azalea, Ace in the Hole						40	4		Ranger, Hero			Once per
 wBNMRCQPNBjPcfJwgrf9j	Azvolai				2		3			Draconic, Illusionist, Dragon, Ally								Whenever Azvolai attacks, you may have him deal 1 arcane damage to up to any 2 targets.	Draconic Illusionist - Dragon Ally					No	
 FmWWpM8FLJCCzQLKBwwKk	Baalghor, Omen of the End						33	3		Shadow, Hero, Young, Demon								"Whenever you pitch a card, banish it.
 
-Attack action cards played from your banished zone get +3{p}."	Shadow Hero - Young Demon			No	No	No	No
+Attack action cards played from your banished zone get +3{p}."	Shadow Hero - Young Demon			No			No
 kFW8PcC89jw6rGKkhfpBt	Back Alley Breakline	Red	1	1	5	2				Generic, Action, Attack								When an activated ability or action card effect puts this face-up into a zone from your deck, gain 1 action point.	Generic Action - Attack						
 cDffzzbmtNH8rNmk9TpQW	Back Alley Breakline	Yellow	2	1	4	2				Generic, Action, Attack								When an activated ability or action card effect puts this face-up into a zone from your deck, gain 1 action point.	Generic Action - Attack						
 RkMDk6MdKNGzhKnnPkLnD	Back Alley Breakline	Blue	3	1	3	2				Generic, Action, Attack								When an activated ability or action card effect puts this face-up into a zone from your deck, gain 1 action point.	Generic Action - Attack						
@@ -9507,12 +9507,12 @@ HDtcFpfJGnLpQW7LfmM7k	Runechant of Envy	Yellow	2	0						Runeblade, Instant, Aura
 
 When this is destroyed, create a Runechant token.
 
-At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura				No	No	
+At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura						
 9wdzWnFf7J6nmL86nFhtN	Runechant of Gluttony	Yellow	2	0						Runeblade, Instant, Aura							Usurp	"This counts as a Runechant. When an attack usurps this, gain {r}.
 
 When this is destroyed, create a Runechant token.
 
-At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura				No	No	
+At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura						
 MT8LQJTF6w8gPqMzNTrkr	Runechant of Greed	Yellow	2	0						Runeblade, Instant, Aura							Usurp	"This counts as a Runechant. When an attack usurps this, draw a card.
 
 When this is destroyed, create a Runechant token.
@@ -9522,22 +9522,22 @@ FpMpBwHGNgTGDjgfpWBKB	Runechant of Lust	Yellow	2	0						Runeblade, Instant, Aura
 
 When this is destroyed, create a Runechant token.
 
-At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura				No	No	
+At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura						
 HqGFdH8tMH6fR8bNMkTjq	Runechant of Pride	Yellow	2	0						Runeblade, Instant, Aura							Usurp	"This counts as a Runechant. When an attack usurps this, it gets +1{p}.
 
 When this is destroyed, create a Runechant token.
 
-At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura				No	No	
+At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura						
 BMgj68hT9jQHQ6nFqhTDT	Runechant of Sloth	Yellow	2	0						Runeblade, Instant, Aura					Go again		Usurp	"This counts as a Runechant. When an attack usurps this, it gets **go again**.
 
 When this is destroyed, create a Runechant token.
 
-At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura				No	No	
+At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura						
 qwpdn8CJWGgkHLqdhDtgh	Runechant of Wrath	Yellow	2	0						Runeblade, Instant, Aura					Overpower		Usurp	"This counts as a Runechant. When an attack usurps this, it gets **overpower**.
 
 When this is destroyed, create a Runechant token.
 
-At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura				No	No	
+At the beginning of your action phase or when you play an attack action card, destroy this."	Runeblade Instant - Aura						
 zzWc8BBmC9T6bfQwDMBPH	Runehold Release					0				Runeblade, Equipment, Arms			Action	Go again				**Action** - Destroy this: Create a Runechant token. **Go again**	Runeblade Equipment - Arms						
 66LHrpFckMQ8WNWhPjbD6	Runerager Swarm	Red	1	0	3	3				Runeblade, Action, Attack		Go again						If you've played or created an aura this turn, this gets **go again**.	Runeblade Action - Attack						
 8zcbgBnjjdmM6G9hCqC9f	Runerager Swarm	Yellow	2	0	2	3				Runeblade, Action, Attack		Go again						If you've played or created an aura this turn, this gets **go again**.	Runeblade Action - Attack						
