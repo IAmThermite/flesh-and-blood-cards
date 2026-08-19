@@ -56,8 +56,8 @@ SECTIONS = [
         "artist",
         "Printings missing an artist",
         "CardVault returned no artist for these faces, and every printing has one. Fill the "
-        "Artists column in on card-printing.csv - a blank one puts an empty artist in "
-        "artist.csv when the data set is regenerated.",
+        "Artists column in on card-printing.csv - a blank one leaves the printing with "
+        "no credit, and the artist missing from artist.csv.",
     ),
     (
         "pitch",

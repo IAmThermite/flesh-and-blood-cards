@@ -17,7 +17,12 @@ def create_artists_csv_from_card_csv(language):
             artist_column=row['Artists']
             individual_artists=artist_column.split(',')
             for artist in individual_artists:
-                artists.add(re.split(r'\s+[-–—]\s+', artist)[0].strip())
+                name=re.split(r'\s+[-–—]\s+', artist)[0].strip()
+
+                # A printing with no artist yet - a spoiler CardVault gave no artist for -
+                # would otherwise put an empty name in artist.csv.
+                if name:
+                    artists.add(name)
 
     # Sort the artists
     artists_sorted = sorted(artists, key=str.casefold)
