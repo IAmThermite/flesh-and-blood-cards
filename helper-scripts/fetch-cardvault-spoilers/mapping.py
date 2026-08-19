@@ -54,7 +54,9 @@ ART_VARIATION_CAVEAT = (
     "Extended art (EA) and full art (FA) come straight from the API. Alternate art (AA), "
     "alternate border (AB), alternate text (AT) and half size (HS) have no equivalent in "
     "CardVault, so a printing that needs one of those will arrive blank, EA or FA. Check "
-    "against the Collector's Centre."
+    "against the card itself. A blank on a plain regular printing isn't flagged - there's "
+    "nothing in the API to tell one apart from a regular printing that needs AA - "
+    "so those are worth a look too when the set finishes spoiling."
 )
 
 # Columns this script never fills, because they're a judgement call about the card rather
@@ -135,13 +137,37 @@ def normalise_dashes(text):
     return text.replace(" -- ", " - ")
 
 
+# A bold run and whatever padding CardVault left inside it. The inner text can't contain a
+# star, so the pair can only match the markers it opened with - a stray unclosed ** stays
+# where it is rather than swallowing the paragraphs after it.
+EMPHASIS = re.compile(r"\*\*(\s*)([^*]+?)(\s*)\*\*")
+
+
+def normalise_emphasis(text):
+    """
+    Move any padding CardVault left inside a bold run outside of it.
+
+    The markers are meant to wrap the words, but a fair few cards carry the space inside
+    them - "**Blood Debt **", "**Instant **-- Discard a zombie" - which reads as a trailing
+    space in the CSV and leaves the dash without the space in front of it that
+    normalise_dashes is looking for. Both come out right once the padding is on the outside.
+    """
+
+    return EMPHASIS.sub(lambda match: f"{match[1]}**{match[2]}**{match[3]}", text)
+
+
 def functional_text(core):
     """
     CardVault separates paragraphs with {br}; the CSVs use a blank line.
+
+    Emphasis is normalised before the dashes, because a "**Instant **-- " only looks like
+    the " -- " the CSVs write as " - " once its padding is back on the outside.
     """
 
     text = (core.get("textbox") or "").replace("{br}", "\n\n")
-    return normalise_icons(normalise_dashes(text))
+    text = normalise_icons(normalise_dashes(normalise_emphasis(text)))
+    # Padding moved out of a bold run at the end of a paragraph is trailing whitespace now.
+    return "\n".join(line.rstrip() for line in text.split("\n")).strip()
 
 
 def artists(face):
@@ -277,6 +303,42 @@ def art_variation_for(face):
     return ART_VARIATIONS[art_type]
 
 
+def art_variation_needs_checking(rarity, foiling, art_variation):
+    """
+    Whether a printing's Art Variations column is worth a person's eyes.
+
+    It can be wrong in both directions, and only flagging one of them is what lets the other
+    through - a blank reads as deliberate, so nobody goes looking.
+
+    A value the script wrote can't be trusted, because the API only knows three of the
+    variations the CSVs use - see ART_VARIATION_CAVEAT.
+
+    A blank can't be trusted either, on a printing whose treatment usually carries a value.
+    91% of the marvels already in the CSVs have one, and every marvel in DYN, MPW and SEA
+    does, so a blank marvel is far likelier to be missing FA than to be right. Cold foils
+    carry one about a quarter of the time, often enough to look. Rainbow foils (13%), gold
+    foils (9%) and plain regular printings (3%) hardly ever do, and flagging those would
+    bury the printings that need the attention.
+    """
+
+    if art_variation:
+        return True
+
+    return rarity == "V" or foiling == "C"
+
+
+def is_same_card_both_sides(print_data):
+    """
+    Whether a two faced printing is one card printed twice.
+
+    A Marvel is: both faces point at the same core. A flip card like Viserai, or a double
+    sided token, has a core per face - the same piece of card, but two different cards on it.
+    """
+
+    faces = faces_in_order(print_data)
+    return len(faces) == 2 and faces[0].get("core") == faces[1].get("core")
+
+
 def is_double_faced_card(print_data):
     """
     Whether a two faced printing is two different cards rather than one card printed twice.
@@ -285,10 +347,30 @@ def is_double_faced_card(print_data):
     Is DFC column reads No. A flip card like Viserai has a core per face, and reads Yes.
     """
 
-    faces = faces_in_order(print_data)
-    if len(faces) != 2:
-        return False
-    return faces[0].get("core") != faces[1].get("core")
+    return len(faces_in_order(print_data)) == 2 and not is_same_card_both_sides(print_data)
+
+
+def fill_blank_artists(fields_for_faces, print_data):
+    """
+    Give a face with no artist of its own the other face's.
+
+    CardVault leaves printed_artist empty on the back of a marvel often enough to be worth
+    handling - three of IAR's alone. Both sides are the same card there, so the front's
+    artist is the back's by definition.
+
+    A flip card or a double sided token is two different cards and those are drawn by
+    different artists. Those are set as blank and get reported instead for manual review.
+    """
+
+    if not is_same_card_both_sides(print_data):
+        return
+
+    artist = next((fields["Artists"] for fields in fields_for_faces if fields["Artists"]), "")
+    if not artist:
+        return
+
+    for fields in fields_for_faces:
+        fields["Artists"] = fields["Artists"] or artist
 
 
 def printing_descriptor(card_id, foiling, rarity):

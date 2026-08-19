@@ -14,6 +14,7 @@ SECTIONS = [
     ("face_associations", "Double faced printings paired up"),
     ("skipped", "Needs manual entry"),
     ("check_art_variation", "Check the art variation"),
+    ("missing_artist", "Fill in the artist"),
     ("check_pitch", "Check the pitch"),
     ("check_set_range", "Check the set's card range"),
     ("blocked", "Blocked"),

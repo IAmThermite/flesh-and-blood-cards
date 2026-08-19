@@ -48,8 +48,16 @@ SECTIONS = [
         "art_variation",
         "Printings to check the art variation on",
         "CardVault only distinguishes regular, extended art and full art, so anything that "
-        "should be AA, AB, AT or HS will have come through wrong. Check against the "
-        "[Collector's Centre](https://fabtcg.com/collectors-centre/).",
+        "should be AA, AB, AT or HS will have come through wrong. Blanks on marvels and "
+        "cold foils are listed too, because those treatments usually carry a variation and "
+        "a blank one is more likely to be missing than right. Manually check the card.",
+    ),
+    (
+        "artist",
+        "Printings missing an artist",
+        "CardVault returned no artist for these faces, and every printing has one. Fill the "
+        "Artists column in on card-printing.csv - a blank one puts an empty artist in "
+        "artist.csv when the data set is regenerated.",
     ),
     (
         "pitch",
@@ -101,6 +109,8 @@ def items_from_report(report):
         items.append({"section": "cards", "text": entry})
     for entry in report.check_art_variation:
         items.append({"section": "art_variation", "text": entry})
+    for entry in report.missing_artist:
+        items.append({"section": "artist", "text": entry})
     for entry in report.check_pitch:
         items.append({"section": "pitch", "text": entry})
     for entry in report.skipped:

@@ -353,6 +353,8 @@ def collect_set(set_code, existing, report, full_sweep):
                 )
                 continue
 
+            mapping.fill_blank_artists([fields for fields, _ in rows_for_print], print_data)
+
             existing_printings[key] = len(rows_for_print)
             written_this_run[key] = print_id
             printing_plans.extend(rows_for_print)
@@ -379,8 +381,21 @@ def collect_set(set_code, existing, report, full_sweep):
                 )
             report.new_printings.append(f"{print_id} ({published_at})")
 
-            if any(fields["Art Variations"] for fields, _ in rows_for_print):
+            if any(
+                mapping.art_variation_needs_checking(rarity, foiling, fields["Art Variations"])
+                for fields, _ in rows_for_print
+            ):
                 report.check_art_variation.append(print_id)
+
+            # Every printing has an artist, but CardVault occasionally returns an empty one.
+            # A marvel's back face borrows the front's above, because it's the same card;
+            # anything still blank here is a face the script has nothing to fill it from.
+            for fields, _ in rows_for_print:
+                if not fields["Artists"]:
+                    image = fields["Image URL"].rsplit("/", 1)[-1] or "no image"
+                    report.missing_artist.append(
+                        f"{print_id} {fields['Card Name']} ({image})"
+                    )
 
             if start_card_id and end_card_id and not (start_card_id <= code <= end_card_id):
                 out_of_range.add(code)
