@@ -7,9 +7,6 @@ adds more cards. This keeps one checklist in the PR body and grows it: new items
 appended, and anything already there keeps whatever state it had, so a ticked box survives
 the next run.
 
-Ticking a box doesn't gate anything. It's shared scratch paper - a way for several people to
-work through the manual columns without doubling up.
-
 The fetch pass writes the items file; turning that into a PR body is a separate step:
 
     python main.py --sets MPW AOL
@@ -95,9 +92,8 @@ ITEM = re.compile(r"^- \[([ xX])\]\s+(.*?)\s*$")
 HEADING = re.compile(r"^### (.+?)\s*$")
 
 PREAMBLE = (
-    "Added to as cards are pulled from CardVault. Ticking a box doesn't gate anything - "
-    "it's here so the manual columns can be shared out without two people doing the same "
-    "card twice."
+    "Added to as cards are pulled from CardVault. All cards need manual review and data "
+    "entry for the fields listed below as CardVault does not supply the information we need."
 )
 
 
@@ -223,14 +219,9 @@ def merge(entries, new_items):
 def render(entries):
     """Lay the entries out under their headings, dropping any section with nothing in it."""
 
-    done = sum(1 for _, _, ticked in entries if ticked)
     lines = [
         START,
         "## Data entry checklist",
-        "",
-        PREAMBLE,
-        "",
-        f"**{done} of {len(entries)} done.**",
         "",
     ]
 
