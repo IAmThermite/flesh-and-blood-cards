@@ -774,6 +774,21 @@ jnptttBbHJCwHBC99PMkF	Battering Bolt	Red	1	2	6	3				Ranger, Action, Arrow, Attac
 NgL8WHN9bMrCdg6d8p8Mc	Battle Clearing Bellow	Blue	3	3		3				Brute, Action								"Your next attack with 6 or more base {p} this turn gets +6{p}.
 
 **Go again**"	Brute Action				No	No	
+dcDrDDcp9Q6zBJrrwRfjT	Battle Prep	Red	1	0		3				Generic, Action								"**Opt 2**
+
+If this was played from arsenal, your next attack this turn gets +3{p}.
+
+**Go again**"	Generic Action					No	
+9jhL8bWFrNFQLPPRnbB8G	Battle Prep	Yellow	2	0		3				Generic, Action								"**Opt 2**
+
+If this was played from arsenal, your next attack this turn gets +2{p}.
+
+**Go again**"	Generic Action					No	
+dnC6gbgMjJW9KKC67HTBf	Battle Prep	Blue	3	0		3				Generic, Action								"**Opt 2**
+
+If this was played from arsenal, your next attack this turn gets +1{p}.
+
+**Go again**"	Generic Action					No	
 pNc7mQN79mQRRB86pnwGt	Battlefield Beacon	Yellow	2	0	3	3				Light, Warrior, Action, Attack								"When this attacks, choose 1 for each card you've banished from your soul this combat chain. You may choose the same mode up to 3 times;
 - Create a Courage token.
 - Create a Toughness token.
