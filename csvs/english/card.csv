@@ -216,6 +216,9 @@ qdbgkqgpTRMQQPr7jcdQL	Ancestral Harmony	Blue	3	0		3				Ninja, Action		Go again		
 Banish the top card of your deck. If it has **combo**, you may play it this turn.
 
 **Go again**"	Ninja Action				No	No	
+RcFbWD7mqQmTzzkfDkLd9	Ancient Earth Oak	Red	1	3	6	3				Ice, Action, Attack								"When this hits a hero, create a Frostbite token under their control.
+
+**Earth Bond** - If an Earth card was pitched to play this, this gets +2{p} and ""When this hits a hero, put this on the bottom of its owner's deck."""	Ice Action - Attack				No	No	
 ncw9gNCtknnPLww6gGzGC	And Again...	Blue	3	1		3				Warrior, Action		Attack					Sharpen	**Attack** with target sword that has been sharpened and you've attacked with this turn.	Warrior Action				No	No	
 CFkkCCFjGpQMLrRgFd87W	Angelic Attendant	Yellow	2	0		3				Light, Illusionist, Action		Awaken, Go again						"**Awaken** target figment you control.
 
@@ -2680,6 +2683,7 @@ Nj6B7WzpjfdJCbjq6Mwrp	Crush Confidence	Blue	3	3	5	3				Guardian, Action, Attack	
 qh8pckPwPHDHtPFj7tztn	Crush the Weak	Red	1	3	7	3				Guardian, Action, Attack		Crush						**Crush** - When this deals 4 or more damage to a hero, they can't play attack action cards with 3 or less base {p} during their next action phase.	Guardian Action - Attack						
 M8JWqJCWzWJWnbKQ7BjG6	Crush the Weak	Yellow	2	3	6	3				Guardian, Action, Attack		Crush						**Crush** - When this deals 4 or more damage to a hero, they can't play attack action cards with 3 or less base {p} during their next action phase.	Guardian Action - Attack						
 m76gcHbBbBpjQnJgHpbQq	Crush the Weak	Blue	3	3	5	3				Guardian, Action, Attack		Crush						**Crush** - When this deals 4 or more damage to a hero, they can't play attack action cards with 3 or less base {p} during their next action phase.	Guardian Action - Attack						
+bFRBfLjBWcphkNPfjdhTR	Crushing Headache	Red	1	6	10	3				Guardian, Action, Attack								**Crush** - When this deals 4 or more damage to a hero, they reveal their arsenal and hand. Destroy all non-attack action cards in their arsenal and they discard all non-attack action cards in their hand revealed this way.	Guardian Action - Attack				No	No	
 9qQTtRm6phFRbknPqHqM6	Crushing Impact									Event								The next time you would deal less than 4 damage this turn, instead deal 4 damage.	Event		No	No	No	No	No
 JfndQHGQ9CTQ8FPcFC6RH	Cryptic Crossing	Yellow	2	3	6	3				Runeblade, Action, Attack								"If an attack action card and a non-attack action card were pitched to play this, this gets ""The first time this deals damage to the defending hero, they discard a card and you draw a card."""	Runeblade Action - Attack				No	No	
 7RhQ7rthWCfHkgfdHFFJm	Cull	Red	1	0		3				Shadow, Runeblade, Action		Blood Debt						"You may play this from your banished zone.
@@ -5362,6 +5366,9 @@ RFRrT7hMB7bMJ9jcjzJgj	Haze Bending	Blue	3	0		2				Illusionist, Action, Aura		Spe
 LngwQzcgtkJQfCQ7PkP9h	Haze Shelter	Red	1	2						Mystic, Illusionist, Instant, Aura		Ward X						**Ward X**, where X is 4 if you've pitched a blue card this turn, otherwise X is 1.	Mystic Illusionist Instant - Aura						
 DpC7pdbKCcfcgDRCNHkch	Haze Shelter	Yellow	2	2						Mystic, Illusionist, Instant, Aura		Ward X						**Ward X**, where X is 3 if you've pitched a blue card this turn, otherwise X is 1.	Mystic Illusionist Instant - Aura						
 CGJMGJrWtt9qWQ6zfJHWK	Haze Shelter	Blue	3	2						Mystic, Illusionist, Instant, Aura		Ward X						**Ward X**, where X is 2 if you've pitched a blue card this turn, otherwise X is 1.	Mystic Illusionist Instant - Aura						
+WFKDMWGNJW8TWGpNBpktL	Head Banging Chorus	Yellow	2	1		3				Revered, Guardian, Instant, Aura								"**Suspense**
+
+The first Guardian or Revered attack action card you play each turn gets ""When this hits a hero, if you have no cards in hand, draw a card."""	Revered Guardian Instant - Aura				No	No	
 JtCMThrjDDLjGmBbCcpWc	Head Jab	Red	1	0	3	2				Ninja, Action, Attack		Go again						**Go again**	Ninja Action - Attack						
 CwHzMDBNQRNdWpMc7phMr	Head Jab	Yellow	2	0	2	2				Ninja, Action, Attack		Go again						**Go again**	Ninja Action - Attack						
 CbngjC9FTFNdmTGT7ddCT	Head Jab	Blue	3	0	1	2				Ninja, Action, Attack		Go again						**Go again**	Ninja Action - Attack						
@@ -5916,6 +5923,9 @@ Once per turn, when a Hyper Driver is put under this, if there are 3 or more Hyp
 HFwjczQFRKCgTFHdbjdzW	Hypothermia	Blue	3	0		2				Ice, Action, Affliction, Aura						Go again		"Your attacks can't gain **go again**.
 
 At the beginning of your end phase, destroy this."	Ice Action - Affliction Aura				No	No	
+gcpJFwfzDLnHWbnhKLFtR	Ice Aged Oak	Blue	3	3	4	3				Earth, Action, Attack								"When this hits a hero, create an Embodiment of Earth token.
+
+**Ice Bond** - If an Ice card was pitched to play this, this gets **dominate** and ""When this hits a hero, create a Frostbite token in each of their exposed head, chest, arms, and leg zones."""	Earth Action - Attack				No	No	
 rfCmCzDDJzWK7PqbR8NTK	Ice Bolt	Red	1	2		3			5	Ice, Wizard, Action								Deal 5 arcane damage to any target.	Ice Wizard Action						
 MTLmmmcPGLhQ9p8z6HbDF	Ice Bolt	Yellow	2	2		3			4	Ice, Wizard, Action								Deal 4 arcane damage to any target.	Ice Wizard Action						
 fb7rNjThhmgFtrjmGcc6k	Ice Bolt	Blue	3	2		3			3	Ice, Wizard, Action								Deal 3 arcane damage to any target.	Ice Wizard Action						
