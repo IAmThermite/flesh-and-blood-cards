@@ -277,6 +277,7 @@ b8JRFt6dF7JckNz8N6kDN	Anticipating Gaze					2				Warrior, Equipment, Head		Blade
 QTpCnrrjTbQhdRdLBzLzB	Apex Bonebreaker					2				Brute, Equipment, Arms		Temper						"When this defends together with a card with 6 or more {p}, create a Might token.
 
 **Temper**"	Brute Equipment - Arms				No	No	
+J8JGMc8FbWzhhpFCLkRzG	Apex Buster	Yellow	2	3	6	3				Brute, Action, Attack								**Instant** - {r}{r}, discard this: Destroy target card that is defending an attack you control with 6 or more base {p} .	Brute Action - Attack				No	No	
 wQmDNJMgNTftTKBHcb9Rc	Aphrodias								2	Lightning, Illusionist, Weapon, Orb, 2H			Instant					**Instant** - {r}, {t}: Deal 2 arcane damage to target hero. Activate this only if an aura with a holo counter has entered the arena under your control this turn.	Lightning Illusionist Weapon - Orb (2H)						
 mHnppNNqw9hMncFgCJdCB	Apocalypse Automaton	Red	1	3	6	3				Mechanologist, Action, Attack		Evo Upgrade						"Play this only if you have 1 or more Evos equipped.
 
@@ -5480,6 +5481,9 @@ zMbD7hqPwGNQCcDC6DPB9	Hell Hammer				6					Shadow, Brute, Weapon, Hammer, 2H		Bl
 When the combat chain closes, if this attacked, banish it.
 
 **Blood Debt**"	Shadow Brute Weapon - Hammer (2H)						
+G9H6LtRKfB9Nh7njknPzN	Hellbound Assault	Red	1	2	7	3				Shadow, Brute, Action, Attack								"When this hits, banish it.
+
+**Blood Debt**"	Shadow Brute Action - Attack					No	
 cBRqwBmLLnnTKt8PKkh7k	Helm of Astral Sanctuary					0				Generic, Equipment, Head			Instant					**Instant** - {t} your hero, destroy this: Prevent the next 1 damage that would be dealt to you this turn.	Generic Equipment - Head						
 TKbBnD6hMmqHfhDPtmHjL	Helm of Halo's Grace					2				Light, Warrior, Equipment, Head		Charge, Blade Break						"When this defends, you may **charge** your hero's soul. If a yellow card is **charged** this way, draw a card.
 
@@ -6080,6 +6084,9 @@ fJdjjcFWMpqfCNKpJbNLr	Infuse Alloy	Blue	3	0	2	2				Mechanologist, Action, Attack
 PnfMD9zp7JgTwTmJTQkwz	Infuse Titanium	Red	1	3	7	2				Mechanologist, Action, Attack		Galvanize						**Galvanize** - When this defends, you may destroy an item you control. If you do, this gets +2{d}.	Mechanologist Action - Attack						
 qQbcdmqJw9tPqqDBnDpH9	Infuse Titanium	Yellow	2	3	6	2				Mechanologist, Action, Attack		Galvanize						**Galvanize** - When this defends, you may destroy an item you control. If you do, this gets +2{d}.	Mechanologist Action - Attack						
 JhJWJjwBffmkgq69rfrgC	Infuse Titanium	Blue	3	3	5	2				Mechanologist, Action, Attack		Galvanize						**Galvanize** - When this defends, you may destroy an item you control. If you do, this gets +2{d}.	Mechanologist Action - Attack						
+fRWHtW7DRhhNfFjMb7pR6	Ingest the Unknown	Yellow	2	1	0	3				Shadow, Brute, Action, Attack								"When this attacks, banish the top card of your deck. This gets +X{p}, where X is the banished card's base {p}.
+
+**Blood Debt**"	Shadow Brute Action - Attack				No	No	
 TPQdbDWdpDjBznGcwfF7g	Ink-lined Cloak					0				Wizard, Equipment, Chest			Instant					**Instant** - Destroy this: Gain {r}. Activate this only if you control an aura permanent with Sigil in its name.	Wizard Equipment - Chest						
 FRTnBzBCRC7TbNhdKLWqW	Inner Chi	Blue	3							Mystic, Resource, Chi									Mystic Resource - Chi						
 gfrwTGTGJhqjTPKbcd96P	Insidious Chill	Blue	3	3		2				Ice, Action, Aura								"This enters the arena with 3 frost counters on it. When it has no frost counters, destroy it.
