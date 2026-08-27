@@ -2813,6 +2813,9 @@ HjgMJg6DrhJqR6fMnp6fc	Dance of Darkness									Shadow, Equipment, Legs		Blood D
 
 **Blood Debt**"	Shadow Equipment - Legs						
 kDCzjqmjjMT9hdnJTfRJb	Danger Digits					0				Assassin, Ninja, Equipment, Arms			Attack Reaction					**Attack Reaction** - Destroy this: Target dagger you control that isn't on the active chain link deals 1 damage to the defending hero. If damage is dealt this way, the dagger has hit. Destroy the dagger.	Assassin / Ninja Equipment - Arms						
+6KkCNpN9MrgKcjn9dpczm	Danse Macabre					1				Necromancer, Equipment, Legs								"Whenever an ally you control enters the arena, you may pay {r}{r} and {t} this. If you do, that ally's first attack this turn gets **go again** and destroy that ally at the beginning of the end phase.
+
+**Blade Break**"	Necromancer Equipment - Legs				No	No	
 PfTbqGJqLK6zHDKrcbDCL	Darkest Hour	Red	1	2		3				Shadow, Action								"You may put a card from your hand on top of your deck rather than pay this card's {r} cost.
 
 Your next Shadow attack this turn gets +4{p}. **Go again**
@@ -9673,6 +9676,15 @@ JKhQ7hPQnhbqnwpfcBzQh	Runic Reaping	Blue	3	1		2				Runeblade, Action		Go again		
 If an attack action card was pitched to play this, the next Runeblade attack action card you play this turn gets +1{p}.
 
 **Go again**"	Runeblade Action						
+LgfzFTjbt6pdWTG6R7kgH	Runic Reaving	Red	1	0	4	2				Runeblade, Action, Attack								"**Usurp**
+
+**Instant** - Discard this: Create a Runechant token."	Runeblade Action - Attack					No	
+mmKBJNPH9PwFTPmg8gPNm	Runic Reaving	Yellow	2	0	3	2				Runeblade, Action, Attack								"**Usurp**
+
+**Instant** - Discard this: Create a Runechant token."	Runeblade Action - Attack					No	
+d6qpbhfFGCT8BMFCgp9JP	Runic Reaving	Blue	3	0	2	2				Runeblade, Action, Attack								"**Usurp**
+
+**Instant** - Discard this: Create a Runechant token."	Runeblade Action - Attack					No	
 MbWDqNtrDdJWLWNCNDQpB	Runic Reckoning	Red	1	1		3				Runeblade, Action		Go again						"This costs {r} less to play for each Runechant you control.
 
 The next Runeblade attack action card you play this turn gets +3{p}.
