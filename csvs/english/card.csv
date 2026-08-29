@@ -2905,6 +2905,9 @@ q6DTC9d8krW76gpTCpfmg	Deadly Duo	Yellow	2	1	2	2				Ninja, Action, Attack		Go aga
 cqtpwmnhMR8bGtcc8qHwB	Deadly Duo	Blue	3	1	1	2				Ninja, Action, Attack		Go again						"When this hits, the next attack action card with 2 or less base {p} you play this combat chain gets +2{p}.
 
 **Go again**"	Ninja Action - Attack						
+8mdCtmnRLz7CLPbMhq8fM	Deadly Spinneret	Red	1	0	3	3				Assassin, Action, Attack								"**Stealth**
+
+**Instant** - Discard this: Equip a Graphene Chelicera token to each of your empty weapon zones."	Assassin Action - Attack				No	No	
 r7fBPzjnf99MPwFc6F8b6	Deadwood Dirge	Red	1	0		2				Runeblade, Action		Go again						"Destroy an aura you control. If you do, create 3 Runechant tokens.
 
 **Go again**"	Runeblade Action						
@@ -3569,6 +3572,9 @@ P8KtKdKjn8HN6rLmckJkP	Echo Casque					1				Brute, Equipment, Head		Battleworn			
 wzqz9DGw687RGfqhgBPBm	Echoflash	Yellow	2	1					1	Lightning, Wizard, Instant								"Deal 1 arcane damage to target hero.
 
 When this is put into your graveyard from anywhere, your hero deals 1 arcane damage to target hero."	Lightning Wizard Instant				No	No	
+zPmfzqPPMWwFcmNNQdDLd	Echoing Trap	Blue	3			3				Ranger, Block, Trap								"**Ambush**
+
+When this defends an attack action card with the same name as another card played this turn, the attacking hero discards a card."	Ranger Block - Trap				No	No	
 wJcJBPNg8mD6m9778FnLn	Eclectic Magnetism	Red	1	1	5	3				Lightning, Action, Attack								When this attacks, you may play a non-attack action card this chain link as though it were an instant.	Lightning Action - Attack				No	No	
 PDHFDfPrn8TwBGw6h7cFr	Eclipse	Blue	3	0						Shadow, Instant		Legendary, Chane Specialization					Blood Debt	"**Legendary Chane Specialization**
 
@@ -11378,6 +11384,7 @@ jQmQWTMMdzJgk69cJNj8j	Stir the Wildwood	Blue	3	2	3	3				Elemental, Runeblade, Ac
 If you've dealt arcane damage to an opponent this turn, this gets +2{p}.
 
 If this was **fused**, it gets +2{p}."	Elemental Runeblade Action - Attack						
+QQm67KRL6LfDQR7K6pwhc	Stoke Vengeance	Red	1	1	4	3				Ninja, Action, Attack								"**Combo** - If Edge of Autumn was the last attack this combat chain, this gets **go again** and ""When this hits, your next attack this combat chain gets +2{p}."""	Ninja Action - Attack				No	No	
 PbTTdKnFz9jptJ7WkbB6K	Stoke the Flames	Red	1	1	4	3				Draconic, Action, Attack		Go again						When this hits, you may return a Phoenix Flame from your graveyard to your hand. If you do, this gets **go again**.	Draconic Action - Attack						
 LknHqj6JMJ6CRNpDNBtHG	Stone Rain	Red	1	0	4	3				Ranger, Action, Arrow, Attack		Dominate						"If this has an aim counter, it gets **dominate** and ""When this hits a hero, they banish face-down a card from their hand. At the beginning of their next end phase, they return it to their hand."""	Ranger Action - Arrow Attack				No	No	
 9TtNBLtzhLBjgHtLcc999	Stonewall Confidence	Red	1	2		3				Guardian, Action, Aura		Go again						"**Go again**
