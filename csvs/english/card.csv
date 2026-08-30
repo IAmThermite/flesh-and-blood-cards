@@ -499,6 +499,11 @@ BkRHdjBwFhwMwmBfDhpfb	Assembly Module	Blue	3	0						Mechanologist, Action, Item	
 This enters the arena with a steam counter. At the start of your turn, destroy this unless you remove a steam counter from it.
 
 **Action** - {t}: Search your deck for a Hyper Driver, put it into the arena, then shuffle."	Mechanologist Action - Item					No	
+JpC7tcBPdFp8pKrjmH9th	Astral Ambience	Yellow	2	2	6	3				Illusionist, Action, Attack								"Whenever this fragments, create a Spectral Shield token.
+
+**Instant** - {t} a Spectral Shield you control: This gets **go again**.
+
+**Fragment**"	Illusionist Action - Attack				No	No	
 rNhqkLtwRGdRf7Pkh6b7b	Astral Assault	Red	1	2	5	2				Lightning, Action, Attack								When this attacks, you may destroy a Lightning Flow you control. If you do, this gets +2{p}.	Lightning Action - Attack						
 dhfWgpW6bPJrPMcKrFRdt	Astral Assault	Yellow	2	2	4	2				Lightning, Action, Attack								When this attacks, you may destroy a Lightning Flow you control. If you do, this gets +2{p}.	Lightning Action - Attack						
 BJBhJz9Gmjc6fpQjzrDB8	Astral Assault	Blue	3	2	3	2				Lightning, Action, Attack								When this attacks, you may destroy a Lightning Flow you control. If you do, this gets +2{p}.	Lightning Action - Attack						
@@ -1888,6 +1893,7 @@ bBtWcpCjGqkMMkwqwgtRT	Chain Lightning	Yellow	2	1		3			3	Wizard, Action								"Y
 If you've played another Wizard non-attack action card this turn, deal 3 arcane damage to each opposing hero."	Wizard Action				No	No	
 9j8NKt8hTkdwGPgrdcQrp	Chain Reaction	Yellow	2	0		3				Ranger, Defense Reaction, Trap							Go again	When this defends an attack with **go again**, you may turn a non-attack action card in your arsenal face-up. If you do, you may play it this turn as though it were an instant.	Ranger Defense Reaction - Trap				No	No	
 kJhgfCfT9nhBbdDPndnJR	Chain of Brutality	Red	1	0	2	3				Reviled, Brute, Action, Attack		Go again						"If this has 6 or more {p}, it gets **go again** and ""When this hits a hero, the next attack action card you play this turn has 6 base {p}."""	Reviled Brute Action - Attack					No	
+g7LWmbfdjRLD6tkQWDGjT	Chains of Consecration	Yellow	2	0						Light, Instant								Prevent all damage target ally would deal this turn. If damage is prevented from a Shadow ally this way, banish it face-down.	Light Instant				No	No	
 kmWrWK6PhLjLdr86QDDWP	Chains of Eminence	Red	1	0		2				Generic, Action, Aura		Go again						"**Go again**
 
 When this enters the arena, name a card. The named card can't be pitched, played, or defend while this is in the arena.
@@ -9706,6 +9712,9 @@ The next Runeblade attack action card you play this turn gets +3{p}.
 **Go again**"	Runeblade Action				No	No	
 gBdLwdzLq6zrMGbHKpKfw	Runic Reclamation	Red	1	3	7	3				Runeblade, Action, Attack								When this hits a hero, destroy target aura they control. If you do, create a Runechant token.	Runeblade Action - Attack				No	No	
 hPQ9NCmMKDdgMkzpkpGb6	Runner Runner	Red	1	2	6	3				Brute, Warrior, Action, Attack							Go again	When this attacks, if it has **go again**, create an Agility token.	Brute / Warrior Action - Attack				No	No	
+KtBDw9HncrMH8kcMMr6WD	Rush of Knowledge	Blue	3	0	4	2				Illusionist, Wizard, Action, Attack								"When this attacks, you may destroy a Ponder token you control. If do you, draw a card and gain 1 action point.
+
+**Phantasm**"	Illusionist / Wizard Action - Attack				No	No	
 jbmgCjPjGMC9g6688q8RM	Rush of Power	Red	1	0	3	3			1	Lightning, Runeblade, Action, Attack		Quickstrike					Go again	"**Quickstrike** - If this has go again, it gets +1{p}.
 
 When this hits a hero, deal 1 arcane damage to them."	Lightning Runeblade Action - Attack						
@@ -10553,6 +10562,9 @@ wWD8D9JqHhnzctrrTrBDW	Sigil of the Arknight	Blue	3	0		2				Runeblade, Action, Au
 At the beginning of your action phase, destroy this.
 
 When this leaves the arena, reveal the top card of your deck. If it's an attack action card, put it into your hand."	Runeblade Action - Aura					No	
+QjW7T7KdrjBgqtPDw7GFB	Sigil of the Muse	Red	1	0		3				Wizard, Action, Aura								"If a hero would draw 1 or more cards during an action phase, instead they create that many Ponder tokens.
+
+At the beginning of your action phase, destroy this and create a Ponder token."	Wizard Action - Aura				No	No	
 bqTcgLnMrzmpGJHFznhG6	Signal Jammer	Blue	3	0						Mechanologist, Action, Item								"This enters the arena with a steam counter.
 
 At the beginning of your action phase, destroy this unless you remove a steam counter from it. Each hero can't play more than 1 non-attack action card each turn."	Mechanologist Action - Item				No	No	
