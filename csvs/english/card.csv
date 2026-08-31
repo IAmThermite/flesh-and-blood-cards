@@ -2463,6 +2463,9 @@ mjFjGKmpGbTCnrJR6fN79	Construct Nitro Mechanoid	Yellow	2	4		3				Mechanologist, 
 GkqChmpPNNJKWdGDTnFnk	Consuming Aftermath	Red	1	3	6	2				Shadow, Action, Attack		Dominate						As an additional cost to play this, you may banish a card from your hand. If a Shadow card is banished this way, this gets **dominate**.	Shadow Action - Attack					No	
 8JrJrTrFwTB76GnRhc8hg	Consuming Aftermath	Yellow	2	3	5	2				Shadow, Action, Attack		Dominate						As an additional cost to play this, you may banish a card from your hand. If a Shadow card is banished this way, this gets **dominate**.	Shadow Action - Attack					No	
 tGbgpCzdw6Jzk99PLb9Cm	Consuming Aftermath	Blue	3	3	4	2				Shadow, Action, Attack		Dominate						As an additional cost to play this, you may banish a card from your hand. If a Shadow card is banished this way, this gets **dominate**.	Shadow Action - Attack					No	
+CnWQtmmptDWHndfwPFLJQ	Consuming Appetite	Yellow	2	3	6	3				Shadow, Brute, Action, Attack								"**Instant** - {r}, banish this from your hand: Until end of turn, Blasmophet, the Insatiable Hunger tokens you control get ""**Action** - {t}: **Attack**. **Go again**""
+
+**Blood Debt**"	Shadow Brute Action - Attack					No	
 cbztbcnpWpmL7dQ78nr9C	Consuming Lash	Yellow	2	2	6	3				Shadow, Brute, Action, Attack								"Play this only if you control a Blasmophet.
 
 **Instant** - {r}, banish this from your hand: Your next attack this turn gets **go again**.
@@ -3730,6 +3733,9 @@ CT8Gz8H8fhfPwLFHTM7Mh	Embrace Sin	Yellow	2	1		2				Shadow, Runeblade, Action				
 You may play an aura with Runechant in its name from your banished zone this turn.
 
 **Go again**"	Shadow Runeblade Action					No	
+6tcdJBqCtFmqJKKqztnN9	Embrace Ursur	Red	1	1	3	3				Shadow, Runeblade, Action, Attack								When this attacks, you may banish a card from your hand. If it's Runeblade, create a Runechant token. If it's Shadow, this gets **go again**.	Shadow Runeblade Action - Attack						
+KLNKdzcrjmbkp6fqDNRw7	Embrace Ursur	Yellow	2	1	2	3				Shadow, Runeblade, Action, Attack								When this attacks, you may banish a card from your hand. If it's Runeblade, create a Runechant token. If it's Shadow, this gets **go again**.	Shadow Runeblade Action - Attack						
+TFTCtjfRDBjpJT9CFMzPd	Embrace Ursur	Blue	3	1	1	3				Shadow, Runeblade, Action, Attack								When this attacks, you may banish a card from your hand. If it's Runeblade, create a Runechant token. If it's Shadow, this gets **go again**.	Shadow Runeblade Action - Attack						
 8D9wTFwLWtN9hkFwDgRWW	Embraforged Gauntlet					2				Shadow, Equipment, Arms		Temper, Blood Debt						"If this would be put into your graveyard from anywhere, instead banish it.
 
 **Temper**
@@ -7624,6 +7630,15 @@ MNTwwGcGgbWBPrnDdKtBb	Ominous Excavation	Blue	3	0						Generic, Instant								"
 
 If an aura you control was destroyed this turn, create a Ponder token."	Generic Instant					No	
 dbpfNKKDCMKCPHDkL6BJf	Ominous Respite	Yellow	2	1						Generic, Instant								Gain 2{h}. If an aura you control was destroyed this turn, instead gain 3{h}.	Generic Instant					No	
+k9HWDwhkfmhbG9kbqw7Kz	Ominous Toll	Red	1	0	3	2				Shadow, Necromancer, Action, Attack								"When this attacks, you may discard a zombie. If you do, create a Gate to i'Arathael token.
+
+**Go again**"	Shadow Necromancer Action - Attack						
+kQQMTWRHFpB8cBpptKNbh	Ominous Toll	Yellow	2	0	2	2				Shadow, Necromancer, Action, Attack								"When this attacks, you may discard a zombie. If you do, create a Gate to i'Arathael token.
+
+**Go again**"	Shadow Necromancer Action - Attack						
+R7TDdNMKbP7Lt89GfR8GK	Ominous Toll	Blue	3	0	1	2				Shadow, Necromancer, Action, Attack								"When this attacks, you may discard a zombie. If you do, create a Gate to i'Arathael token.
+
+**Go again**"	Shadow Necromancer Action - Attack						
 rC98Cch9DNGTfpggrNBh6	On a Knife Edge	Yellow	2	0		2				Generic, Action		Go again			Go again			"Your next sword attack this turn gets **go again**.
 
 **Go again**"	Generic Action						
