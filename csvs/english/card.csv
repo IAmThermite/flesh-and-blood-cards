@@ -4216,6 +4216,9 @@ When this hits a hero, banish the top card of their deck. If it's red, repeat th
 wzB7GqTmmpNTjqtQcMk7C	Excessive Bloodloss	Blue	3	1	3	3				Assassin, Action, Attack		Contract						"**Contract** - You are contracted to banish opponents' red cards. Whenever you complete this contract, create a Silver token.
 
 When this hits a hero, banish the top card of their deck. If it's red, repeat this process once."	Assassin Action - Attack						
+FbnbRGbDJ7DWC6FHmBJdD	Exorcism	Red	1	1		3				Generic, Action								"Your next attack this turn gets +3{p} and ""When this hits a hero, turn all cards in their banished zone face-down.""
+
+**Go again**"	Generic Action				No	No	
 dHGPHrcmzW8TJT6m8mrPp	Expedite	Red	1	0	3	3				Mechanologist, Action, Attack		Boost						"**Boost**
 
 When this hits, you may put an item with cost 1 or less from your hand into the arena."	Mechanologist Action - Attack						
@@ -12895,6 +12898,9 @@ hJgFfDPRWWmknCPnHCrrL	Villainous Pose	Blue	3	2		2				Reviled, Action		Go again, 
 **The crowd boos** you.
 
 **Go again**"	Reviled Action						
+GcQ9LGFwJPTThkPDHHJGL	Violent Gusto	Red	1	2	6	3				Generic, Action, Attack								"When this attacks a hero, you may name an aura permanent they control and return it to its owner's hand.
+
+When this hits a hero, return all aura permanents they control with that name to their owner's hand."	Generic Action - Attack				No	No	
 mcF6F69HgBntfh7QKkHWw	Vipox	Red	1	0	1	3				Generic, Action, Attack								When this hits a hero, they lose {h} equal to the number of cards in their hand.	Generic Action - Attack				No	No	
 qrgHbhCHptKd9Lj7hzDQQ	Virtuoso Bodice					2				Guardian, Equipment, Chest		Blade Break					Suspense	"When this defends, you may remove a suspense counter from an aura you control. If you do, gain {r}{r}.
 
