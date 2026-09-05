@@ -9228,6 +9228,9 @@ TwtwkgrK6kKwbGBFqjLgT	Restless Commander	Red	1	0	3		3			Shadow, Necromancer, Act
 FMFrCcMFkjB96Dm7njT69	Restless Corporal	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"**Action** - {t}: Put a card from your banished zone into your graveyard. **Go again**
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally						
+G7LFj8BBJTGW77fnQmNzg	Restless Looter	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"**Instant** - {t}: Discard a card. If you do, draw a card.
+
+**Decay**"	Shadow Necromancer Action - Zombie Ally					No	
 NpHWmhkTW7QB8hW9N7jKk	Restless Magister	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"When this hits a hero, they banish a card from their hand.
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally					No	
@@ -9237,6 +9240,9 @@ kPm7F8dprQbcTwDbhp9dp	Restless Outlaw	Red	1	0	3		3			Shadow, Necromancer, Action
 MpPWBfDrNhwwdjwKMMnRh	Restless Quartermaster	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"When this hits a hero, they banish a card in their arsenal.
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally					No	
+GH9DwkrhN78tzmDTMLLGj	Restless Templar	Red	1	0	3	3	3			Shadow, Necromancer, Action, Zombie, Ally								"Whenever a zombie you control with decay dies, create a Gate to i'Arathael token.
+
+**Decay**"	Shadow Necromancer Action - Zombie Ally				No	No	
 JMzGFRDF8qTWJCLPRfQgH	Restvine Elixir	Red	1	1		3				Generic, Action		Go again						"Your next attack this turn gets +3{p}.
 
 You may destroy an Inertia token you control. If you do, gain 1{h}.
@@ -12241,6 +12247,11 @@ cH7H7wcqh9qtMrNtJ7wdF	Tome of Imperial Flame	Red	1	0						Draconic, Action		Go a
 You may pitch 2 red cards. If you don't, banish your hand.
 
 **Go again**"	Draconic Action				No	No	
+bhjGbQtwLfjPQCCKMjfLP	Tome of Necrosis	Red	1	0		3				Necromancer, Action								"As an additional cost to play this, destroy an ally you control or discard an ally.
+
+Draw a card and {u} your hero.
+
+**Go again**"	Necromancer Action				No	No	
 mgDTDhJcfztFMhLrtcpBF	Tome of Pandemonium	Yellow	2	1		2				Chaos, Action		Go again						"Banish the top card of each hero's deck. You may play them this turn.
 
 **Go again**"	Chaos Action				No	No	
