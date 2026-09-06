@@ -1490,6 +1490,9 @@ RjcPtRpbKCD9THck8w7Nw	Bonebreaker Bellow	Blue	3	1		3				Brute, Action		Beat Ches
 Your next Brute attack this turn gets +1{p}. If you've **beaten chest** this turn, instead it gets +3{p}.
 
 **Go again**"	Brute Action						
+q9qbLpLtPqbw9pLcJTLbm	Boneseer Skullcap					2				Brute, Equipment, Head								"When this defends, reveal the top card of your deck. If it has 6 or more base {p}, put it on top. Otherwise, put it on the bottom.
+
+**Temper**"	Brute Equipment - Head				No	No	
 wmTPDLtBjwhmbKqqJmgCm	Boneyard Marauder	Red	1	1	6	3				Shadow, Brute, Action, Attack		Blood Debt						"As an additional cost to play this, banish 3 random cards from your graveyard.
 
 **Blood Debt**"	Shadow Brute Action - Attack						
@@ -3102,6 +3105,9 @@ rFtwwctDWPnQc7Wwtf6J6	Destructive Tendencies	Blue	3	0						Generic, Instant					
 wdQd78FWKJBKQCGTHtpDb	Devotion Never Dies	Red	1	1	4	2				Ninja, Action, Attack		Go again						"When this hits, if a Draconic attack was the last attack this combat chain, banish this. If you do, you may play it this turn.
 
 **Go again**"	Ninja Action - Attack				No	No	
+wLghzqkwJMKbJgH78GbLg	Devouring Doomwake	Red	1	6	11	3				Shadow, Brute, Action, Attack								"When this hits, banish it and all defending cards.
+
+**Blood Debt**"	Shadow Brute Action - Attack				No	No	
 NJnDKMhtRtcWptfC8pwWM	Diabolic Offering	Blue	3	1	*	*				Shadow, Brute, Action, Attack		Blood Debt						"If a card with 6 or more {p} has been put into your banished zone this turn, this card's {p} and {d} are 6, otherwise they are 0.
 
 **Blood Debt**"	Shadow Brute Action - Attack				No	No	
@@ -7967,6 +7973,9 @@ Create a Ponder token."	Generic Instant
 RhgzwQqqQ9g9mt8LkBzQm	Peaceful Sanctuary	Red	1	0		3				Generic, Action, Aura								"Heroes can't create aura tokens.
 
 At the start of your action phase, destroy this."	Generic Action - Aura				No	No	
+htrFmmGd7nbKCddMWN86N	Peak Power	Red	1	3	7	2				Brute, Action, Attack								When this attacks, reveal the top card of your deck. If the revealed card has 6 or more base {p}, this gets **overpower**.	Brute Action - Attack					No	
+WgMqgMMbLRkmcBPmFnfff	Peak Power	Yellow	2	3	6	2				Brute, Action, Attack								When this attacks, reveal the top card of your deck. If the revealed card has 6 or more base {p}, this gets **overpower**.	Brute Action - Attack					No	
+kJg9Fq7Gj7BRtPfmWn7Jb	Peak Power	Blue	3	3	5	2				Brute, Action, Attack								When this attacks, reveal the top card of your deck. If the revealed card has 6 or more base {p}, this gets **overpower**.	Brute Action - Attack					No	
 rKb97mmPGtmm9R9dMDW8d	Pearl Amulet	Blue	3	0						Generic, Action, Item		Legendary, Watery Grave	Action	Go again				"**Action** - Destroy this: {u} target permanent. **Go again**
 
 **Legend of the Watery Grave**"	Generic Action - Item				No	No	
