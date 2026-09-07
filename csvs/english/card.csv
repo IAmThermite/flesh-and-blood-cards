@@ -452,6 +452,13 @@ This costs {r} less to play for each Runechant you control.
 When this hits, create X Runechant tokens, where X is the damage dealt this way.
 
 **Dominate**"	Runeblade Action - Attack				No	No	
+ghKpBprtFpKPMdnfnzchw	Arknight Descendancy	Blue	3	5	6	3				Shadow, Runeblade, Action, Attack								"**Viserai Specialization**
+
+This costs {r} less to play for each Runechant you control.
+
+When this is banished from anywhere, you may pay up to 3{h}. Create that many Runechant tokens.
+
+**Blood Debt**"	Shadow Runeblade Action - Attack				No	No	
 pkMGCRh9fDT98dRgnQF8W	Arknight Shard	Blue	3							Runeblade, Resource, Gem		Legendary, Viserai Specialization						"**Legendary Viserai Specialization**
 
 When this is pitched, create a Runechant token."	Runeblade Resource - Gem				No	No	
@@ -4776,6 +4783,9 @@ t9FQnwWKw7RWz7pPBGf7f	Fool's Gold	Yellow	2							Generic, Resource								When t
 JBQPqNK9TGWNHD9NKmKTh	For the Dracai	Red	1	0	4	3				Draconic, Action, Attack							Mark	When this attacks a **marked** hero, create a Fealty token.	Draconic Action - Attack						
 kfQHGNNdKjPpG8nWkfB9P	For the Emperor	Red	1	1	5	3				Draconic, Action, Attack							Mark	When this attacks a **marked** hero, create a Fealty token.	Draconic Action - Attack						
 bFDwJwbqJQPJpcnHRjLCj	For the Realm	Red	1	2	6	3				Draconic, Action, Attack							Mark	When this attacks a **marked** hero, create a Fealty token.	Draconic Action - Attack						
+JzPWDPN6dnGbMrtbkjzFb	Forbidden Harvest	Yellow	2	1		2				Shadow, Runeblade, Action								"Turn up to 3 cards in your banished zone face-down, then create a Runechant token for each Shadow card turned face-down this way.
+
+**Go again**"	Shadow Runeblade Action					No	
 RN8gkCHTdn6DLWt7BzNfW	Force Sight	Red	1	1		2				Generic, Action		Opt 2, Go again						"The next attack action card you play this turn gets +3{p}.
 
 If this was played from arsenal, **opt 2**.
