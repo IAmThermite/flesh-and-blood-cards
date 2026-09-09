@@ -2193,6 +2193,9 @@ CjRzTWJcLTzzfkhwCRK7K	Civic Peak					2				Guardian, Equipment, Head		Temper					
 qQ9JC8BtngfRq7n9pqpKM	Civic Steps					2				Guardian, Equipment, Legs		Temper						"Whenever this defends, create a Quicken token under another hero's control.
 
 **Temper**"	Guardian Equipment - Legs						
+6zbwkqftQnTL8zdrHmwQz	Clambering Corpses	Blue	3	0	1	3				Shadow, Necromancer, Action, Attack								"When this attacks, you may discard a zombie. If you do, this gets +3{p} and **go again**.
+
+When this hits a hero, your zombie attacks this turn get **go again**."	Shadow Necromancer Action - Attack				No	No	
 9G9hzcppH7WtgccPwfdGC	Clamp Press	Blue	3	2						Mechanologist, Action, Item		Crank						"**Crank**
 
 This enters the arena with 2 steam counters. At the start of your turn, destroy this unless you remove a steam counter from it.
@@ -2451,6 +2454,9 @@ kMRjHHLzPtgLw7j7PmQqf	Command and Conquer	Red	1	2	6	3				Generic, Action, Attack
 Until end of turn, your Warrior attacks get ""When this is defended by 1 or more attack action cards, destroy a card in the defending hero's arsenal.""
 
 **Go again**"	Warrior Action				No	No	
+jgz7PjR8TPtWbLFdgDRDJ	Commit to Corruption	Red	1	0		3				Shadow, Necromancer, Action								"Your next attack this turn gets +3{p} and ""When this hits, create a Corrupted Corpse in your banished zone.""
+
+**Go again**"	Shadow Necromancer Action					No	
 6h97MQcbc89bqd99BGRht	Companion of the Claw	Red	1	2	4	2				Mystic, Ninja, Action, Attack		Go again						"When this attacks, if you've pitched a blue card this turn, create a Crouching Tiger in your hand.
 
 **Go again**"	Mystic Ninja Action - Attack						
@@ -3532,6 +3538,9 @@ If you've played a red card this turn, your dragon attacks get **go again**."	Dr
 9bQFfTFGQWJFWrcJnfQgz	Drone of Brutality	Red	1	2	6	2				Generic, Action, Attack								If this would be put into your graveyard from anywhere, instead put it on the bottom of your deck.	Generic Action - Attack					No	
 Nhmj8MBNCmWFC68JkhkNC	Drone of Brutality	Yellow	2	2	5	2				Generic, Action, Attack								If this would be put into your graveyard from anywhere, instead put it on the bottom of your deck.	Generic Action - Attack					No	
 hJt6FwT8mhQbcWQLzgHMT	Drone of Brutality	Blue	3	2	4	2				Generic, Action, Attack								If this would be put into your graveyard from anywhere, instead put it on the bottom of your deck.	Generic Action - Attack					No	
+G8FNR7NRCWQ66MfrmGngg	Drop Dead Bodice					0				Shadow, Necromancer, Equipment, Chest								"**Instant** - Destroy this: Until end of turn, whenever a zombie is put into your graveyard, gain {r}.
+
+**Arcane Barrier 1**"	Shadow Necromancer Equipment - Chest						
 pBTGtg7LJbjTBWDGQDknH	Drop of Dragon Blood	Red	1	2						Draconic, Instant		Legendary						"**Legendary**
 
 This costs {r} less to play for each Draconic chain link you control.
@@ -5000,7 +5009,7 @@ whJmFnkNbtrd8D98KGg8d	Gas Up	Blue	3	1		2				Mechanologist, Action		Go again					
 You may put a Hyper Driver from your banished zone into the arena.
 
 **Go again**"	Mechanologist Action						
-JtkWt6Kzpgz9qpPLPp8Ff	Gate to i'Arathael									Shadow, Token, Aura			Instant				Blood Debt	**Instant** - {r}, destroy this: You may play target action card with blood debt from your banished zone this turn.	Shadow Token - Aura				No	No	
+JtkWt6Kzpgz9qpPLPp8Ff	Gate to i'Arathael									Shadow, Token, Aura			Instant				Blood Debt	**Instant** - {r}, destroy this: You may play target action card with blood debt from your banished zone this turn.	Shadow Token - Aura						
 GPRfKmdq6LnRwNQCG8jnR	Gauntlet of Boulderhold					1				Guardian, Equipment, Arms		Battleworn	Action	Go again				"**Action** - {r}{r}{r}, destroy this: The next Guardian attack action card you play this turn gets +2{p}. **Go again**
 
 **Battleworn**"	Guardian Equipment - Arms						
@@ -7844,6 +7853,9 @@ Bd8JQMtjbmwQ7W6GLt7KL	Oscilio, Constella Intelligence						36	4		Elemental, Wiza
 **Essence of Lightning**"	Elemental Wizard Hero		No		No	No	
 nqbttmdCrgTbFBjJBzLtz	Oscilio, Forked Continuum						38	4		Lightning, Wizard, Hero			Instant					**Instant** - {r}, {t}, destroy a Lightning Flow you control: Discard a card and create a Ponder token. If an instant is discarded this way, you may play it this turn.	Lightning Wizard Hero		No		No	No	
 bdD7LdLhpgdfLwzCq6jBc	Oscilio, Scion of the Third Age						19	4		Lightning, Wizard, Hero, Young			Instant					**Instant** - {r}, {t}, destroy a Lightning Flow you control: Discard a card and create a Ponder token. If an instant is discarded this way, you may play it this turn.	Lightning Wizard Hero - Young			No			No
+Trc9PQqt7QGDWg7kkQr6d	Otherworldly Ossuary	Blue	3	1		3				Shadow, Necromancer, Action								"Create a Corrupted Corpse in your banished zone.
+
+**Go again**"	Shadow Necromancer Action					No	
 qgzjH8rNPpg6Jb6PgzggC	Out Muscle	Red	1	3	6	2				Generic, Action, Attack		Go again						If this isn't defended by a card with equal or greater {p}, this gets **go again**.	Generic Action - Attack					No	
 dRFbtRTF8qzzBwbqHkWtF	Out Muscle	Yellow	2	3	5	2				Generic, Action, Attack		Go again						If this isn't defended by a card with equal or greater {p}, this gets **go again**.	Generic Action - Attack					No	
 Tt9bDKwjdn6dLqhGNc9Rc	Out Muscle	Blue	3	3	4	2				Generic, Action, Attack		Go again						If this isn't defended by a card with equal or greater {p}, this gets **go again**.	Generic Action - Attack					No	
@@ -9367,6 +9379,9 @@ kPm7F8dprQbcTwDbhp9dp	Restless Outlaw	Red	1	0	3		3			Shadow, Necromancer, Action
 MpPWBfDrNhwwdjwKMMnRh	Restless Quartermaster	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"When this hits a hero, they banish a card in their arsenal.
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally					No	
+rww9tn9HMgBDHJdbfDgzk	Restless Steed	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"When this hits, the attack gets **go again**.
+
+**Decay**"	Shadow Necromancer Action - Zombie Ally						
 GH9DwkrhN78tzmDTMLLGj	Restless Templar	Red	1	0	3	3	3			Shadow, Necromancer, Action, Zombie, Ally								"Whenever a zombie you control with decay dies, create a Gate to i'Arathael token.
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally				No	No	
@@ -9607,6 +9622,9 @@ BQDWRBw9TQDmGFNBHFMfR	Rites of Lightning	Blue	3	1	2	3			1	Elemental, Runeblade, 
 When this attacks, if it was **fused**, deal 1 arcane damage to target hero.
 
 If you've dealt arcane damage this turn, this gets **go again**."	Elemental Runeblade Action - Attack					No	
+JmcD7nRjT8WJMkCQzhKBG	Rites of Nightfall	Blue	3	1		3				Shadow, Action								"Create a Gate to i'Arathael token.
+
+**Go again**"	Shadow Action					No	
 qTbnWfWzCJMrcf8BqjNqg	Rites of Replenishment	Red	1	2	6	3				Elemental, Runeblade, Action, Attack		Earth Fusion						"**Earth Fusion**
 
 When this attacks, if you've dealt arcane damage this turn, you may put a non-attack action card from your graveyard on the bottom of your deck.
@@ -10417,6 +10435,9 @@ n8zwhgdnBkDqF9McWtMNd	Shadowrealm Ripper	Yellow	2	1	4	3				Shadow, Action, Attac
 HkgCqJgnnK8KRrKThwHtN	Shadowrealm Ripper	Blue	3	1	3	3				Shadow, Action, Attack								"When this attacks, you may banish a card from your hand. If it's Shadow, this gets +2{p}.
 
 **Blood Debt**"	Shadow Action - Attack						
+GfHBz8GqknQnNgwDWPCwC	Shadowrealm Solace	Blue	3	0		3				Shadow, Necromancer, Action								"You may put a card from your banished zone into your graveyard. If it's a zombie, gain 1{h}.
+
+**Go again**"	Shadow Necromancer Action						
 9FCpDBbqfhGHtN8JcQLNN	Shadowrealm Strength	Red	1	0		3				Shadow, Necromancer, Action								"You may put a card from your banished zone into your graveyard. If it's a zombie, your next attack this turn gets +3{p}.
 
 **Go again**"	Shadow Necromancer Action						
@@ -10869,6 +10890,16 @@ m9KtRPwMhWCwt8Gfp86cn	Sizzle	Yellow	2	0		2				Lightning, Action		Go again						"
 
 **Go again**"	Lightning Action						
 DPh9t9CPG8qjfbPNPbfBK	Sizzling Steel	Red	1	1		2				Draconic, Warrior, Attack Reaction								Target dagger attack gets +3{p}. If you control 2 or more Draconic chain links, instead it gets +4{p}.	Draconic Warrior Attack Reaction						
+PtKcnWbbgkjQMGQhCBBh8	Skeletal Puppetry	Red	1	2		2				Necromancer, Action								"You may discard an ally rather than pay this card's {r} cost.
+
+Your next ally attack this turn gets +3{p} and **go again**.
+
+**Go again**"	Necromancer Action					No	
+6LpRR8cmGnLkpCKBpb6pW	Skeletal Puppetry	Blue	3	2		2				Necromancer, Action								"You may discard an ally rather than pay this card's {r} cost.
+
+Your next ally attack this turn gets +1{p} and **go again**.
+
+**Go again**"	Necromancer Action					No	
 LB6wBhCKpBWCJqd9tFR8B	Skera Strapping					0				Brute, Equipment, Arms		Spellvoid 3						If you've pitched a card with 6 or more {p} this turn, this gets **spellvoid 3**.	Brute Equipment - Arms						
 cjk6KqfdDWCF6pLdpQFdj	Skittering Sands	Red	1	0		2				Draconic, Illusionist, Action		Transform, Go again						"**Transform** target ash you control into an Aether Ashwing. It gets +3{p} until end of turn.
 
