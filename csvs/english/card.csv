@@ -2904,6 +2904,9 @@ Ddqz6QF9FNMT8qJjjr8Q9	Dabble in Darkness	Red	1	0	5	3				Shadow, Action, Attack		
 wKRRTFLrpKDJRLQTnb7Ld	Daily Grind	Blue	3	0		3				Guardian, Action, Aura					Clash			"Attack action cards you control get ""When this defends, **clash** with the attacking hero. The winner destroys the top card of the other hero's deck.""
 
 At the start of your turn, destroy this."	Guardian Action - Aura				No	No	
+zpT9Dh66dJh9gr8mpzwzL	Dam the Shadowake	Red	1			4				Shadow, Block								When this defends a Shadow hero's attack, create a Gate to i'Arathael token.	Shadow Block						
+fwBgWHNhBNwtTcQK8qn6m	Dam the Shadowake	Yellow	2			3				Shadow, Block								When this defends a Shadow hero's attack, create a Gate to i'Arathael token.	Shadow Block						
+q9wQ89bkTmrrh8mBq6Qrp	Dam the Shadowake	Blue	3			2				Shadow, Block								When this defends a Shadow hero's attack, create a Gate to i'Arathael token.	Shadow Block						
 rzGrbqkdk7nptwNhTJKCb	Dampen	Red	1	2		3			4	Wizard, Action								"Deal 4 arcane damage to any target.
 
 Prevent the next X arcane damage that would be dealt to you this turn, where X is the damage dealt by this."	Wizard Action					No	
@@ -2920,6 +2923,7 @@ kDCzjqmjjMT9hdnJTfRJb	Danger Digits					0				Assassin, Ninja, Equipment, Arms			
 6KkCNpN9MrgKcjn9dpczm	Danse Macabre					1				Necromancer, Equipment, Legs								"Whenever an ally you control enters the arena, you may pay {r}{r} and {t} this. If you do, that ally's first attack this turn gets **go again** and destroy that ally at the beginning of the end phase.
 
 **Blade Break**"	Necromancer Equipment - Legs				No	No	
+rLNwTnFzgJMHzRptbLpwB	Dark Arcanite Boots					0				Generic, Equipment, Legs								**Shadow Resist 1**	Generic Equipment - Legs						
 PfTbqGJqLK6zHDKrcbDCL	Darkest Hour	Red	1	2		3				Shadow, Action								"You may put a card from your hand on top of your deck rather than pay this card's {r} cost.
 
 Your next Shadow attack this turn gets +4{p}. **Go again**
@@ -9379,6 +9383,9 @@ kPm7F8dprQbcTwDbhp9dp	Restless Outlaw	Red	1	0	3		3			Shadow, Necromancer, Action
 MpPWBfDrNhwwdjwKMMnRh	Restless Quartermaster	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"When this hits a hero, they banish a card in their arsenal.
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally					No	
+RQTnNPLLDhRBLnqgNzDPM	Restless Shieldmaiden	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"**Shadow Resist 1**
+
+**Decay**"	Shadow Necromancer Action - Zombie Ally						
 rww9tn9HMgBDHJdbfDgzk	Restless Steed	Red	1	0	3		3			Shadow, Necromancer, Action, Zombie, Ally								"When this hits, the attack gets **go again**.
 
 **Decay**"	Shadow Necromancer Action - Zombie Ally						
