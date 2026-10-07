@@ -480,6 +480,11 @@ gTFpc8PnjzBtjcJkzcCbt	Asking for Trouble	Yellow	2			4				Brute, Block								Whe
 cFgpPh7JLB8jCtrTd6nKG	Aspect of Tiger: Body	Red	1	0	3	3				Ninja, Action, Attack		Combo, Go again						**Combo** - When this attacks, if a red attack action card was the last attack this combat chain, this gets **go again** and create a Crouching Tiger in your banished zone. You may play it this turn.	Ninja Action - Attack					No	
 p6nMGj9fLB8p9HFDhrJRP	Aspect of Tiger: Mind	Blue	3	0	1	3				Ninja, Action, Attack		Combo, Go again						**Combo** - When this attacks, if a blue attack action card was the last attack this combat chain, this gets **go again** and create a Crouching Tiger in your banished zone. You may play it this turn.	Ninja Action - Attack					No	
 khwtPrnQkQFfNBccCczht	Aspect of Tiger: Soul	Yellow	2	0	2	3				Ninja, Action, Attack		Combo, Go again						**Combo** - When this attacks, if a yellow attack action card was the last attack this combat chain, this gets **go again** and create a Crouching Tiger in your banished zone. You may play it this turn.	Ninja Action - Attack					No	
+w77FMTjrRLgtTfCbfKjQM	Assassin Weapon - Dagger (1H)				1					Assassin, Weapon, Dagger, 1H								"**Action** - {r}{r}, {t}: **Attack**. **Go again**
+
+If this is attacking an infected hero, this gets +1{p}.
+
+**Piercing 1**"	Assassin Weapon - Dagger (1H)						
 bnFnGz7gd8tRfQfcmk8nG	Assault and Battery	Red	1	3	7	3				Brute, Action, Attack		Beat Chest					Beat Chest	"**Beat Chest**
 
 When this attacks, if you've **beaten chest** this turn, create an Agility token."	Brute Action - Attack						
@@ -7517,6 +7522,7 @@ hdBzQDmLW99WzrRmgqBcg	Out for Blood	Yellow	2	1		3				Warrior, Attack Reaction		R
 hmh7T87jmwTmpfdbdjBFR	Out for Blood	Blue	3	1		3				Warrior, Attack Reaction		Reprise						"Target weapon attack gets +1{p}.
 
 **Reprise** - If the defending hero has defended with a card from their hand this chain link, your next attack this turn gets +1{p}."	Warrior Attack Reaction						
+cQfzCDkjWWcNtHL77Kpgz	Outbreak	Blue	3	3		3				Assassin, Attack Reaction								"Target Assassin attack action card gets +3{p} and ""When this hits a hero, create a Frailty, Inertia, and Bloodrot Pox token under their control."""	Assassin Attack Reaction				No	No	
 jhHRPW9NgMWC66TRC9G8d	Outed	Red	1	0	3					Generic, Action, Attack		Go again					Mark	"If you are **marked**, you can't play this.
 
 If the defending hero is **marked**, this gets +1{p}.
@@ -8341,6 +8347,7 @@ ctHW6nkg8WJKJcmqRtTpH	Prognosticate	Yellow	2	0		3			2	Wizard, Action		Surge, Opt
 6nPhzmrgb6bf6Km6gDBFG	Prognosticate	Blue	3	0		3			1	Wizard, Action		Surge, Opt 1						"Deal 1 arcane damage to target hero.
 
 **Surge** - If this deals more than 1 damage, **opt 1**."	Wizard Action						
+MKJJrLCK7jqB7cG7TGtBD	Prolonged Illness	Blue	3	0		3				Assassin, Instant								Until end of turn, whenever a disease token is destroyed, if it's the first disease token with that name that's been destroyed this turn, create a token copy of it under the same hero's control.	Assassin Instant				No	No	
 WDDHGnJfg7HGgWcnRGrN7	Promise of Plenty	Red	1	0	3	2				Generic, Action, Attack		Go again						"When this hits, each hero who doesn't have a card in their arsenal puts the top card of their deck face-down into their arsenal.
 
 If this was played from arsenal, it gets **go again**."	Generic Action - Attack					No	
@@ -9795,6 +9802,9 @@ When this hits a hero, create an Inertia token under their control."	Ranger Acti
 9wnz6M6QrJktmmcPLgpbr	Seduce Secrets	Yellow	2	0						Generic, Instant								"Look at target hero's hand and the top card of their deck.
 
 If this was played from arsenal, draw a card."	Generic Instant				No	No	
+w6ndb6MqgKCckbBHmrLrf	Seed Bloodrot	Blue	3	0						Assassin, Instant								Create a Bloodrot Pox token under each hero's control.	Assassin Instant						
+bpBTcjpcQFJPMBqK7G9nC	Seed Frailty	Blue	3	0						Assassin, Instant								Create a Frailty token under each hero's control.	Assassin Instant						
+zJ69bMhKnqdNzwbjkLLWD	Seed Inertia	Blue	3	0						Assassin, Instant								Create an Inertia token under each hero's control.	Assassin Instant						
 bkwMDWGMmKTMd9dKQMt76	Seeds of Agony	Red	1	0		2			1	Shadow, Runeblade, Action		Go again, Blood Debt						"You may play this from your banished zone.
 
 The next attack action card with cost 2 or less you play this turn gets ""When this attacks, deal 1 arcane damage to target hero.""
@@ -12540,6 +12550,9 @@ hJgFfDPRWWmknCPnHCrrL	Villainous Pose	Blue	3	2		2				Reviled, Action		Go again, 
 
 **Go again**"	Reviled Action						
 mcF6F69HgBntfh7QKkHWw	Vipox	Red	1	0	1	3				Generic, Action, Attack								When this hits a hero, they lose {h} equal to the number of cards in their hand.	Generic Action - Attack				No	No	
+ffwF7KttcQbGJwMJGct7k	Viral Diffusion		1	3		4				Assassin, Defense Reaction, Trap								"**Mortimer Specialization**
+
+When this defends, create a Frailty, Inertia, and Bloodrot Pox token under the attacking hero's control."	Assassin Defense Reaction - Trap				No	No	
 qrgHbhCHptKd9Lj7hzDQQ	Virtuoso Bodice					2				Guardian, Equipment, Chest		Blade Break					Suspense	"When this defends, you may remove a suspense counter from an aura you control. If you do, gain {r}{r}.
 
 **Blade Break**"	Guardian Equipment - Chest				No	No	
