@@ -28,6 +28,10 @@
         "name": "Angel"
     },
     {
+        "unique_id": "p8KWQjJkPT6RNhBCj9n7c",
+        "name": "Arakni"
+    },
+    {
         "unique_id": "Wd89Lr6DnQJqzrhQW9TRj",
         "name": "Arms"
     },
@@ -116,6 +120,10 @@
         "name": "Cog"
     },
     {
+        "unique_id": "6jWKBFqdCTd9fhfWnzrNd",
+        "name": "Companion"
+    },
+    {
         "unique_id": "HrgTfm7hGrDQ8bLcTpjB9",
         "name": "Construct"
     },
@@ -134,6 +142,10 @@
     {
         "unique_id": "kchhNfctqPFht6DFNRWhJ",
         "name": "Demon"
+    },
+    {
+        "unique_id": "CCddf8bmRjNP6HJ6RTprJ",
+        "name": "Disease"
     },
     {
         "unique_id": "dGBzCkJ7FWTFbWmjGbQjT",
@@ -244,6 +256,10 @@
         "name": "Lightning"
     },
     {
+        "unique_id": "Ljpnj6nfr97GnTNTbjwGc",
+        "name": "Log"
+    },
+    {
         "unique_id": "JGjBnHQ7JzFMGdPnRFwRd",
         "name": "Lute"
     },
@@ -312,6 +328,10 @@
         "name": "Polearm"
     },
     {
+        "unique_id": "gpGPCfmL6PjmtJB9TWtjW",
+        "name": "Puffin"
+    },
+    {
         "unique_id": "B7GtthGWB6pkK8M9NwWGp",
         "name": "Quiver"
     },
@@ -350,6 +370,14 @@
     {
         "unique_id": "DTkFqTdJDpGpnmhMCwnnC",
         "name": "Scepter"
+    },
+    {
+        "unique_id": "nckJgBqNmrwRmjq6cHwrL",
+        "name": "Scroll"
+    },
+    {
+        "unique_id": "KPFcPwnJHtgRPNdBzrd6R",
+        "name": "Scurv"
     },
     {
         "unique_id": "MMRzw7RhQmHQpbN9MPHTD",
@@ -410,5 +438,9 @@
     {
         "unique_id": "QPtmrBGhLFbnpFMQznnwH",
         "name": "Young"
+    },
+    {
+        "unique_id": "6BPJ8HKn9wL6kh6djtBg6",
+        "name": "Zombie"
     }
 ]

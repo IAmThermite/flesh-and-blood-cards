@@ -216,6 +216,12 @@
         "description_plain": ""
     },
     {
+        "unique_id": "rJmPhjjt7qjG8BHpDCqTc",
+        "name": "High Tide",
+        "description": "A Pirate mechanic that triggers the effect when 2 or more blue cards are in your pitch zone.",
+        "description_plain": "A Pirate mechanic that triggers the effect when 2 or more blue cards are in your pitch zone."
+    },
+    {
         "unique_id": "NdTgddPBhJLhG7HRjqPG6",
         "name": "Intimidate",
         "description": "A Brute mechanic that showcases how frightening a brute is to its enemies. **Intimidate** removes a random card from a heroes hand making it more difficult to defend.",
@@ -238,6 +244,12 @@
         "name": "Material",
         "description": "An Illusionist mechanic that applies effects if it is under another permanent.",
         "description_plain": "An Illusionist mechanic that applies effects if it is under another permanent."
+    },
+    {
+        "unique_id": "tWmTpjT7HPDmLHCfhWDNQ",
+        "name": "Meld",
+        "description": "**Meld** is a keyword that allows you o play one or both halves of the card.",
+        "description_plain": "Meld is a keyword that allows you o play one or both halves of the card."
     },
     {
         "unique_id": "jTtHPbKjwLkkDhRQHpWnK",
@@ -376,6 +388,12 @@
         "name": "Spellvoid X",
         "description": "**Spellvoid** is a keyword primarily on equipment or items. **Spellvoid** is a one time use effect that prevents arcane damage.",
         "description_plain": "Spellvoid is a keyword primarily on equipment or items. Spellvoid is a one time use effect that prevents arcane damage."
+    },
+    {
+        "unique_id": "zQDCMQgTNnrfzj6qw9qPB",
+        "name": "Starfall",
+        "description": "A Lightning wizard effect that triggers an effect when an instant card has been put into your graveyard this turn.",
+        "description_plain": "A Lightning wizard effect that triggers an effect when an instant card has been put into your graveyard this turn."
     },
     {
         "unique_id": "Hf7NC8dzdQnDFbD8jb6cq",

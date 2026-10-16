@@ -302,7 +302,7 @@
                 "unique_id": "BmGtJQktNKT6nQpQmGpMf",
                 "edition": "N",
                 "start_card_id": "AMA001",
-                "end_card_id": "AMA029",
+                "end_card_id": "AMA030",
                 "initial_release_date": "2026-09-25T00:00:00Z",
                 "out_of_print": false,
                 "card_database": "https://cardvault.fabtcg.com/products/armory-deck-malice-domina-of-the-dead/",
@@ -1309,16 +1309,16 @@
             {
                 "unique_id": "qPHBhhWF8Mb8pfGcmztnF",
                 "edition": "N",
-                "start_card_id": "IAR145",
-                "end_card_id": "IAR222",
-                "initial_release_date": null,
+                "start_card_id": "IAR000",
+                "end_card_id": "IAR666",
+                "initial_release_date": "2026-09-25T00:00:00.000Z",
                 "out_of_print": false,
-                "card_database": null,
-                "product_page": null,
+                "card_database": "https://cardvault.fabtcg.com/products/usurp-the-shadow-throne",
+                "product_page": "https://fabtcg.com/products/booster-set/iar/",
                 "collectors_center": null,
                 "card_gallery": null,
                 "release_notes": null,
-                "set_logo": null
+                "set_logo": "https://cdn.fabtcg.com/uploads/2026/07/usurp_the_shadow_throne_logo.png"
             }
         ]
     },
@@ -2274,6 +2274,27 @@
                 "out_of_print": false,
                 "card_database": "https://cards.fabtcg.com/products/smash-palace/",
                 "product_page": "https://fabtcg.com/en/products/booster-set/smash-palace/",
+                "collectors_center": null,
+                "card_gallery": null,
+                "release_notes": null,
+                "set_logo": null
+            }
+        ]
+    },
+    {
+        "unique_id": "tq7bnHfwnHrdwwgJ8fCtb",
+        "id": "SPW",
+        "name": "Smash Palace - Chorus of Steel",
+        "printings": [
+            {
+                "unique_id": "N9GCTHwD6CDh9HrFHDfnM",
+                "edition": "N",
+                "start_card_id": "SPW001",
+                "end_card_id": "SPW004",
+                "initial_release_date": null,
+                "out_of_print": false,
+                "card_database": null,
+                "product_page": null,
                 "collectors_center": null,
                 "card_gallery": null,
                 "release_notes": null,
