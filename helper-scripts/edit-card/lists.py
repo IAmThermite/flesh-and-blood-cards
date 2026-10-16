@@ -26,6 +26,17 @@ SHORT_LIST = 12
 PICK_ONE_KEYS = ("type to narrow the list · ↑↓ move · Enter choose · Esc back",)
 PICK_SEVERAL_KEYS = ("type to narrow the list · ↑↓ move · Enter add or remove · Esc done",)
 
+# Keys that leave a list for another field when it's part of a form.
+FORM_EXITS = ("past top", "past bottom", "left", "right", "tab", "back tab")
+
+# In a form, ← and → (or going off the top or bottom of the list) change field.
+PICK_ONE_FORM_KEYS = (
+    "type to narrow · ↑↓ move · ←→ previous or next field · Enter choose",
+)
+PICK_SEVERAL_FORM_KEYS = (
+    "type to narrow · ↑↓ move · ←→ previous or next field · Enter add or remove",
+)
+
 
 class Vocabulary:
     """
@@ -78,6 +89,10 @@ def build_vocabularies():
 
     keywords = Vocabulary("keyword.csv", several=True)
     vocabularies = {
+        # No CSV lists the colours, but there are only these - pitch order, then the one Purple.
+        "Color": Vocabulary(
+            None, closed=True, options={"Red": "", "Yellow": "", "Blue": "", "Purple": ""}
+        ),
         "Types": Vocabulary("type.csv", several=True),
         "Card Keywords": keywords,
         "Abilities and Effects": Vocabulary("ability.csv", several=True),
@@ -218,13 +233,23 @@ class Lists:
             rows.append(Row("  (blank)", ""))
         return rows or [Row("Nothing matches.")]
 
-    def pick(self, record, column):
-        """Choose a column's value from its list. Returns the value, or None if abandoned."""
+    def pick(self, record, column, edges=False, notes=()):
+        """
+        Choose a column's value from its list.
+
+        Returns the value - None if it was left as it was - and how the list was left: "chosen",
+        "done", or with `edges` (in a form), "back" for ←, Shift-Tab or ↑ off its top - →,
+        Tab and ↓ off its bottom being "done". `notes` are shown under the list. Ctrl-C
+        raises KeyboardInterrupt.
+        """
 
         vocabulary = self.vocabularies[column]
         choices = self.choices(record, column)
         chosen = split_list(record[column]) if vocabulary.several else [record[column]]
-        keys = PICK_SEVERAL_KEYS if vocabulary.several else PICK_ONE_KEYS
+        if edges:
+            keys = PICK_SEVERAL_FORM_KEYS if vocabulary.several else PICK_ONE_FORM_KEYS
+        else:
+            keys = PICK_SEVERAL_KEYS if vocabulary.several else PICK_ONE_KEYS
         cursor, text = Cursor(), ""
 
         # Start a single choice on the value it has now.
@@ -235,15 +260,19 @@ class Lists:
         while True:
             title = f"{column}: {', '.join(chosen) or '(blank)'}"
             prompt = f"Showing: {text}_" if text else "Type to narrow the list."
-            key = self.screen.choose(title, rows, cursor, keys, [prompt], typing=True)
+            key = self.screen.choose(
+                title, rows, cursor, keys, [*notes, prompt], typing=True, edges=edges
+            )
 
             if key == "interrupt":
-                return None
-            if key == "escape":
-                return ", ".join(chosen) if vocabulary.several else None
+                raise KeyboardInterrupt
+            leaving = ("escape",) + (FORM_EXITS if edges else ())
+            if key in leaving:
+                value = ", ".join(chosen) if vocabulary.several else None
+                return value, "back" if key in ("past top", "left", "back tab") else "done"
             if key == "enter" and cursor.at is not None:
                 if not vocabulary.several:
-                    return rows[cursor.at].target
+                    return rows[cursor.at].target, "chosen"
                 self.toggle(vocabulary, chosen, rows[cursor.at].target)
                 text = ""
             elif key == "backspace":
@@ -265,17 +294,19 @@ class Lists:
             chosen.remove(value)
             return
 
-        # "Ward X" is the keyword. What goes on the card is "Ward 3".
+        # "Ward X" is the keyword. What goes on the card is "Ward 3" - so the number is typed
+        # straight after the name, on the screen's own line, where Esc goes back to the list.
         if value.endswith(" X") and value in vocabulary.options:
-            with self.screen.console(4):
-                try:
-                    amount = input(f"{value} - what is X? (a number, or X; Enter to cancel): ")
-                except (EOFError, KeyboardInterrupt):
-                    print()
+            stem, amount, problem = value[:-2], "", ""
+            while True:
+                hint = problem or "its number, or X · Enter adds it · Esc back to the list"
+                how, amount = self.screen.edit_line(f"{stem} ", amount, hint)
+                if how != "enter" or not amount.strip():
                     return
-            if not amount.strip():
-                return
-            value = vocabulary.valued(f"{value[:-2]} {amount}") or f"{value[:-2]} {amount.strip()}"
+                if vocabulary.valued(f"{stem} {amount}"):
+                    value = vocabulary.valued(f"{stem} {amount}")
+                    break
+                problem = f"! {stem} takes a number, or X"
 
         if value not in chosen:
             chosen.append(value)

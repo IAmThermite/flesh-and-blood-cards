@@ -5,6 +5,7 @@ An interactive Python script that looks a card up by name or print code and lets
 python main.py                        # asks for a card name or print code
 python main.py command and conquer    # opens the card straight away
 python main.py IAR056                 # so does a print code
+python main.py + Lunging Strike       # adds a new card
 ```
 
 ## Finding a card
@@ -21,11 +22,11 @@ The card opens as a list of its `card.csv` fields, then the cards it references,
 | Key | What it does |
 | --- | --- |
 | `↑` `↓` | Move the highlight. `Page Up`, `Page Down`, `Home` and `End` move further, and `j` / `k` work too. |
-| `Enter` | On a field, edit it: pick from a list where the field has one (see below), otherwise change the value on a line. On a printing, open it. On **Add reference…** or a reference, open the list of cards to reference. |
+| `Enter` | On a field, edit it: pick from a list where the field has one (see below), otherwise change the value on a line. On a printing, open it. On **Add reference…** or a reference, open the list of cards to reference. On **Add printing…**, add a printing. |
 | `t` | Type the highlighted field's value on a line, even if it has a list. The current value is there ready to change; clear it to blank the field. |
 | `e` | Edit the highlighted field in `$EDITOR` instead, which is easier for long functional text. |
-| `a` | Add a blank printing. |
-| `c` | Add a printing as a copy of the highlighted one, to change what differs. |
+| `a` | Add a printing, asking for its fields one after another (see below) - the same as **Add printing…**, the last row under the printings. |
+| `c` | Add a printing as a copy of the highlighted one, going through its fields to change what differs. |
 | `d` | On a printing, mark it for deletion - `d` again keeps it. On a reference, remove it. |
 | `s` | Save. |
 | `q` or `Esc` | Close the card. If there are unsaved changes it lists them: `Enter` saves, `n` discards, `c` keeps editing. In a printing, go back to the card. |
@@ -41,6 +42,7 @@ Fields whose values are defined in another CSV open as a list. Type to narrow it
 
 | Field | List |
 | --- | --- |
+| `Color` | Red, Yellow, Blue, Purple or blank |
 | `Types` | `type.csv` |
 | `Card Keywords`, `Ability and Effect Keywords`, `Granted Keywords`, `Removed Keywords`, `Interacts with Keywords` | `keyword.csv` |
 | `Abilities and Effects` | `ability.csv` |
@@ -54,7 +56,7 @@ Fields that hold several values (keywords, types, artists, art variations) stay 
 The short lists - edition, rarity, foiling, art variation, set - are complete, so nothing else is accepted. The rest are a starting point rather than the whole story:
 
 * Each value shows how many cards or printings use it. Values that are in use but missing from the CSV are listed too, marked as such, so `Ice Fusion` or a type that hasn't been added to `type.csv` yet can still be picked.
-* Picking a keyword written with an X, like `Ward X`, asks what X is and adds `Ward 3`.
+* Picking a keyword written with an X, like `Ward X`, asks for its number on the line under the list: type `3` and it adds `Ward 3`. Anything but a number (or X) is refused, and `Esc` goes back to the list. Typing `ward 3` into the list does the same in one go.
 * Typing something the list doesn't have offers to add it, last in the list. A value that isn't in the CSV or on any other row gets a note when it's added, since a typo looks just like a new keyword.
 
 ### References
@@ -65,6 +67,25 @@ A card refers to another by name, so a reference covers every pitch of it: ticki
 If the card you're editing comes in more than one pitch, you're asked whether to make the same change to the others, since a card's pitches nearly always reference the same things. `Enter` does, `n` changes just this one.
 
 New rows go where the file would have them: in card name order, then by the name referenced and the pitches.
+
+### Adding a card or printing
+Type `+` at the search prompt to add a card - `+ Lunging Strike` starts it with that name. The fields are then asked for one after another, as a form, with the field being asked highlighted on the card: a list to pick from where the field has one, a line to type on otherwise. `Enter` keeps what a field holds and moves on, so a field that should stay blank is just `Enter`. Fields are asked for in the order they're listed on the card - the same order as the CSV, and as every other view in the script - and the pitch is filled in from the colour, ready to keep.
+
+Once the card's fields are done it offers to add its first printing. **Add printing…** under a card's printings, `a`, and `c` on a printing go through the same form for a printing. The card ID fills in the set, and for a set that's only been printed once - every set but the first few - the set printing and edition as well; fields filled in like that are passed over. For a set with more than one edition (WTR, ARC, CRU, MON, ELE) the set printing is asked next, and choosing it fills in the edition. Afterwards the printing is shown, to look over before going back to the card.
+
+Made a mistake a few fields back? Go back to it - the form moves both ways, and what you'd typed is kept:
+
+| Key | In a field that's typed | In a field with a list |
+| --- | --- | --- |
+| `Enter` | Keep it and move on | Choose (or tick) the highlighted value |
+| `↑` `↓` | Previous / next field | Move through the list - off its top or bottom changes field |
+| `←` `→` | Move along the line | Previous / next field |
+| `Shift-Tab` `Tab` | Previous / next field | Previous / next field |
+| `Esc` | Move on, leaving it as it was | Move on |
+
+While typing, `Home` / `End` (or `Ctrl-A` / `Ctrl-E`), `Delete`, `Ctrl-U`, `Ctrl-K` and `Ctrl-W` edit the line. Whatever a field filled in along the way - the set from a card ID, say - is shown under the next one.
+
+`Ctrl-C` stops a form at any point, keeping what's been filled in so far to carry on with field by field. Nothing is written until you save: a new card goes into `card.csv` in name order. With `--plain` the form goes one way, a field after another.
 
 ### A card's other pitches
 A card's pitches nearly always share their `Traits`, keyword and ability columns, so after changing one of those on a card that comes in other pitches, you're asked whether to make the same change to them. `Enter` does, `n` keeps it to this one.
@@ -96,7 +117,7 @@ The other pitches' changes are listed and saved along with the card's own.
 * Renaming a card, or changing its pitch, carries into the `Card Name` and `Card Pitch` of its printings. Other CSVs that write the name out (the legality CSVs, `card-reference.csv`) are listed when you save, but not changed.
 * Changing a printing's `Image URL` clears any `Image Hash` columns on that row, so the hash gets recalculated for the new image.
 
-`Unique ID` columns can't be edited. A new printing is saved with a blank one, so run `generate-unique-ids` afterwards.
+`Unique ID` columns can't be edited. A new printing is saved with a blank one, so run `generate-unique-ids` afterwards. A new card gets its Unique ID straight away, in the same form `generate-unique-ids` would give it, because its printings and references are linked to it by that ID.
 
 ## Saving
 Nothing is written until you save, and only the rows you changed are rewritten. A new printing goes beside the other printings with the same `Card ID` (plain before foils), or into `Card ID` order if it's the first with that ID.

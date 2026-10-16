@@ -6,14 +6,23 @@ lists.py, printings.py, references.py and search.py. This holds them together: o
 card, the two ways of showing it, and saving.
 """
 
+import bisect
 import contextlib
 import re
 
-from csv_io import CARD_CSV, PRINTING_CSV, REFERENCE_CSV, Record, Table, files_mentioning
-from fields import EDIT_KEYS, Fields
+from csv_io import (
+    CARD_CSV,
+    PRINTING_CSV,
+    REFERENCE_CSV,
+    Record,
+    Table,
+    files_mentioning,
+    mint_unique_id,
+)
+from fields import EDIT_KEYS, Fields, form
 from lists import Lists, build_vocabularies
 from prompts import History
-from printings import Printings, load_set_printings, set_printing_vocabulary
+from printings import ADD_PRINTING, Printings, load_set_printings, set_printing_vocabulary
 from references import ADD_REFERENCE, References
 from screen import Cursor, bold, dim
 from search import Search
@@ -24,6 +33,9 @@ CARD_KEYS = (
     "↑↓ move · Enter edit · t type it instead · e edit in $EDITOR · s save · q close card",
     "Enter opens a printing · a add a printing · c copy it · d delete a printing or reference",
 )
+
+# A new card's pitch, before it's asked for, going by its colour.
+PITCH_OF = {"Red": "1", "Yellow": "2", "Blue": "3", "Purple": "4"}
 
 # Command help for --plain.
 CARD_HELP = (
@@ -81,7 +93,19 @@ class Editor(Search, Fields, Lists, Printings, References):
         return self.screen.suspended() if leave else self.screen.console(rows)
 
     def card_title(self, card):
-        return f"{card['Name']} ({card['Color']})" if card["Color"] else card["Name"]
+        name = card["Name"] or "(new card)"
+        return f"{name} ({card['Color']})" if card["Color"] else name
+
+    def confirm(self, question):
+        """A yes or no on the terminal, where Enter is yes."""
+
+        with self.terminal(3):
+            try:
+                answer = input(f"{question} (Enter does, n doesn't): ")
+            except (EOFError, KeyboardInterrupt):
+                print()
+                return False
+        return answer.strip().lower() not in ("n", "no")
 
     def kin(self):
         """
@@ -91,6 +115,8 @@ class Editor(Search, Fields, Lists, Printings, References):
         hasn't been saved doesn't sweep in some other card.
         """
 
+        if self.card.original is None:
+            return []
         name, type_text = (self.card_csv.index[column] for column in ("Name", "Type Text"))
         key = (self.card.before("Name"), self.card.before("Type Text"))
         return [
@@ -105,9 +131,20 @@ class Editor(Search, Fields, Lists, Printings, References):
             cards[self.card["Unique ID"]] = self.card.values
         return cards
 
+    def new_card(self, name=""):
+        """Start a card that isn't in card.csv yet, asking for its fields one after another."""
+
+        card = Record(self.card_csv, values=[""] * len(self.card_csv.header))
+        # Its printings and references hang off its Unique ID, so it needs one from the start
+        # rather than waiting for generate-unique-ids.
+        card["Unique ID"] = mint_unique_id({row[0] for row in self.card_csv.rows})
+        card["Name"] = name
+        self.open(card)
+
     def open(self, card):
+        new = card.original is None
         # A working copy of its own, so nothing left unsaved last time it was open comes back.
-        self.card = Record(self.card_csv, card.original)
+        self.card = card if new else Record(self.card_csv, card.original)
         self.kin_cards = [Record(self.card_csv, row) for row in self.kin()]
         self.load_printings()
         self.load_references()
@@ -116,7 +153,7 @@ class Editor(Search, Fields, Lists, Printings, References):
             self.messages, self.transcript = [], []
             try:
                 with self.screen:
-                    self.card_screen()
+                    self.card_screen(new)
             finally:
                 # The screen takes everything it showed with it, so leave what was saved.
                 if self.transcript:
@@ -124,14 +161,54 @@ class Editor(Search, Fields, Lists, Printings, References):
                 for line in self.transcript:
                     print(f"  {line}")
         else:
-            self.card_view()
+            self.card_view(new)
 
         self.card = None
 
+    def fill_in_card(self, cursor=None):
+        """
+        Ask for a new card's fields one after another, then offer to add its first printing.
+
+        Returns that printing, if one was added.
+        """
+
+        def show(column, number, count):
+            rows = self.record_rows(self.card) + self.reference_rows() + self.printing_rows()
+            cursor.at = next(n for n, row in enumerate(rows) if row.target == column)
+            title = (
+                f"New card - field {number} of {count}: "
+                "Enter keeps it and moves on, ↑↓ change field, Ctrl-C stops"
+            )
+            self.screen.show(title, rows, cursor, ())
+
+        def prepare(column):
+            if column == "Pitch" and not self.card["Pitch"]:
+                self.card["Pitch"] = PITCH_OF.get(self.card["Color"], "")
+
+        if not self.screen:
+            print("\nNew card, a field at a time - Enter keeps each and moves on, Ctrl-C stops.")
+        columns = form(self.card)
+        if not self.fill_in(self.card, columns, show if self.screen else None, prepare=prepare):
+            return None
+        if not self.confirm("Add its first printing now?"):
+            return None
+
+        # Finished or stopped part way, the printing is then shown to look over and carry on with.
+        printing = self.add_printing()
+        if printing:
+            self.fill_in_printing(printing)
+            if self.screen:
+                self.printing_screen(printing)
+            else:
+                self.printing_view(printing)
+        return printing
+
     # Showing the card
 
-    def card_screen(self):
+    def card_screen(self, new=False):
         cursor, follow = Cursor(), None
+        if new:
+            follow = self.fill_in_card(cursor)
         while True:
             title = self.card_title(self.card)
             if self.pending():
@@ -159,9 +236,14 @@ class Editor(Search, Fields, Lists, Printings, References):
                 self.change_references([], [target])
             elif key in EDIT_KEYS and on_field:
                 self.edit(self.card, target, EDIT_KEYS[key])
-            elif key == "a" or (key == "c" and on_printing):
+            elif (
+                key == "a"
+                or (key == "c" and on_printing)
+                or (key in ("enter", "right") and target is ADD_PRINTING)
+            ):
                 printing = self.add_printing(target if key == "c" else None)
                 if printing:
+                    self.fill_in_printing(printing)
                     self.printing_screen(printing)
                     # Come back with the highlight on the new printing.
                     follow = printing
@@ -179,7 +261,9 @@ class Editor(Search, Fields, Lists, Printings, References):
         self.show_printings()
         print(f"\n{dim(CARD_HELP)}")
 
-    def card_view(self):
+    def card_view(self, new=False):
+        if new:
+            self.fill_in_card()
         self.show_card()
         while True:
             try:
@@ -219,6 +303,7 @@ class Editor(Search, Fields, Lists, Printings, References):
                     continue
                 printing = self.add_printing(self.printings[int(choice) - 1] if choice else None)
                 if printing:
+                    self.fill_in_printing(printing)
                     self.printing_view(printing)
                     self.show_card()
             elif command == "s":
@@ -237,6 +322,8 @@ class Editor(Search, Fields, Lists, Printings, References):
         """The unsaved changes, a line each."""
 
         lines = []
+        if self.card.original is None:
+            lines.append(f"{CARD_CSV}: {self.card_title(self.card)}: added")
         for column, old, new in self.card.changes():
             lines.append("{}: {}: {} -> {}".format(CARD_CSV, column, *excerpts(old, new)))
         for kin in self.kin_cards:
@@ -254,13 +341,16 @@ class Editor(Search, Fields, Lists, Printings, References):
             self.say("Nothing to save.")
             return True
 
+        if self.card.original is None and not self.card["Name"]:
+            self.say("! a new card needs a Name before it can be saved")
+            return False
         for printing in self.printings:
             if printing.original is None and not printing["Card ID"]:
                 self.say("! a new printing needs a Card ID before it can be saved")
                 return False
 
         touched = []
-        if self.card.changes() or any(kin.changes() for kin in self.kin_cards):
+        if self.card.marker != " " or any(kin.changes() for kin in self.kin_cards):
             touched.append(self.card_csv)
         if any(printing.marker != " " for printing in self.printings):
             touched.append(self.printing_csv)
@@ -281,7 +371,11 @@ class Editor(Search, Fields, Lists, Printings, References):
         added = any(printing.marker == "+" for printing in self.printings)
         renumbered = added or any(printing.deleted for printing in self.printings)
 
-        self.card.original[:] = self.card.values
+        if self.card.original is None:
+            self.card.original = self.card.values
+            self.card_csv.rows.insert(self.position_for_card(self.card.values), self.card.values)
+        else:
+            self.card.original[:] = self.card.values
         for kin in self.kin_cards:
             kin.original[:] = kin.values
         self.apply_printings()
@@ -314,6 +408,13 @@ class Editor(Search, Fields, Lists, Printings, References):
             self.say(line)
         self.transcript += report
         return True
+
+    def position_for_card(self, new):
+        """Where a new card.csv row belongs: the file runs in name order, pitches ascending."""
+
+        name, pitch = (self.card_csv.index[column] for column in ("Name", "Pitch"))
+        keys = [(row[name], row[pitch]) for row in self.card_csv.rows]
+        return bisect.bisect_right(keys, (new[name], new[pitch]))
 
     def close(self):
         """Leave the card, offering to save first. Returns False to carry on editing."""

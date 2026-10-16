@@ -4,7 +4,7 @@ import bisect
 import re
 
 from csv_io import PRINTING_CSV, Record, files_mentioning, read_rows
-from fields import EDIT_KEYS
+from fields import EDIT_KEYS, form
 from lists import Vocabulary
 from screen import Cursor, Row, bold, dim
 from text import excerpts
@@ -12,7 +12,8 @@ from text import excerpts
 # Where several printings share a set number the CSV lists the plain one first, then its foils.
 FOILING_ORDER = {"S": 0, "R": 1, "C": 2, "G": 3}
 
-# The columns that tell one printing from another, for the list under a card.
+# The columns that tell one printing from another, for the list under a card - in the CSV's
+# order, like everywhere else.
 PRINTING_SUMMARY = (
     "Card ID",
     "Edition",
@@ -20,9 +21,15 @@ PRINTING_SUMMARY = (
     "Foiling",
     "Art Variations",
     "Artists",
-    "TCGPlayer ID",
     "Image URL",
+    "TCGPlayer ID",
 )
+
+# Fields a new printing's card ID or set printing fill in, which the form then passes over.
+FILLED_ALONG_THE_WAY = {"Set Printing Unique ID", "Set ID", "Edition"}
+
+# The row under a card's printings that starts a new one.
+ADD_PRINTING = object()
 
 NO_UNIQUE_ID = (
     "This card has no Unique ID yet, so its printings can't be matched to it.",
@@ -95,10 +102,13 @@ class Printings:
     def printing_table(self, numbered):
         """The card's printings as aligned lines of text, heading first."""
 
-        table = [("",) + PRINTING_SUMMARY[:-1] + ("Image",)]
+        # Just the image's file name - the rest of the URL is the same for every printing.
+        table = [("",) + tuple("Image" if c == "Image URL" else c for c in PRINTING_SUMMARY)]
         for number, printing in enumerate(self.printings, 1):
-            cells = [printing[column] for column in PRINTING_SUMMARY]
-            cells[-1] = cells[-1].rsplit("/", 1)[-1]
+            cells = [
+                printing[column].rsplit("/", 1)[-1] if column == "Image URL" else printing[column]
+                for column in PRINTING_SUMMARY
+            ]
             table.append((printing.marker + (f"p{number}" if numbered else ""), *cells))
 
         widths = [max(len(row[position]) for row in table) for position in range(len(table[0]))]
@@ -110,18 +120,19 @@ class Printings:
     # On the arrow key screen
 
     def printing_rows(self):
-        """The printings under a card as screen rows, each pickable as its Record."""
+        """
+        The printings under a card as screen rows, each pickable as its Record, and an
+        "Add printing…" row after them.
+        """
 
         rows = [Row(""), Row("Printings", style=bold)]
         if not self.card["Unique ID"]:
-            rows.append(Row(list(NO_UNIQUE_ID)))
-        elif not self.printings:
-            rows.append(Row("None yet."))
-        else:
+            return rows + [Row(list(NO_UNIQUE_ID))]
+        if self.printings:
             heading, *lines = self.printing_table(numbered=False)
             rows.append(Row(heading, style=dim))
             rows += [Row(line, target=printing) for line, printing in zip(lines, self.printings)]
-        return rows
+        return rows + [Row("   Add printing…", target=ADD_PRINTING)]
 
     def printing_screen(self, printing):
         cursor = Cursor()
@@ -190,6 +201,15 @@ class Printings:
         if column in ("Card ID", "Set ID", "Edition"):
             self.link_set_printing(printing)
 
+        # A set printing is of one edition, so choosing it says what the edition is.
+        if column == "Set Printing Unique ID":
+            match = next(
+                (sp for sp in self.set_printings if sp["Unique ID"] == printing[column]), None
+            )
+            if match and printing["Edition"] != match["Edition"]:
+                printing["Edition"] = match["Edition"]
+                self.say(f"Edition -> {match['Edition']}")
+
         # A hash describes the old image, and calculate-phashes skips rows that already have one.
         if column == "Image URL":
             stale = [
@@ -203,13 +223,19 @@ class Printings:
                 self.say(f"cleared {', '.join(stale)} - run calculate-phashes for the new image")
 
     def link_set_printing(self, printing):
-        """Point a printing at the set printing that its Set ID and Edition describe."""
+        """
+        Point a printing at the set printing that its Set ID and Edition describe.
 
+        With no edition yet, a set that's only been printed once gives the edition too - which
+        is nearly every set since the first few, so a card ID is usually all it takes.
+        """
+
+        edition = printing["Edition"]
         matches = [
             set_printing
             for set_printing in self.set_printings
             if set_printing["Set ID"] == printing["Set ID"]
-            and set_printing["Edition"] == printing["Edition"]
+            and (set_printing["Edition"] == edition or not edition)
         ]
         # Two sets can share an identifier (History Pack 1 and its Black Label), so let the
         # card ID ranges decide between them.
@@ -226,6 +252,13 @@ class Printings:
             if printing["Set Printing Unique ID"] != matches[0]["Unique ID"]:
                 printing["Set Printing Unique ID"] = matches[0]["Unique ID"]
                 self.say(f"Set Printing Unique ID -> {describe_set_printing(matches[0])}")
+            if not edition:
+                printing["Edition"] = matches[0]["Edition"]
+                self.say(f"Edition -> {matches[0]['Edition']}")
+        elif not edition:
+            # Several editions of the set, and nothing yet to say which: the set printing or
+            # the edition will, once one's chosen.
+            return
         elif matches:
             self.say("! several set printings fit - set Set Printing Unique ID to one of:")
             for set_printing in matches:
@@ -251,6 +284,33 @@ class Printings:
         self.printings.append(printing)
         self.sync_card_columns()
         return printing
+
+    def fill_in_printing(self, printing):
+        """
+        Ask for a new printing's fields one after another. False if it was stopped part way.
+
+        Image hashes aren't asked for - calculate-phashes works those out.
+        """
+
+        cursor = Cursor()
+
+        def show(column, number, count):
+            rows = self.record_rows(printing)
+            cursor.at = next(n for n, row in enumerate(rows) if row.target == column)
+            title = (
+                f"New printing of {self.card_title(self.card)} - field {number} of {count}: "
+                "Enter keeps it and moves on, ↑↓ change field, Ctrl-C stops"
+            )
+            self.screen.show(title, rows, cursor, ())
+
+        def skip(column):
+            return column in FILLED_ALONG_THE_WAY and printing[column]
+
+        if not self.screen:
+            print(f"\nNew printing of {self.card_title(self.card)}, a field at a time - "
+                  "Enter keeps each and moves on, Ctrl-C stops.")
+        columns = form(printing, leave_out=("Image Hash",))
+        return self.fill_in(printing, columns, show if self.screen else None, skip=skip)
 
     def delete_printing(self, printing):
         number = self.printings.index(printing) + 1

@@ -6,12 +6,16 @@ Record is a working copy of one row that can be compared with what's on disk.
 """
 
 import csv
+import secrets
 from pathlib import Path
 
 CSV_DIR = Path(__file__).parent / "../../csvs/english"
 CARD_CSV = "card.csv"
 PRINTING_CSV = "card-printing.csv"
 REFERENCE_CSV = "card-reference.csv"
+
+# generate-unique-ids mints IDs with nanoid's "nolookalikesSafe" alphabet, 21 characters long.
+ID_ALPHABET = "6789BCDFGHJKLMNPQRTWbcdfghjkmnpqrtwz"
 
 
 class Table:
@@ -86,6 +90,15 @@ class Record:
 def read_rows(name):
     with (CSV_DIR / name).open(newline="", encoding="utf-8") as csvfile:
         return list(csv.DictReader(csvfile, delimiter="\t", quotechar='"'))
+
+
+def mint_unique_id(taken):
+    """A new Unique ID of the kind generate-unique-ids gives, and not one of `taken`."""
+
+    while True:
+        unique_id = "".join(secrets.choice(ID_ALPHABET) for _ in range(21))
+        if unique_id not in taken:
+            return unique_id
 
 
 def files_mentioning(unique_id):

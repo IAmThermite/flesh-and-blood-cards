@@ -38,6 +38,15 @@ def editable(record):
     return [column for column in record.table.index if column not in LOCKED]
 
 
+def form(record, leave_out=()):
+    """
+    The columns a form asks for, in the order they're listed on screen - the CSV's own - less
+    any starting with one of `leave_out`.
+    """
+
+    return [column for column in editable(record) if not column.startswith(tuple(leave_out))]
+
+
 class Fields:
     """
     Showing and editing the fields of a row. Part of the Editor.
@@ -115,26 +124,40 @@ class Fields:
         else:
             print(f"  There's no field {number}.")
 
-    def edit(self, record, column, how="type"):
+    def edit(self, record, column, how="type", quiet=False):
         """
         Change one field - by picking from its column's list, typing on a line, or in $EDITOR.
 
         Picking needs a screen and a column that has a list. Without both, it's typed.
+        Returns False if it was abandoned with Ctrl-C, True otherwise - changed or not.
         """
 
         old = record[column]
         if how == "pick" and self.screen and column in self.vocabularies:
-            value = self.pick(record, column)
+            try:
+                value, _ = self.pick(record, column)
+            except KeyboardInterrupt:
+                return False
+            if value is None:
+                return True
         else:
             # Room for the hint, the prompt and however many lines the value wraps onto.
             rows = 4 + (len(column) + len(old)) // shutil.get_terminal_size().columns
             with self.terminal(rows, leave=how == "editor"):
                 value = self.ask(record, column, in_editor=how == "editor")
+            if value is None:
+                return False
 
-        if value is None:
-            return
+        self.store(record, column, value, quiet)
+        return True
+
+    def store(self, record, column, value, quiet=False):
+        """Put a field's new value in, and carry it through to whatever follows from it."""
+
+        old = record[column]
         if value == old:
-            self.say("unchanged")
+            if not quiet:
+                self.say("unchanged")
             return
 
         record[column] = value
@@ -146,6 +169,84 @@ class Fields:
                 self.share_with_kin(column, old, value)
         else:
             self.printing_edited(record, column)
+
+    def fill_in(self, record, columns, show=None, skip=lambda column: False, prepare=None):
+        """
+        Ask for each of `columns` in turn, as a form - a new card's or printing's fields.
+
+        Enter keeps what a field holds and moves on to the next. On the screen ↑ and ↓ move to
+        the previous and next fields too, so a field can be gone back to and changed. Ctrl-C
+        stops, leaving what's been filled in so far to carry on with field by field.
+
+        `show(column, number, count)` draws the screen with that field highlighted, behind it.
+        `skip(column)` passes over a field that's been filled in along the way, and
+        `prepare(column)` can fill one in, ready to keep, the first time it comes up.
+        Returns False if the form was stopped.
+        """
+
+        position, step, seen = 0, 1, set()
+        while position < len(columns):
+            if position < 0:
+                # Back past the first field: start again from the top.
+                position, step = 0, 1
+            column = columns[position]
+            if skip(column):
+                position += step
+                continue
+            if prepare and column not in seen:
+                prepare(column)
+            seen.add(column)
+            # What the last field filled in along the way stays in view while this one's asked.
+            notes, self.messages = self.messages, []
+            if show:
+                show(column, position + 1, len(columns))
+
+            if self.screen:
+                move = self.form_field(record, column, notes)
+            else:
+                move = "next" if self.edit(record, column, "pick", quiet=True) else "stop"
+            if move == "stop":
+                self.say("stopped - the rest can be filled in field by field")
+                return False
+            step = -1 if move == "back" else 1
+            position += step
+        return True
+
+    def form_field(self, record, column, notes=()):
+        """
+        Ask for one field of a form on the screen. Returns where to go: "next", "back" or "stop".
+
+        A field with a list is picked from it, where ← and → change field. A field without is
+        typed on a line, where ↑ and ↓ keep what's typed and change field. Shift-Tab and Tab
+        go back and on from either.
+        """
+
+        if column in self.vocabularies:
+            try:
+                value, ending = self.pick(record, column, edges=True, notes=notes)
+            except KeyboardInterrupt:
+                return "stop"
+            if value is not None:
+                self.store(record, column, value, quiet=True)
+            return "back" if ending == "back" else "next"
+
+        old = record[column]
+        draft, problem = old.replace("\n", "\\n"), ""
+        while True:
+            hint = problem or self.hint(column, in_editor=False)
+            how, draft = self.screen.edit_line(f"{column}: ", draft, hint, notes)
+            if how == "interrupt":
+                return "stop"
+            if how == "escape":
+                return "next"
+            entered = draft.strip().replace("\\n", "\n")
+            try:
+                value = old if entered == old else self.normalise(record, column, entered)
+            except ValueError as error:
+                problem = f"! {error}"
+                continue
+            self.store(record, column, value, quiet=True)
+            return "back" if how in ("up", "back tab") else "next"
 
     def ask(self, record, column, in_editor):
         """Prompt for a column's value until it's one that passes. None if it's abandoned."""
@@ -287,7 +388,9 @@ class Fields:
         """
 
         for copy, source in (("Card Name", "Name"), ("Card Pitch", "Pitch")):
-            renamed = self.card[source] != self.card.before(source)
+            # A new card has nothing on disk to have been renamed from, so its copies follow it.
+            new = self.card.original is None
+            renamed = new or self.card[source] != self.card.before(source)
             for printing in self.printings:
                 if renamed or printing.original is None:
                     printing[copy] = self.card[source]

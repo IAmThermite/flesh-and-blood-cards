@@ -6,6 +6,7 @@ cards it references in card-reference.csv.
     python main.py                        # asks for a card name or print code
     python main.py command and conquer    # opens the card straight away
     python main.py IAR056                 # so does a print code
+    python main.py + Lunging Strike       # adds a new card
 
 In a terminal the card opens as a list to move through with the arrow keys. Anywhere that
 can't be done (or with --plain) the fields are numbered and edited by typing commands.
@@ -18,6 +19,8 @@ import argparse
 
 from editor import Editor
 from screen import Screen, can_browse
+
+SEARCH_PROMPT = "Card name or print code (+ adds a card, Enter quits): "
 
 
 def main():
@@ -43,9 +46,13 @@ def main():
         while True:
             if not query:
                 print()
-                query = editor.searches.ask("Card name or print code (Enter to quit): ")
+                query = editor.searches.ask(SEARCH_PROMPT)
             if not query:
                 break
+            if query.startswith("+"):
+                editor.new_card(query[1:].strip())
+                query = ""
+                continue
             matches = editor.search(query)
             if len(matches) == 1:
                 editor.open(matches[0])

@@ -25,7 +25,7 @@ class Search:
             matches = self.printed_as(cards, wanted)
 
         if not matches:
-            print(f"No card matches '{query}'.")
+            print(f"No card matches '{query}' - + {query} would add it as a new card.")
         return sorted(matches, key=lambda card: (card["Name"], card["Pitch"]))
 
     def find(self, query):
