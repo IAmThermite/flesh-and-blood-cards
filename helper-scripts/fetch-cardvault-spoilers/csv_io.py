@@ -165,7 +165,6 @@ def index_existing(card_header, card_rows, printing_header, printing_rows):
     cards        (Name, Pitch) -> Unique ID
     codes        Set ID -> {Card ID}
     printings    (Set ID, Card ID, Foiling) -> how many rows the CSV already has
-    pitches      Name -> {Pitch}, each pitch that has been entered for a card, so we can tell if a new pitch is needed
     """
 
     name_index = column_index(card_header, "Name")
@@ -173,13 +172,11 @@ def index_existing(card_header, card_rows, printing_header, printing_rows):
     card_unique_index = column_index(card_header, "Unique ID")
 
     cards = {}
-    pitches = {}
     for row in card_rows:
         if len(row) <= pitch_index:
             continue
         key = (row[name_index], row[pitch_index])
         cards.setdefault(key, row[card_unique_index])
-        pitches.setdefault(row[name_index], set()).add(row[pitch_index])
 
     set_index = column_index(printing_header, "Set ID")
     code_index = column_index(printing_header, "Card ID")
@@ -194,4 +191,4 @@ def index_existing(card_header, card_rows, printing_header, printing_rows):
         key = (row[set_index], row[code_index], row[foiling_index])
         printings[key] = printings.get(key, 0) + 1
 
-    return cards, codes, printings, pitches
+    return cards, codes, printings

@@ -207,7 +207,7 @@ def collect_set(set_code, existing, report, full_sweep):
     can't be given a Card Unique ID until generate-unique-ids has run.
     """
 
-    existing_cards, existing_codes, existing_printings, existing_pitches = existing
+    existing_cards, existing_codes, existing_printings = existing
 
     set_printing = csv_io.resolve_set_printing(set_code)
     if set_printing is None:
@@ -284,18 +284,6 @@ def collect_set(set_code, existing, report, full_sweep):
             report.new_cards.append(
                 f"{code_link} {card_key[0]}" + (f" ({card_key[1]})" if card_key[1] else "")
             )
-
-            # A card that's new only because the pitch disagrees is usually a real new pitch
-            # variant, but it can also mean CardVault left the pitch off - it does that on
-            # the back face of Part the Mistveil's transcend cards, where Inner Chi comes
-            # back with no pitch against the CSVs' 3. Writing that blind duplicates the card.
-            known_pitches = existing_pitches.get(card_key[0])
-            if known_pitches:
-                report.check_pitch.append(
-                    f"{code_link} {card_key[0]!r}: added with pitch {card_key[1] or '(none)'}, but "
-                    f"card.csv already has pitch {', '.join(sorted(p or '(none)' for p in known_pitches))} "
-                    f"- confirm it's a new variant rather than a duplicate"
-                )
 
         return card_key
 
@@ -428,7 +416,9 @@ def collect_set(set_code, existing, report, full_sweep):
                 mapping.art_variation_needs_checking(rarity, foiling, fields["Art Variations"])
                 for fields, _ in rows_for_print
             ):
-                report.check_art_variation.append(print_link)
+                # A marvel's back face is the same card, so name each card once.
+                names = dict.fromkeys(fields["Card Name"] for fields, _ in rows_for_print)
+                report.check_art_variation.append(f"{print_link} {' / '.join(names)}")
 
             # Every printing has an artist, but CardVault occasionally returns an empty one.
             # A marvel's back face borrows the front's above, because it's the same card;
@@ -667,7 +657,7 @@ def run_link(args):
     card_header, card_rows = read_csv(CSV_DIR / "card.csv")
     printing_header, printing_rows = read_csv(CSV_DIR / "card-printing.csv")
 
-    cards, _, _, _ = csv_io.index_existing(card_header, card_rows, printing_header, printing_rows)
+    cards, _, _ = csv_io.index_existing(card_header, card_rows, printing_header, printing_rows)
 
     card_unique_index = column_index(printing_header, "Card Unique ID")
     name_index = column_index(printing_header, "Card Name")

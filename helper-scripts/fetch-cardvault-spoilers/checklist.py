@@ -57,12 +57,6 @@ SECTIONS = [
         "no credit, and the artist missing from artist.csv.",
     ),
     (
-        "pitch",
-        "Cards to check the pitch on",
-        "The name is already in card.csv at a different pitch, so this is either a new "
-        "variant or a duplicate.",
-    ),
-    (
         "manual",
         "Printings needing manual entry",
         "The script wouldn't guess at these.",
@@ -122,8 +116,6 @@ def items_from_report(report):
         items.append({"section": "art_variation", "text": entry})
     for entry in report.missing_artist:
         items.append({"section": "artist", "text": entry})
-    for entry in report.check_pitch:
-        items.append({"section": "pitch", "text": entry})
     for entry in report.skipped:
         items.append({"section": "manual", "text": entry})
     for entry in report.check_set_range:
