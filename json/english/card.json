@@ -49304,6 +49304,24 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "454852",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/454852?Language=English&Printing=Cold+Foil"
+            },
+            {
+                "unique_id": "h9hJWjrmbQHjd9WFmTk7j",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA008",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "L",
+                "expansion_slot": false,
+                "artists": [
+                    "Sariya Asavametha"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA008-RF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -81341,6 +81359,89 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "677664",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/677664?Language=English&Printing=Rainbow+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "JCqptNPBBbFFfW8NJtLRJ",
+        "name": "Cadaver Handlers",
+        "color": "",
+        "pitch": "",
+        "cost": "",
+        "power": "",
+        "defense": "1",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Equipment",
+            "Arms"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "While this is in your graveyard, at the start of your turn, you may destroy 2 Silver you control. If you do, equip this.\n\n**Attack Reaction** - Destroy this: If the defending hero is infected, cards defending an Assassin attack get -1{d} this chain link.\n\n**Battleworn**",
+        "functional_text_plain": "While this is in your graveyard, at the start of your turn, you may destroy 2 Silver you control. If you do, equip this.\nAttack Reaction - Destroy this: If the defending hero is infected, cards defending an Assassin attack get -1{d} this chain link.\nBattleworn",
+        "type_text": "Assassin Equipment - Arms",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "Bbc6rWGWL7K6kPhLmrdCD",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA007",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "L",
+                "expansion_slot": false,
+                "artists": [
+                    "Alexander Mokhov"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA007-RF.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "RNNPpwbnCQT77GjNw9PDc",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA007",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "C",
+                "rarity": "L",
+                "expansion_slot": false,
+                "artists": [
+                    "Alexander Mokhov"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA007-CF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -134905,6 +135006,89 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "612579",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/612579?Language=English&Printing=Rainbow+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "btfKdf7LBGmDW87dmLJjB",
+        "name": "Demoralize the Dracai",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "1",
+        "power": "5",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Contract** - You are contracted to banish opponents' red cards. Whenever you complete this contract, create a Silver token.\n\nWhenever an attack action card you control hits a hero, banish the top card of their deck.",
+        "functional_text_plain": "Contract - You are contracted to banish opponents' red cards. Whenever you complete this contract, create a Silver token.\nWhenever an attack action card you control hits a hero, banish the top card of their deck.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "rNKQPKwJnC7JBrNNbFgmp",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA020",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Milivoj Ćeran"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA020.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "KCWcm7z9b8dBQmjKK6hMN",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA020",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Milivoj Ćeran"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA020-RF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
