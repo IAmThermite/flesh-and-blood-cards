@@ -11445,6 +11445,11 @@ mzgkQrfmk8LtFjnQzQqgM	Tag the Target	Yellow	2	0	2	2				Ninja, Action, Attack		Go
 qnKjmr6mDJDGbhn6mQdkp	Tag the Target	Blue	3	0	1	2				Ninja, Action, Attack		Go again, Mark						"When this hits a hero, **mark** them.
 
 **Go again**"	Ninja Action - Attack						
+PfCbwqnmwpqpmkf8g6jjp	Tailored Targeting	Red	1	0	4	3				Assassin, Action, Attack								"When this attacks, name a card.
+
+**Contract** - You are contracted to banish opponents' cards with the chosen name. Whenever you complete this contract, create a Silver token.
+
+Whenever you hit an opposing hero this chain link, banish the top card of their deck. If it's the named card, repeat this process."	Assassin Action - Attack				No	No	
 FtGCjcNCNGg9MkDMwtKCN	Taipanis, Dracai of Judgement						20	4		Draconic, Adjudicator, Hero								The first time each turn another hero becomes the target of a source that would deal lethal damage, you may discard a red card. If you do, choose new targets for that source.	Draconic Adjudicator Hero		No		No	No	
 hFhjbTW96DmWQPBP8C8HF	Take Aim	Red	1	0		2				Ranger, Action		Reload, Go again						"The next Ranger attack action card you play this turn gets +3{p}.
 
