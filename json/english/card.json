@@ -75339,6 +75339,89 @@
         ]
     },
     {
+        "unique_id": "pkk97QGPBzgpbBBhqHrfL",
+        "name": "Bribe the Guards",
+        "color": "Blue",
+        "pitch": "3",
+        "cost": "0",
+        "power": "1",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Stealth**\n\n**Instant** - Destroy a Silver you control: Target card defending this gets -1{d} this combat chain.",
+        "functional_text_plain": "Stealth\nInstant - Destroy a Silver you control: Target card defending this gets -1{d} this combat chain.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "PWhRgmMG9dWzwQLPWF9R8",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA017",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Vito Febrianno"
+                ],
+                "art_variations": [],
+                "flavor_text": "\"There's nothing in Rathe more infectious than greed.\" - Huxley",
+                "flavor_text_plain": "\"There's nothing in Rathe more infectious than greed.\" - Huxley",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA017.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "z7PWmqRtBnqr7QqPKqdpP",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA017",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Vito Febrianno"
+                ],
+                "art_variations": [],
+                "flavor_text": "\"There's nothing in Rathe more infectious than greed.\" - Huxley",
+                "flavor_text_plain": "\"There's nothing in Rathe more infectious than greed.\" - Huxley",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA017-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "BJKkfCPh7LmMrT9bDn6wz",
         "name": "Brimming Blade",
         "color": "Red",
@@ -111266,6 +111349,91 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "517208",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/517208?Language=English&Printing=Rainbow+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "cdk9D7Nd8JDBkcpJTWcjt",
+        "name": "Continued Coercion",
+        "color": "Yellow",
+        "pitch": "2",
+        "cost": "0",
+        "power": "2",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Stealth**\n\nWhen this leaves the combat chain, attacks get **go again** this chain link.",
+        "functional_text_plain": "Stealth\nWhen this leaves the combat chain, attacks get go again this chain link.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "rLRzBjRTMRtbgbfhbktd9",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA019",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Pavel Rtishchev (Klaher)"
+                ],
+                "art_variations": [],
+                "flavor_text": "\"Some question the utility of torture. I question their resolve.\" - Whitetail",
+                "flavor_text_plain": "\"Some question the utility of torture. I question their resolve.\" - Whitetail",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA019.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "kn7kmTTTqpNm8jbDtpNcP",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA019",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Pavel Rtishchev (Klaher)"
+                ],
+                "art_variations": [
+                    "EA"
+                ],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA019-RF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -198581,6 +198749,91 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "561379",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/561379?Language=English&Printing=Rainbow+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "M7NWKPNWphJq9cr7PTHPc",
+        "name": "Flip the Script",
+        "color": "Blue",
+        "pitch": "3",
+        "cost": "0",
+        "power": "1",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Stealth**\n\nWhen this leaves the combat chain, attacks get +1{p} this chain link.",
+        "functional_text_plain": "Stealth\nWhen this leaves the combat chain, attacks get +1{p} this chain link.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "jPFGCJLP7GFDgnfJRTDhL",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA021",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Ismatulloh"
+                ],
+                "art_variations": [],
+                "flavor_text": "\"You only saw what I wanted you to see.\" - Uzuri",
+                "flavor_text_plain": "\"You only saw what I wanted you to see.\" - Uzuri",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA021.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "zrdcTHG8PtDjqGKrjpBgR",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA021",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Ismatulloh"
+                ],
+                "art_variations": [
+                    "EA"
+                ],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA021-RF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
