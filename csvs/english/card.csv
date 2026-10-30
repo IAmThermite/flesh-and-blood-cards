@@ -2343,6 +2343,9 @@ While this is equipped face-down, when an attack hits you and its controller has
 QFf8JBQK6HBJ6Tqdzm9HJ	Concealed Sedative									Ranger, Equipment, Chest, Trap		Cloaked						"**Cloaked**
 
 While this is equipped face-down, when an attack with {p} greater than its base hits you, destroy this and create an Inertia token under each opponent's control."	Ranger Equipment - Chest Trap						
+nDB7bN8LTDFt89gqPrkJ7	Concoct Agony	Yellow	2	0	2	3				Assassin, Action, Attack								"**Stealth**
+
+If you've played or activated 3 or more attack reactions this chain link, this gets +3{p} and ""When this hits a hero, banish all cards in their arsenal."""	Assassin Action - Attack				No	No	
 wTwJPcMRB8jf7rwCKzKPF	Concoct Disorder	Red	1	1	4	3				Chaos, Action, Attack		Go again						When this attacks, each hero puts the top card of their deck face-down into their arsenal. If 2 or more cards are put into arsenals this way, this gets **go again**.	Chaos Action - Attack						
 pqtLFGFhtmWgjMTMHDJLQ	Concoct Disorder	Yellow	2	1	3	3				Chaos, Action, Attack		Go again						When this attacks, each hero puts the top card of their deck face-down into their arsenal. If 2 or more cards are put into arsenals this way, this gets **go again**.	Chaos Action - Attack						
 jhTpW6FqWNmdHzcHd9j8B	Concoct Disorder	Blue	3	1	2	3				Chaos, Action, Attack		Go again						When this attacks, each hero puts the top card of their deck face-down into their arsenal. If 2 or more cards are put into arsenals this way, this gets **go again**.	Chaos Action - Attack						
@@ -10201,6 +10204,12 @@ Rq8CK88DfJfrn9F8BjcLH	Shuck	Blue	3	0		3				Warrior, Action								Create a Flurr
 TrRC6WMrRhbCtKzpRQLPM	Sic 'Em Shot	Red	1	1	4	3				Ranger, Action, Arrow, Attack		Go again						**Go again**	Ranger Action - Arrow Attack						
 TMBGhtBJMzbWMLPzNJCW9	Sic 'Em Shot	Yellow	2	1	3	3				Ranger, Action, Arrow, Attack		Go again						**Go again**	Ranger Action - Arrow Attack						
 FHfhK9rLHDcNCdQJQ79Wh	Sic 'Em Shot	Blue	3	1	2	3				Ranger, Action, Arrow, Attack		Go again						**Go again**	Ranger Action - Arrow Attack						
+bqfPTDcWLddQrMPbwdTG9	Sick Intent	Red	1	2	6	3				Assassin, Action, Attack								"**Contract** - You are contracted to create disease tokens under opponents' control. Whenever you complete this contract, create a Silver token.
+
+When this hits a hero, create a Frailty, Inertia, or Bloodrot Pox token under their control."	Assassin Action - Attack				No	No	
+bbkjCjGbqwj7CBD9wJMnz	Sickening Exhaustion	Blue	3	1		3				Assassin, Attack Reaction								If the defending hero is infected, put all cards in their arsenal on the bottom of their deck.	Assassin Attack Reaction					No	
+pnMzMHprCzjMqQppTBPpB	Sickening Rot	Blue	3	1		3				Assassin, Attack Reaction								If the defending hero is infected, deal 2 damage to them unless they pay {r}{r}{r}.	Assassin Attack Reaction					No	
+6RWj8bgR8MjJRhKzp8mzk	Sickening Weakness	Blue	3	1		3				Assassin, Attack Reaction								If the defending hero is infected, defending cards get -1{d} this chain link.	Assassin Attack Reaction					No	
 rFQzCPdqFTwbhn7jMKkjg	Sift	Red	1	0		3				Generic, Action		Go again						"Put up to 4 cards from your hand on the bottom of your deck, then draw that many cards.
 
 **Go again**"	Generic Action					No	
