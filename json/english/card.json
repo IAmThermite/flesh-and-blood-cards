@@ -1655,6 +1655,70 @@
         ]
     },
     {
+        "unique_id": "kHGLJwpkkGgPqhN6n7JdN",
+        "name": "Act on Intel: Whereabouts",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "1",
+        "power": "",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Attack Reaction"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "Target Assassin attack action card with contract gets +1{p} and \"When this hits a hero, they choose a card in their hand. Banish it.\"",
+        "functional_text_plain": "Target Assassin attack action card with contract gets +1{p} and \"When this hits a hero, they choose a card in their hand. Banish it.\"",
+        "type_text": "Assassin Attack Reaction",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "tNQqRhFfbFMdNJfdj8WTQ",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO014",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Stormy Elia Fanggidae"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO014.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "Wmr8NmHdQCmPCbMBPncTq",
         "name": "Adaptive Alpha Mold",
         "color": "",
@@ -13257,6 +13321,24 @@
         ],
         "printings": [
             {
+                "unique_id": "dMRL68WFr7zFFHcrb8hzL",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO007",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Shen Fei"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO007.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "ML6Nn6kzkrCfQNzfkc7qz",
                 "set_printing_unique_id": "rjjNJ8JcpGzwbrzmWNTb9",
                 "id": "ARK008",
@@ -13460,6 +13542,24 @@
             "TNJz9fCgqmhhLz9rP9tkt"
         ],
         "printings": [
+            {
+                "unique_id": "kGcmR8wgtbC7kRHBm86Wz",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO024",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Shen Fei"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO024.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "L6ftJCrWQhNpQjtHDNz6c",
                 "set_printing_unique_id": "rjjNJ8JcpGzwbrzmWNTb9",
@@ -61025,6 +61125,24 @@
         ],
         "printings": [
             {
+                "unique_id": "gHpc8L8HT8nG668qW6MJH",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO016",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Henrique Lindner"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO016.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "qm8JCDd6RRGQMFwc6M8gt",
                 "set_printing_unique_id": "WcjfRJCbhGChDhr87thKC",
                 "id": "ARA019",
@@ -100724,6 +100842,24 @@
         ],
         "printings": [
             {
+                "unique_id": "W8gdft9CNwNjDMfDpD6WW",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO022",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Mateusz Wiśniewski"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO022.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "PQMgkgzhpzhkTnQNKGKJf",
                 "set_printing_unique_id": "zd6wBL7zcQR7zrJhwCjrh",
                 "id": "OUT159",
@@ -125551,6 +125687,24 @@
         "commoner_suspended": false,
         "ll_restricted": false,
         "printings": [
+            {
+                "unique_id": "zBK6hKz8HRPcQwPBnmKhM",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO015",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Narendra B Adi"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO015.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "j7rkQ7mjbcGJT6wQknbJ8",
                 "set_printing_unique_id": "rjjNJ8JcpGzwbrzmWNTb9",
@@ -174372,6 +174526,71 @@
         ]
     },
     {
+        "unique_id": "6wbJzc9PfkfBRQqkBfTBD",
+        "name": "Escaped Subject",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "0",
+        "power": "4",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "If the defending hero is infected, this gets **go again**.",
+        "functional_text_plain": "If the defending hero is infected, this gets go again.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "F9dTQQ7d7gHKMGDkCRpBc",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO008",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Jefrey Yonathan"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO008.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "qMzCjGnnHpbqRJPtJfp6T",
         "name": "Essence of Ancestry: Body",
         "color": "Red",
@@ -176343,6 +176562,71 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "262480",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/262480?Language=English&Printing=Normal"
+            }
+        ]
+    },
+    {
+        "unique_id": "TGRcb6MmNmMhwRhqQTcTg",
+        "name": "Eviscerate the Enervated",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "1",
+        "power": "5",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Contract** - You are contracted to banish infected opponents' cards. Whenever you complete this contract, create a Silver token.\n\nWhen this hits a hero, banish the top card of their deck.",
+        "functional_text_plain": "Contract - You are contracted to banish infected opponents' cards. Whenever you complete this contract, create a Silver token.\nWhen this hits a hero, banish the top card of their deck.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "nCgQgq8MpQMMDCnDDJcBH",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO009",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Wirawan Pranoto"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO009.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -179913,6 +180197,24 @@
             "TNJz9fCgqmhhLz9rP9tkt"
         ],
         "printings": [
+            {
+                "unique_id": "wpqH9bjBGz6z8JWnW9qWM",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO010",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Phu Thieu"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO010.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "wCqfBtTBCnrfPT9RT9Kfr",
                 "set_printing_unique_id": "chrqPgpJpgRWztmTpTGFD",
@@ -206009,6 +206311,24 @@
             "KPWKQmMgm7rmM7bfFw9gF"
         ],
         "printings": [
+            {
+                "unique_id": "8PrF6gm6PttBHBDhgTqHN",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO017",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Vito Vivodka"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO017.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "TLr9mwPBJKcGjTphpMRPD",
                 "set_printing_unique_id": "zd6wBL7zcQR7zrJhwCjrh",
@@ -265833,6 +266153,24 @@
         ],
         "printings": [
             {
+                "unique_id": "kbBhJjTFCWzpwwFctM9Wk",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO018",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Erick Efata"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO018.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "LJKTGt6d9kHqPNzGzBJPJ",
                 "set_printing_unique_id": "zd6wBL7zcQR7zrJhwCjrh",
                 "id": "OUT173",
@@ -278014,6 +278352,71 @@
         ]
     },
     {
+        "unique_id": "bfrgtgtQFmknj9d7pLnRc",
+        "name": "Isolation Vestment",
+        "color": "",
+        "pitch": "",
+        "cost": "",
+        "power": "",
+        "defense": "1",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Equipment",
+            "Chest"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Action** - Destroy this: Assassin attack action cards that target an infected hero cost you {r} less to play this turn. **Go again**\n\n**Blade Break**",
+        "functional_text_plain": "Action - Destroy this: Assassin attack action cards that target an infected hero cost you {r} less to play this turn. Go again\nBlade Break",
+        "type_text": "Assassin Equipment - Chest",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "9TcfgtLq8FM8zhJDkGtDR",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO004",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Thomas Ressuge"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO004-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "TmKrpP8tDg8bmpnqMPtgj",
         "name": "Iyslander",
         "color": "",
@@ -286963,6 +287366,71 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "618073",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/618073?Language=English&Printing=Normal"
+            }
+        ]
+    },
+    {
+        "unique_id": "cQjK9FJcLkWgbJCJ6rMB8",
+        "name": "Languid Pace",
+        "color": "",
+        "pitch": "3",
+        "cost": "1",
+        "power": "3",
+        "defense": "2",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "When this attacks or defends, create an Inertia token under each hero's control.",
+        "functional_text_plain": "When this attacks or defends, create an Inertia token under each hero's control.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "BGBRkcgBHrHrHCbFqDjgr",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO025",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Mateusz Wiśniewski"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO025.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -346788,6 +347256,89 @@
         ]
     },
     {
+        "unique_id": "f8dwCqjpqJhtR9FWthkNL",
+        "name": "Painful Choice",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "0",
+        "power": "3",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Stealth**\n\nWhen this attacks, you may put a card from your hand on the bottom of your deck. If you do, this gets +4{p} unless the defending hero chooses a card in their hand. Banish the chosen card.",
+        "functional_text_plain": "Stealth\nWhen this attacks, you may put a card from your hand on the bottom of your deck. If you do, this gets +4{p} unless the defending hero chooses a card in their hand. Banish the chosen card.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "DQhdLTptwTWMQNppW9JHb",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA023",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Mariusz Gandzel"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA023.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "69wdLB6WTrFwNzQRGqjPL",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA023",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Mariusz Gandzel"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA023-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "hNMR9pM9djfm8m9FHdmRb",
         "name": "Painful Passage",
         "color": "Red",
@@ -355044,6 +355595,106 @@
         ]
     },
     {
+        "unique_id": "KtJ9pJJrjD8ccB9gL6988",
+        "name": "Pick Your Poison",
+        "color": "Yellow",
+        "pitch": "2",
+        "cost": "0",
+        "power": "",
+        "defense": "2",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "Each opposing hero chooses Frailty, Inertia, or Bloodrot Pox. Create the 2 tokens they didn't choose under their control.\n\n**Go again**",
+        "functional_text_plain": "Each opposing hero chooses Frailty, Inertia, or Bloodrot Pox. Create the 2 tokens they didn't choose under their control.\nGo again",
+        "type_text": "Assassin Action",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "LjrNGJHB6DgfD7hChfr67",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO023",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Othon Nikolaidis"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO023.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "PLjGWkrGRGwjDkCrqhLQK",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA124",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Othon Nikolaidis"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA124.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "gpH8GJTwf7Q9kPRpgr7cH",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA124",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Othon Nikolaidis"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA124-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "B9jHdDTw8qwQW7DnqdQPn",
         "name": "Pick Yourself Up Off the Floor",
         "color": "",
@@ -357257,6 +357908,71 @@
         ]
     },
     {
+        "unique_id": "CkpcgRQwFgNwzCrfp8pPm",
+        "name": "Pitch Surgical Gloves",
+        "color": "",
+        "pitch": "",
+        "cost": "",
+        "power": "",
+        "defense": "0",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Equipment",
+            "Arms"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Instant** - **Cure** a disease an opponent controls: Target attack they control gets -1{p}. Destroy this at the beginning of the end phase.\n\n**Arcane Barrier 1**",
+        "functional_text_plain": "Instant - Cure a disease an opponent controls: Target attack they control gets -1{p}. Destroy this at the beginning of the end phase.\nArcane Barrier 1",
+        "type_text": "Assassin Equipment - Arms",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "H7TL76rQhbH7pTCCQRtH7",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO005",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Marcus Reyno"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO005-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "NDJfTHzHkWNMz77HPFkgD",
         "name": "Pitfall Trap",
         "color": "Yellow",
@@ -357515,6 +358231,71 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "488374",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/488374?Language=English&Printing=Cold+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "DdpWjTnnnr8bHqRb6Ftcq",
+        "name": "Plague Mask",
+        "color": "",
+        "pitch": "",
+        "cost": "",
+        "power": "",
+        "defense": "2",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Equipment",
+            "Head"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Instant** - Destroy this: Disease tokens can't be created under your control this turn.\n\n**Blade Break**",
+        "functional_text_plain": "Instant - Destroy this: Disease tokens can't be created under your control this turn.\nBlade Break",
+        "type_text": "Assassin Equipment - Head",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "RMBwNhDzg6BFh7DCLbNPG",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO003",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Saad Irfan"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO003-RF.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
@@ -359984,6 +360765,24 @@
             "TNJz9fCgqmhhLz9rP9tkt"
         ],
         "printings": [
+            {
+                "unique_id": "66NrRm7JgCMDmmtC9Ngbg",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO011",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Carlos Cruchaga"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO011.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "z87r9J8rTWpC7L6qPqWMq",
                 "set_printing_unique_id": "rjjNJ8JcpGzwbrzmWNTb9",
@@ -437094,6 +437893,71 @@
         ]
     },
     {
+        "unique_id": "nnjFJbrFRHjbqjLRNc9w7",
+        "name": "Second Salvos",
+        "color": "",
+        "pitch": "",
+        "cost": "",
+        "power": "",
+        "defense": "1",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Equipment",
+            "Legs"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "While this is in your graveyard, at the start of your turn, you may destroy 2 Silver you control. If you do, equip this.\n\n**Instant** - Destroy this: {u} your hero.\n\n**Blade Break**",
+        "functional_text_plain": "While this is in your graveyard, at the start of your turn, you may destroy 2 Silver you control. If you do, equip this.\nInstant - Destroy this: {u} your hero.\nBlade Break",
+        "type_text": "Assassin Equipment - Legs",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "zLMLBgD7jdnDbMjB66F8M",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO006",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Christ Adiel Then"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO006-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "PjwhnN8B6FghrjRmGwhnJ",
         "name": "Second Strike",
         "color": "Red",
@@ -439374,6 +440238,24 @@
         "ll_restricted": false,
         "printings": [
             {
+                "unique_id": "FkdhJzdQhnR7nmDbDBg9t",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO029",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Orson CaptainSass"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO029.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "Wbt6PdRtJDDMcJDfdMhzf",
                 "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
                 "id": "MPA127",
@@ -441422,6 +442304,24 @@
             "TNJz9fCgqmhhLz9rP9tkt"
         ],
         "printings": [
+            {
+                "unique_id": "TCkLQgnKgzQCDtHzBwfpr",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO020",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Alexis Susani"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO020.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "99LcqWM79rzhdCgDK6KHc",
                 "set_printing_unique_id": "cWmBzGKHW8GwtJddbDhLJ",
@@ -452813,6 +453713,24 @@
                 "flavor_text": "",
                 "flavor_text_plain": "",
                 "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AAC029.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "qQG8jzhrtwDPCTt6rGgzf",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO028",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Henrique Lindner"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO028.webp",
                 "image_rotation_degrees": 0
             },
             {
@@ -474800,6 +475718,71 @@
         ]
     },
     {
+        "unique_id": "GDJkfK8h9WdWzWcbdgBpL",
+        "name": "Sneaking Rot",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "2",
+        "power": "6",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "If you've played or activated an attack reaction this chain link, this gets \"When this hits a hero, create a Bloodrot Pox token under their control.\"",
+        "functional_text_plain": "If you've played or activated an attack reaction this chain link, this gets \"When this hits a hero, create a Bloodrot Pox token under their control.\"",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "GgwqRjPN96thrLzrQnMPg",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO012",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Ismatulloh"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO012.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "q8rqGffz6jP9D7w8DbkcL",
         "name": "Snow Under",
         "color": "Red",
@@ -486259,6 +487242,89 @@
         ]
     },
     {
+        "unique_id": "Rg8CktNhL9NbWbJHNJhbW",
+        "name": "Spike Slasher",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "0",
+        "power": "3",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Stealth**\n\nWhen this attacks, attack reaction cards cost {r} less to play this chain link.",
+        "functional_text_plain": "Stealth\nWhen this attacks, attack reaction cards cost {r} less to play this chain link.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": false,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "8LccDcTLMDnwqP8mNc9bH",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA028",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Stormy Elia Fanggidae"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA028.webp",
+                "image_rotation_degrees": 0
+            },
+            {
+                "unique_id": "qGgBhDqhCzbgwzk7RnnKW",
+                "set_printing_unique_id": "9QCqJLP8C9fHH98qGGRPr",
+                "id": "MPA028",
+                "set_id": "MPA",
+                "edition": "N",
+                "foiling": "R",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Stormy Elia Fanggidae"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/MPA028-RF.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
         "unique_id": "c6tgbGMBbR77gJWhJCzhh",
         "name": "Spike with Bloodrot",
         "color": "Red",
@@ -489065,6 +490131,24 @@
             "drbBwrNtMRPTJ79LBQWWB"
         ],
         "printings": [
+            {
+                "unique_id": "7rtPctjhgK9DMDJJwGTB8",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO021",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Othon Nikolaidis"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO021.webp",
+                "image_rotation_degrees": 0
+            },
             {
                 "unique_id": "jbhnWJW6znCbBnzqrdzRJ",
                 "set_printing_unique_id": "zd6wBL7zcQR7zrJhwCjrh",
@@ -548396,6 +549480,24 @@
         "ll_restricted": false,
         "printings": [
             {
+                "unique_id": "8JG8zk8fcBrLmM9DCftC8",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO026",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "M",
+                "expansion_slot": false,
+                "artists": [
+                    "Simon Dominic"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO026.webp",
+                "image_rotation_degrees": 0
+            },
+            {
                 "unique_id": "CgJnjbwr6TgjQcNwwhTnw",
                 "set_printing_unique_id": "MNCKJJ98TkBTPbBFKL689",
                 "id": "HNT013",
@@ -562200,6 +563302,71 @@
                 "flavor_text": "",
                 "flavor_text_plain": "",
                 "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO019.webp",
+                "image_rotation_degrees": 0
+            }
+        ]
+    },
+    {
+        "unique_id": "fhGnJKLTQ9PrhHpkMLDTg",
+        "name": "Viral Sampling",
+        "color": "Blue",
+        "pitch": "3",
+        "cost": "0",
+        "power": "1",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "**Stealth**\n\n**Contract** - You are contracted to hit an infected opposing hero. Whenever you complete this contract, create a Silver token.",
+        "functional_text_plain": "Stealth\nContract - You are contracted to hit an infected opposing hero. Whenever you complete this contract, create a Silver token.",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": true,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "jj7dPLMbz7WCbgg6jcWgz",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO027",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "C",
+                "expansion_slot": false,
+                "artists": [
+                    "Andi Cahyo W"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO027.webp",
                 "image_rotation_degrees": 0
             }
         ]
@@ -583204,6 +584371,71 @@
                 "image_rotation_degrees": 0,
                 "tcgplayer_product_id": "453360",
                 "tcgplayer_url": "https://www.tcgplayer.com/product/453360?Language=English&Printing=Rainbow+Foil"
+            }
+        ]
+    },
+    {
+        "unique_id": "mCJz9WLNM9rPjjkhBkPRH",
+        "name": "Wound Extraction",
+        "color": "Red",
+        "pitch": "1",
+        "cost": "1",
+        "power": "5",
+        "defense": "3",
+        "health": "",
+        "intelligence": "",
+        "arcane": "",
+        "types": [
+            "Assassin",
+            "Action",
+            "Attack"
+        ],
+        "traits": [],
+        "card_keywords": [],
+        "abilities_and_effects": [],
+        "ability_and_effect_keywords": [],
+        "granted_keywords": [],
+        "removed_keywords": [],
+        "interacts_with_keywords": [],
+        "functional_text": "If you've hit with a dagger this combat chain, this gets \"When this hits a hero, create a Frailty, Inertia, or Bloodrot Pox token under their control.\"",
+        "functional_text_plain": "If you've hit with a dagger this combat chain, this gets \"When this hits a hero, create a Frailty, Inertia, or Bloodrot Pox token under their control.\"",
+        "type_text": "Assassin Action - Attack",
+        "played_horizontally": false,
+        "blitz_legal": true,
+        "cc_legal": true,
+        "commoner_legal": false,
+        "ll_legal": true,
+        "silver_age_legal": true,
+        "blitz_living_legend": false,
+        "cc_living_legend": false,
+        "blitz_banned": false,
+        "cc_banned": false,
+        "commoner_banned": false,
+        "ll_banned": false,
+        "silver_age_banned": false,
+        "upf_banned": false,
+        "blitz_suspended": false,
+        "cc_suspended": false,
+        "commoner_suspended": false,
+        "ll_restricted": false,
+        "printings": [
+            {
+                "unique_id": "8MLQJ8fzFT7GPqnTNPPNd",
+                "set_printing_unique_id": "RbMdRp8HMgGNRptCjHHwH",
+                "id": "AMO013",
+                "set_id": "AMO",
+                "edition": "N",
+                "foiling": "S",
+                "rarity": "R",
+                "expansion_slot": false,
+                "artists": [
+                    "Brian Madya Narendra"
+                ],
+                "art_variations": [],
+                "flavor_text": "",
+                "flavor_text_plain": "",
+                "image_url": "https://legendstory-production-s3-public.s3.amazonaws.com/media/cards/large/AMO013.webp",
+                "image_rotation_degrees": 0
             }
         ]
     },
